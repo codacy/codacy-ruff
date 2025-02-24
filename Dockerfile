@@ -9,7 +9,7 @@ COPY src/codacy_ruff.py codacy_ruff.py
 
 COPY src/codacy_ruff_test.py codacy_ruff_test.py
 
-COPY docs /docs
+COPY /docs /docs
 
 RUN adduser -u 2004 -D docker
 
