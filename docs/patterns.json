@@ -1,0 +1,5418 @@
+{
+    "name": "Codacy-Ruff",
+    "version": "0.9.7",
+    "patterns": [
+        {
+            "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "AIR301_airflow-dag-no-schedule-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "AIR302_airflow3-removal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "AIR303_airflow3-moved-to-provider",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ERA001_commented-out-code",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FAST001_fast-api-redundant-response-model",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FAST002_fast-api-non-annotated-dependency",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FAST003_fast-api-unused-path-parameter",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT101_sys-version-slice3",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT102_sys-version2",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT103_sys-version-cmp-str3",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT201_sys-version-info0-eq3",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT202_six-py3",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT203_sys-version-info1-cmp-int",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT204_sys-version-info-minor-cmp-int",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT301_sys-version0",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT302_sys-version-cmp-str10",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT303_sys-version-slice1",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN001_missing-type-function-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN002_missing-type-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN003_missing-type-kwargs",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN201_missing-return-type-undocumented-public-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN202_missing-return-type-private-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN204_missing-return-type-special-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN205_missing-return-type-static-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN206_missing-return-type-class-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN401_any-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC100_cancel-scope-no-checkpoint",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC105_trio-sync-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC109_async-function-with-timeout",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC110_async-busy-wait",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC115_async-zero-sleep",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC116_long-sleep-not-forever",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC210_blocking-http-call-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC220_create-subprocess-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC221_run-process-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC222_wait-for-process-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC230_blocking-open-call-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC251_blocking-sleep-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S101_assert",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S102_exec-builtin",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S103_bad-file-permissions",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S104_hardcoded-bind-all-interfaces",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S105_hardcoded-password-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S106_hardcoded-password-func-arg",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S107_hardcoded-password-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S108_hardcoded-temp-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S110_try-except-pass",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S112_try-except-continue",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S113_request-without-timeout",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S201_flask-debug-true",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S202_tarfile-unsafe-members",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S301_suspicious-pickle-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S302_suspicious-marshal-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S303_suspicious-insecure-hash-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S304_suspicious-insecure-cipher-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S305_suspicious-insecure-cipher-mode-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S306_suspicious-mktemp-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S307_suspicious-eval-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S308_suspicious-mark-safe-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S310_suspicious-url-open-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S311_suspicious-non-cryptographic-random-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S312_suspicious-telnet-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S313_suspicious-xmlc-element-tree-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S314_suspicious-xml-element-tree-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S315_suspicious-xml-expat-reader-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S316_suspicious-xml-expat-builder-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S317_suspicious-xml-sax-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S318_suspicious-xml-mini-dom-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S319_suspicious-xml-pull-dom-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S320_suspicious-xmle-tree-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S321_suspicious-ftp-lib-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S323_suspicious-unverified-context-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S324_hashlib-insecure-hash-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S401_suspicious-telnetlib-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S402_suspicious-ftplib-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S403_suspicious-pickle-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S404_suspicious-subprocess-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S405_suspicious-xml-etree-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S406_suspicious-xml-sax-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S407_suspicious-xml-expat-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S408_suspicious-xml-minidom-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S409_suspicious-xml-pulldom-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S411_suspicious-xmlrpc-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S412_suspicious-httpoxy-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S413_suspicious-pycrypto-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S415_suspicious-pyghmi-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S501_request-with-no-cert-validation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S502_ssl-insecure-version",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S503_ssl-with-bad-defaults",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S504_ssl-with-no-version",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S505_weak-cryptographic-key",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S506_unsafe-yaml-load",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S507_ssh-no-host-key-verification",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S508_snmp-insecure-version",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S509_snmp-weak-cryptography",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S601_paramiko-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S602_subprocess-popen-with-shell-equals-true",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S603_subprocess-without-shell-equals-true",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S604_call-with-shell-equals-true",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S605_start-process-with-a-shell",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S606_start-process-with-no-shell",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S607_start-process-with-partial-path",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S608_hardcoded-sql-expression",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S609_unix-command-wildcard-injection",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S610_django-extra",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S611_django-raw-sql",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S612_logging-config-insecure-listen",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S701_jinja2-autoescape-false",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "S702_mako-templates",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "BLE001_blind-except",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FBT001_boolean-type-hint-positional-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FBT002_boolean-default-value-positional-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FBT003_boolean-positional-value-in-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B002_unary-prefix-increment-decrement",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B003_assignment-to-os-environ",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B004_unreliable-callable-check",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B005_strip-with-multi-characters",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B006_mutable-argument-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B007_unused-loop-control-variable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B008_function-call-in-default-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B009_get-attr-with-constant",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B010_set-attr-with-constant",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B011_assert-false",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B012_jump-statement-in-finally",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B013_redundant-tuple-in-exception-handler",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B014_duplicate-handler-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B015_useless-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B016_raise-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B017_assert-raises-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B018_useless-expression",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B019_cached-instance-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B020_loop-variable-overrides-iterator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B021_f-string-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B022_useless-contextlib-suppress",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B023_function-uses-loop-variable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B024_abstract-base-class-without-abstract-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B025_duplicate-try-block-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B026_star-arg-unpacking-after-keyword-arg",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B027_empty-method-without-abstract-decorator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B028_no-explicit-stacklevel",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B029_except-with-empty-tuple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B030_except-with-non-exception-classes",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B031_reuse-of-groupby-generator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B032_unintentional-type-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B033_duplicate-value",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B034_re-sub-positional-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B035_static-key-dict-comprehension",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B039_mutable-contextvar-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B901_return-in-generator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B903_class-as-data-structure",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B904_raise-without-from-inside-except",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B905_zip-without-explicit-strict",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B909_loop-iterator-mutation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "B911_batched-without-explicit-strict",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "A001_builtin-variable-shadowing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "A002_builtin-argument-shadowing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "A003_builtin-attribute-shadowing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "A004_builtin-import-shadowing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "A005_stdlib-module-shadowing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "A006_builtin-lambda-argument-shadowing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "COM812_missing-trailing-comma",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "COM818_trailing-comma-on-bare-tuple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "COM819_prohibited-trailing-comma",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C400_unnecessary-generator-list",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C401_unnecessary-generator-set",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C402_unnecessary-generator-dict",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C403_unnecessary-list-comprehension-set",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C404_unnecessary-list-comprehension-dict",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C405_unnecessary-literal-set",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C406_unnecessary-literal-dict",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C408_unnecessary-collection-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C409_unnecessary-literal-within-tuple-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C410_unnecessary-literal-within-list-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C411_unnecessary-list-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C413_unnecessary-call-around-sorted",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C414_unnecessary-double-cast-or-process",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C415_unnecessary-subscript-reversal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C416_unnecessary-comprehension",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C417_unnecessary-map",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C418_unnecessary-literal-within-dict-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C419_unnecessary-comprehension-in-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C420_unnecessary-dict-comprehension-for-iterable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "CPY001_missing-copyright-notice",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ001_call-datetime-without-tzinfo",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ002_call-datetime-today",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ003_call-datetime-utcnow",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ004_call-datetime-utcfromtimestamp",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ005_call-datetime-now-without-tzinfo",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ006_call-datetime-fromtimestamp",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ007_call-datetime-strptime-without-zone",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ011_call-date-today",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ012_call-date-fromtimestamp",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ901_datetime-min-max",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "T100_debugger",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ001_django-nullable-model-string-field",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ003_django-locals-in-render-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ006_django-exclude-with-model-form",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ007_django-all-with-model-form",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ008_django-model-without-dunder-str",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ012_django-unordered-body-content-in-model",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ013_django-non-leading-receiver-decorator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EM101_raw-string-in-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EM102_f-string-in-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EM103_dot-format-in-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE001_shebang-not-executable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE002_shebang-missing-executable-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE003_shebang-missing-python",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE004_shebang-leading-whitespace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE005_shebang-not-first-line",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX001_line-contains-fixme",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX002_line-contains-todo",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX003_line-contains-xxx",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX004_line-contains-hack",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FA100_future-rewritable-type-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FA102_future-required-type-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "INT001_f-string-in-get-text-func-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "INT002_format-in-get-text-func-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "INT003_printf-in-get-text-func-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ISC001_single-line-implicit-string-concatenation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ISC002_multi-line-implicit-string-concatenation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ISC003_explicit-string-concatenation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ICN001_unconventional-import-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ICN002_banned-import-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ICN003_banned-import-from",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG001_direct-logger-instantiation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG002_invalid-get-logger-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG004_log-exception-outside-except-handler",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG007_exception-without-exc-info",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG009_undocumented-warn",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG014_exc-info-outside-except-handler",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG015_root-logger-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G001_logging-string-format",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G002_logging-percent-format",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G003_logging-string-concat",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G004_logging-f-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G010_logging-warn",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G101_logging-extra-attr-clash",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G201_logging-exc-info",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "G202_logging-redundant-exc-info",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "INP001_implicit-namespace-package",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE790_unnecessary-placeholder",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE794_duplicate-class-field-definition",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE796_non-unique-enums",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE800_unnecessary-spread",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE804_unnecessary-dict-kwargs",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE807_reimplemented-container-builtin",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE808_unnecessary-range-start",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE810_multiple-starts-ends-with",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "T201_print",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "T203_p-print",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI001_unprefixed-type-param",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI002_complex-if-statement-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI003_unrecognized-version-info-check",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI004_patch-version-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI005_wrong-tuple-length-version-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI006_bad-version-info-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI007_unrecognized-platform-check",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI008_unrecognized-platform-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI009_pass-statement-stub-body",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI010_non-empty-stub-body",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI011_typed-argument-default-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI012_pass-in-class-body",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI013_ellipsis-in-non-empty-class-body",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI014_argument-default-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI015_assignment-default-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI016_duplicate-union-member",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI017_complex-assignment-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI018_unused-private-type-var",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI019_custom-type-var-for-self",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI020_quoted-annotation-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI021_docstring-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI024_collections-named-tuple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI025_unaliased-collections-abc-set-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI026_type-alias-without-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI029_str-or-repr-defined-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI030_unnecessary-literal-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI032_any-eq-ne-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI033_type-comment-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI034_non-self-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI035_unassigned-special-variable-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI036_bad-exit-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI041_redundant-numeric-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI042_snake-case-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI043_t-suffixed-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI044_future-annotations-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI045_iter-method-return-iterable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI046_unused-private-protocol",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI047_unused-private-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI048_stub-body-multiple-statements",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI049_unused-private-typed-dict",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI050_no-return-argument-annotation-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI051_redundant-literal-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI052_unannotated-assignment-in-stub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI053_string-or-bytes-too-long",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI054_numeric-literal-too-long",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI055_unnecessary-type-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI056_unsupported-method-call-on-all",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI057_byte-string-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI058_generator-return-from-iter-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI059_generic-not-last-base-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI061_redundant-none-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI062_duplicate-literal-member",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI063_pep484-style-positional-only-parameter",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI064_redundant-final-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI066_bad-version-info-order",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT001_pytest-fixture-incorrect-parentheses-style",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT002_pytest-fixture-positional-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT003_pytest-extraneous-scope-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT006_pytest-parametrize-names-wrong-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT007_pytest-parametrize-values-wrong-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT008_pytest-patch-with-lambda",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT009_pytest-unittest-assertion",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT010_pytest-raises-without-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT011_pytest-raises-too-broad",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT012_pytest-raises-with-multiple-statements",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT013_pytest-incorrect-pytest-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT014_pytest-duplicate-parametrize-test-cases",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT015_pytest-assert-always-false",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT016_pytest-fail-without-message",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT017_pytest-assert-in-except",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT018_pytest-composite-assertion",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT019_pytest-fixture-param-without-value",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT020_pytest-deprecated-yield-fixture",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT021_pytest-fixture-finalizer-callback",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT022_pytest-useless-yield-fixture",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT023_pytest-incorrect-mark-parentheses-style",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT024_pytest-unnecessary-asyncio-mark-on-fixture",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT025_pytest-erroneous-use-fixtures-on-fixture",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT026_pytest-use-fixtures-without-parameters",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT027_pytest-unittest-raises-assertion",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT028_pytest-parameter-with-default-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT029_pytest-warns-without-warning",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT030_pytest-warns-too-broad",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PT031_pytest-warns-with-multiple-statements",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "Q000_bad-quotes-inline-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "Q001_bad-quotes-multiline-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "Q002_bad-quotes-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "Q003_avoidable-escaped-quote",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "Q004_unnecessary-escaped-quote",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RSE102_unnecessary-paren-on-raise-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET501_unnecessary-return-none",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET502_implicit-return-value",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET503_implicit-return",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET504_unnecessary-assign",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET505_superfluous-else-return",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET506_superfluous-else-raise",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET507_superfluous-else-continue",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RET508_superfluous-else-break",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SLF001_private-member-access",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM101_duplicate-isinstance-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM102_collapsible-if",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM103_needless-bool",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM105_suppressible-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM107_return-in-try-except-finally",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM108_if-else-block-instead-of-if-exp",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM109_compare-with-tuple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM110_reimplemented-builtin",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM112_uncapitalized-environment-variables",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM113_enumerate-for-loop",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM114_if-with-same-arms",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM115_open-file-with-context-handler",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM116_if-else-block-instead-of-dict-lookup",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM117_multiple-with-statements",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM118_in-dict-keys",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM201_negate-equal-op",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM202_negate-not-equal-op",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM208_double-negation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM210_if-expr-with-true-false",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM211_if-expr-with-false-true",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM212_if-expr-with-twisted-arms",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM220_expr-and-not-expr",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM221_expr-or-not-expr",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM222_expr-or-true",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM223_expr-and-false",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM300_yoda-conditions",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM401_if-else-block-instead-of-dict-get",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM905_split-static-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM910_dict-get-with-none-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM911_zip-dict-keys-and-values",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SLOT000_no-slots-in-str-subclass",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SLOT001_no-slots-in-tuple-subclass",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "SLOT002_no-slots-in-namedtuple-subclass",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TID251_banned-api",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TID252_relative-imports",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TID253_banned-module-level-imports",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD001_invalid-todo-tag",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD002_missing-todo-author",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD003_missing-todo-link",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD004_missing-todo-colon",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD005_missing-todo-description",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD006_invalid-todo-capitalization",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TD007_missing-space-after-todo-colon",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC001_typing-only-first-party-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC002_typing-only-third-party-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC003_typing-only-standard-library-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC004_runtime-import-in-type-checking-block",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC005_empty-type-checking-block",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC006_runtime-cast-value",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC007_unquoted-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC008_quoted-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TC010_runtime-string-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG001_unused-function-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG002_unused-method-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG003_unused-class-method-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG004_unused-static-method-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG005_unused-lambda-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH100_os-path-abspath",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH101_os-chmod",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH102_os-mkdir",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH103_os-makedirs",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH104_os-rename",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH105_os-replace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH106_os-rmdir",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH107_os-remove",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH108_os-unlink",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH109_os-getcwd",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH110_os-path-exists",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH111_os-path-expanduser",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH112_os-path-isdir",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH113_os-path-isfile",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH114_os-path-islink",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH115_os-readlink",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH116_os-stat",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH117_os-path-isabs",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH118_os-path-join",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH119_os-path-basename",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH120_os-path-dirname",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH121_os-path-samefile",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH122_os-path-splitext",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH123_builtin-open",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH124_py-path",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH201_path-constructor-current-directory",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH202_os-path-getsize",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH203_os-path-getatime",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH204_os-path-getmtime",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH205_os-path-getctime",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH206_os-sep-split",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH207_glob",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH208_os-listdir",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH210_invalid-pathlib-with-suffix",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FLY002_static-join-to-f-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "I001_unsorted-imports",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "I002_missing-required-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C901_complex-structure",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY001_numpy-deprecated-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY002_numpy-legacy-random",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY003_numpy-deprecated-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY201_numpy2-deprecation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD002_pandas-use-of-inplace-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD003_pandas-use-of-dot-is-null",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD004_pandas-use-of-dot-not-null",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD007_pandas-use-of-dot-ix",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD008_pandas-use-of-dot-at",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD009_pandas-use-of-dot-iat",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD010_pandas-use-of-dot-pivot-or-unstack",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD011_pandas-use-of-dot-values",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD012_pandas-use-of-dot-read-table",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD013_pandas-use-of-dot-stack",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD015_pandas-use-of-pd-merge",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD101_pandas-nunique-constant-series-check",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PD901_pandas-df-variable-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N801_invalid-class-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N802_invalid-function-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N803_invalid-argument-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N804_invalid-first-argument-name-for-class-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N805_invalid-first-argument-name-for-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N806_non-lowercase-variable-in-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N807_dunder-function-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N811_constant-imported-as-non-constant",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N812_lowercase-imported-as-non-lowercase",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N813_camelcase-imported-as-lowercase",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N814_camelcase-imported-as-constant",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N815_mixed-case-variable-in-class-scope",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N816_mixed-case-variable-in-global-scope",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N817_camelcase-imported-as-acronym",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N818_error-suffix-on-exception-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "N999_invalid-module-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF101_unnecessary-list-cast",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF102_incorrect-dict-iterator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF203_try-except-in-loop",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF401_manual-list-comprehension",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF402_manual-list-copy",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF403_manual-dict-comprehension",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E101_mixed-spaces-and-tabs",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E111_indentation-with-invalid-multiple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E112_no-indented-block",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E113_unexpected-indentation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E114_indentation-with-invalid-multiple-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E115_no-indented-block-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E116_unexpected-indentation-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E117_over-indented",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E201_whitespace-after-open-bracket",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E202_whitespace-before-close-bracket",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E203_whitespace-before-punctuation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E204_whitespace-after-decorator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E211_whitespace-before-parameters",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E221_multiple-spaces-before-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E222_multiple-spaces-after-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E223_tab-before-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E224_tab-after-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E225_missing-whitespace-around-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E226_missing-whitespace-around-arithmetic-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E227_missing-whitespace-around-bitwise-or-shift-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E228_missing-whitespace-around-modulo-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E231_missing-whitespace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E241_multiple-spaces-after-comma",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E242_tab-after-comma",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E251_unexpected-spaces-around-keyword-parameter-equals",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E252_missing-whitespace-around-parameter-equals",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E261_too-few-spaces-before-inline-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E262_no-space-after-inline-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E265_no-space-after-block-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E266_multiple-leading-hashes-for-block-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E271_multiple-spaces-after-keyword",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E272_multiple-spaces-before-keyword",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E273_tab-after-keyword",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E274_tab-before-keyword",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E275_missing-whitespace-after-keyword",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E301_blank-line-between-methods",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E302_blank-lines-top-level",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E303_too-many-blank-lines",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E304_blank-line-after-decorator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E305_blank-lines-after-function-or-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E306_blank-lines-before-nested-definition",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E401_multiple-imports-on-one-line",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E402_module-import-not-at-top-of-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E501_line-too-long",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E502_redundant-backslash",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E701_multiple-statements-on-one-line-colon",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E702_multiple-statements-on-one-line-semicolon",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E703_useless-semicolon",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E711_none-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E712_true-false-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E713_not-in-test",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E714_not-is-test",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E721_type-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E722_bare-except",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E731_lambda-assignment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E741_ambiguous-variable-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E742_ambiguous-class-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E743_ambiguous-function-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "E902_io-error",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W191_tab-indentation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W291_trailing-whitespace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W292_missing-newline-at-end-of-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W293_blank-line-with-whitespace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W391_too-many-newlines-at-end-of-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W505_doc-line-too-long",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "W605_invalid-escape-sequence",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DOC201_docstring-missing-returns",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DOC202_docstring-extraneous-returns",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DOC402_docstring-missing-yields",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DOC403_docstring-extraneous-yields",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DOC501_docstring-missing-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DOC502_docstring-extraneous-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D100_undocumented-public-module",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D101_undocumented-public-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D102_undocumented-public-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D103_undocumented-public-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D104_undocumented-public-package",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D105_undocumented-magic-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D106_undocumented-public-nested-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D107_undocumented-public-init",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D200_unnecessary-multiline-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D201_blank-line-before-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D202_blank-line-after-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D203_incorrect-blank-line-before-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D204_incorrect-blank-line-after-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D205_missing-blank-line-after-summary",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D206_docstring-tab-indentation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D207_under-indentation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D208_over-indentation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D209_new-line-after-last-paragraph",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D210_surrounding-whitespace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D211_blank-line-before-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D212_multi-line-summary-first-line",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D213_multi-line-summary-second-line",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D214_overindented-section",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D215_overindented-section-underline",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D300_triple-single-quotes",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D301_escape-sequence-in-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D400_missing-trailing-period",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D401_non-imperative-mood",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D402_signature-in-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D403_first-word-uncapitalized",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D404_docstring-starts-with-this",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D405_non-capitalized-section-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D406_missing-new-line-after-section-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D407_missing-dashed-underline-after-section",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D408_missing-section-underline-after-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D409_mismatched-section-underline-length",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D410_no-blank-line-after-section",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D411_no-blank-line-before-section",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D412_blank-lines-between-header-and-content",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D413_missing-blank-line-after-last-section",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D414_empty-docstring-section",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D415_missing-terminal-punctuation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D416_missing-section-name-colon",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D417_undocumented-param",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D418_overload-with-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "D419_empty-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F401_unused-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F402_import-shadowed-by-loop-var",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F403_undefined-local-with-import-star",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F404_late-future-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F405_undefined-local-with-import-star-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F406_undefined-local-with-nested-import-star-usage",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F407_future-feature-not-defined",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F501_percent-format-invalid-format",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F502_percent-format-expected-mapping",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F503_percent-format-expected-sequence",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F504_percent-format-extra-named-arguments",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F505_percent-format-missing-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F506_percent-format-mixed-positional-and-named",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F507_percent-format-positional-count-mismatch",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F508_percent-format-star-requires-sequence",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F509_percent-format-unsupported-format-character",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F521_string-dot-format-invalid-format",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F522_string-dot-format-extra-named-arguments",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F523_string-dot-format-extra-positional-arguments",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F524_string-dot-format-missing-arguments",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F525_string-dot-format-mixing-automatic",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F541_f-string-missing-placeholders",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F601_multi-value-repeated-key-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F602_multi-value-repeated-key-variable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F621_expressions-in-star-assignment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F622_multiple-starred-expressions",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F631_assert-tuple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F632_is-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F633_invalid-print-syntax",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F634_if-tuple",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F701_break-outside-loop",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F702_continue-outside-loop",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F704_yield-outside-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F706_return-outside-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F707_default-except-not-last",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F722_forward-annotation-syntax-error",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F811_redefined-while-unused",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F821_undefined-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F822_undefined-export",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F823_undefined-local",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F841_unused-variable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F842_unused-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "F901_raise-not-implemented",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PGH003_blanket-type-ignore",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PGH004_blanket-noqa",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PGH005_invalid-mock-access",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0105_type-name-incorrect-variance",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0131_type-bivariance",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0132_type-param-name-mismatch",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0205_single-string-slots",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0206_dict-index-missing-items",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0208_iteration-over-set",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0414_useless-import-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0415_import-outside-top-level",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC1802_len-test",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC1901_compare-to-empty-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC2401_non-ascii-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC2403_non-ascii-import-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC2701_import-private-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC2801_unnecessary-dunder-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC3002_unnecessary-direct-lambda-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0100_yield-in-init",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0101_return-in-init",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0115_nonlocal-and-global",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0116_continue-in-finally",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0117_nonlocal-without-binding",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0118_load-before-global-declaration",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0237_non-slot-assignment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0241_duplicate-bases",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0302_unexpected-special-method-signature",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0303_invalid-length-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0304_invalid-bool-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0305_invalid-index-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0307_invalid-str-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0308_invalid-bytes-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0309_invalid-hash-return-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0604_invalid-all-object",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0605_invalid-all-format",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0643_potential-index-error",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0704_misplaced-bare-raise",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1132_repeated-keyword-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1141_dict-iter-missing-items",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1142_await-outside-async",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1205_logging-too-many-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1206_logging-too-few-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1300_bad-string-format-character",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1307_bad-string-format-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1310_bad-str-strip-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1507_invalid-envvar-value",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1519_singledispatch-method",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1520_singledispatchmethod-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1700_yield-from-in-async-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2502_bidirectional-unicode",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2510_invalid-character-backspace",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2512_invalid-character-sub",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2513_invalid-character-esc",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2514_invalid-character-nul",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2515_invalid-character-zero-width-space",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE4703_modified-iterating-set",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0124_comparison-with-itself",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0133_comparison-of-constant",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0202_no-classmethod-decorator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0203_no-staticmethod-decorator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0206_property-with-parameters",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0402_manual-from-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0904_too-many-public-methods",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0911_too-many-return-statements",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0912_too-many-branches",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0913_too-many-arguments",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0914_too-many-locals",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0915_too-many-statements",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0916_too-many-boolean-expressions",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0917_too-many-positional-arguments",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1702_too-many-nested-blocks",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1704_redefined-argument-from-local",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1711_useless-return",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1714_repeated-equality-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1716_boolean-chained-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1722_sys-exit-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1730_if-stmt-min-max",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1733_unnecessary-dict-index-lookup",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1736_unnecessary-list-index-lookup",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR2004_magic-value-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR2044_empty-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR5501_collapsible-else-if",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR6104_non-augmented-assignment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR6201_literal-membership",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR6301_no-self-use",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0108_unnecessary-lambda",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0120_useless-else-on-loop",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0127_self-assigning-variable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0128_redeclared-assigned-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0129_assert-on-string-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0131_named-expr-without-context",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0133_useless-exception-statement",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0177_nan-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0211_bad-staticmethod-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0244_redefined-slots-in-subclass",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0245_super-without-brackets",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0406_import-self",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0602_global-variable-not-assigned",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0603_global-statement",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0604_global-at-module-level",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0642_self-or-cls-assignment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0711_binary-op-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1501_bad-open-mode",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1507_shallow-copy-environ",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1508_invalid-envvar-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1509_subprocess-popen-preexec-fn",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1510_subprocess-run-without-check",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1514_unspecified-encoding",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1641_eq-without-hash",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW2101_useless-with-lock",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW2901_redefined-loop-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW3201_bad-dunder-method-name",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW3301_nested-min-max",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP001_useless-metaclass-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP003_type-of-primitive",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP004_useless-object-inheritance",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP005_deprecated-unittest-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP006_non-pep585-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP007_non-pep604-annotation-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP008_super-call-with-parameters",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP009_utf8-encoding-declaration",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP010_unnecessary-future-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP011_lru-cache-without-parameters",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP012_unnecessary-encode-utf8",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP013_convert-typed-dict-functional-to-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP014_convert-named-tuple-functional-to-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP015_redundant-open-modes",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP017_datetime-timezone-utc",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP018_native-literals",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP019_typing-text-str-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP020_open-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP021_replace-universal-newlines",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP022_replace-stdout-stderr",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP023_deprecated-c-element-tree",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP024_os-error-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP025_unicode-kind-prefix",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP026_deprecated-mock-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP028_yield-in-for-loop",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP029_unnecessary-builtin-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP030_format-literals",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP031_printf-string-formatting",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP032_f-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP033_lru-cache-with-maxsize-none",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP034_extraneous-parentheses",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP035_deprecated-import",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP036_outdated-version-block",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP037_quoted-annotation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP038_non-pep604-isinstance",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP039_unnecessary-class-parentheses",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP040_non-pep695-type-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP041_timeout-error-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP042_replace-str-enum",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP043_unnecessary-default-type-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP044_non-pep646-unpack",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP045_non-pep604-annotation-optional",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP046_non-pep695-generic-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP047_non-pep695-generic-function",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "UP049_private-type-parameter",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB101_read-whole-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB103_write-whole-file",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB105_print-empty-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB110_if-exp-instead-of-or-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB113_repeated-append",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB116_f-string-number-format",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB118_reimplemented-operator",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB122_for-loop-writes",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB129_readlines-in-for",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB131_delete-full-slice",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB132_check-and-remove-from-set",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB136_if-expr-min-max",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB140_reimplemented-starmap",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB142_for-loop-set-mutations",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB145_slice-copy",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB148_unnecessary-enumerate",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB152_math-constant",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB154_repeated-global",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB156_hardcoded-string-charset",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB157_verbose-decimal-constructor",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB161_bit-count",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB162_fromisoformat-replace-z",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB163_redundant-log-base",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB164_unnecessary-from-float",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB166_int-on-sliced-str",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB167_regex-flag-alias",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB168_isinstance-type-none",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB169_type-none-comparison",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB171_single-item-membership-test",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB177_implicit-cwd",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB180_meta-class-abc-meta",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB181_hashlib-digest-hex",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB187_list-reverse-copy",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB188_slice-to-remove-prefix-or-suffix",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB189_subclass-builtin",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB192_sorted-min-max",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF001_ambiguous-unicode-character-string",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF002_ambiguous-unicode-character-docstring",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF003_ambiguous-unicode-character-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF005_collection-literal-concatenation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF006_asyncio-dangling-task",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF007_zip-instead-of-pairwise",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF008_mutable-dataclass-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF009_function-call-in-dataclass-default-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF010_explicit-f-string-type-conversion",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF012_mutable-class-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF013_implicit-optional",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF015_unnecessary-iterable-allocation-for-first-element",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF016_invalid-index-type",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF017_quadratic-list-summation",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF018_assignment-in-assert",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF019_unnecessary-key-check",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF020_never-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF021_parenthesize-chained-operators",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF022_unsorted-dunder-all",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF023_unsorted-dunder-slots",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF024_mutable-fromkeys-value",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF026_default-factory-kwarg",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF027_missing-f-string-syntax",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF028_invalid-formatter-suppression-comment",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF029_unused-async",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF030_assert-with-print-message",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF031_incorrectly-parenthesized-tuple-in-subscript",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF032_decimal-from-float-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF033_post-init-default",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF034_useless-if-else",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF035_unsafe-markup-use",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF036_none-not-at-end-of-union",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF037_unnecessary-empty-iterable-within-deque-call",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF038_redundant-bool-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF039_unraw-re-pattern",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF040_invalid-assert-message-literal-argument",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF041_unnecessary-nested-literal",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF043_pytest-raises-ambiguous-pattern",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF045_implicit-class-var-in-dataclass",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF046_unnecessary-cast-to-int",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF047_needless-else",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF048_map-int-version-parsing",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF049_dataclass-enum",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF051_if-key-in-dict-del",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF052_used-dummy-variable",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF053_class-with-mixed-type-vars",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF054_indented-form-feed",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF055_unnecessary-regular-expression",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF056_falsy-dict-get-fallback",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF057_unnecessary-round",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF058_starmap-zip",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF100_unused-noqa",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF101_redirected-noqa",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF200_invalid-pyproject-toml",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY002_raise-vanilla-class",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY003_raise-vanilla-args",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY004_type-check-without-type-error",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY201_verbose-raise",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY203_useless-try-except",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY300_try-consider-else",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY301_raise-within-try",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY400_error-instead-of-exception",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY401_verbose-log-message",
+            "category": "ErrorProne",
+            "level": "Info",
+            "enabled": false
+        }
+    ]
+}
