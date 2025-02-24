@@ -20,10 +20,13 @@ def timeout(time):
 
 
 DEFAULT_TIMEOUT = 15 * 60
+
+
 def getTimeout(timeoutString):
     if not timeoutString.isdigit():
         return DEFAULT_TIMEOUT
     return int(timeoutString)
+
 
 class Result:
     # result need be formatted as JSON
@@ -35,15 +38,20 @@ class Result:
         self.message = message
         self.patternId = patternId
         self.line = line
+
     def __str__(self):
-        return f'Result({self.filename},{self.message},{self.patternId},{self.line})'
+        return f"Result({self.filename},{self.message},{self.patternId},{self.line})"
+
     def __repr__(self):
         return self.__str__()
+
     def __eq__(self, o):
-        return (self.filename == o.filename,
-                self.message == o.message,
-                self.patternId == o.patternId,
-                self.line == o.line)
+        return (
+            self.filename == o.filename,
+            self.message == o.message,
+            self.patternId == o.patternId,
+            self.line == o.line,
+        )
 
 
 def toJson(obj):
@@ -51,7 +59,7 @@ def toJson(obj):
 
 
 def readJsonFile(path):
-    with open(path, 'r', encoding='utf-8') as file:
+    with open(path, "r", encoding="utf-8") as file:
         res = json.loads(file.read())
     return res
 
@@ -59,26 +67,23 @@ def readJsonFile(path):
 def run_ruff(options, files, cwd=None, configFile=None):
     print(configFile)
     if configFile is not None:
-        cmd = ['ruff', 'check', '--output-format=json', '--config',configFile]
+        cmd = ["ruff", "check", "--output-format=json", "--config", configFile]
         cmd = cmd + files
     else:
-        cmd = ['ruff', 'check', '--output-format=json']
+        cmd = ["ruff", "check", "--output-format=json"]
         cmd = cmd + options + files
-    
+
     print(cmd)
-    
-    process = subprocess.Popen(
-        cmd,
-        stdout=subprocess.PIPE,
-        cwd=cwd
-    )
+
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, cwd=cwd)
     stdout = process.communicate()[0]
-    result = stdout.decode('utf-8')
+    result = stdout.decode("utf-8")
 
     return result
 
+
 def chunks(lst, n):
-    return [lst[i:i + n] for i in range(0, len(lst), n)]
+    return [lst[i : i + n] for i in range(0, len(lst), n)]
 
 
 def run_ruff_parsed(configFile, options, files, cwd):
@@ -100,39 +105,45 @@ def run_ruff_parsed(configFile, options, files, cwd):
     #    'url': 'https://docs.astral.sh/ruff/rules/unused-import'
     # }
     for res in ruff_dicts:
-        if res['code'] != 'failure' and res['code'] != 'import-error':
-            filename = res['filename']
+        if res["code"] != "failure" and res["code"] != "import-error":
+            filename = res["filename"]
             message = f"{res['message']} ({res['code']})"
             patternId = f"{res['code']}_{res['url'].split('/')[-1]})"
-            line = res['end_location']['row']
+            line = res["end_location"]["row"]
             results.append(Result(filename, message, patternId, line))
 
     return results
 
+
 def walkDirectory(directory):
     def generate():
-        for filename in glob.iglob(os.path.join(directory, '**/*.py'), recursive=True):
+        for filename in glob.iglob(os.path.join(directory, "**/*.py"), recursive=True):
             res = os.path.relpath(filename, directory)
             yield res
+
     return list(generate())
 
+
 def readConfiguration(configFile, srcDir):
-    def allFiles(): return walkDirectory(srcDir)
+    def allFiles():
+        return walkDirectory(srcDir)
+
     try:
         configuration = readJsonFile(configFile)
-        files = configuration.get('files') or allFiles()
-        tools = [t for t in configuration['tools'] if t['name'] == 'ruff']
-        if tools and 'patterns' in tools[0]:
+        files = configuration.get("files") or allFiles()
+        tools = [t for t in configuration["tools"] if t["name"] == "ruff"]
+        if tools and "patterns" in tools[0]:
             ruff = tools[0]
-            tools = set([p['patternId'] for p in ruff.get('patterns') or []])
-            options = [] 
+            tools = set([p["patternId"] for p in ruff.get("patterns") or []])
+            options = []
         else:
             options = []
-            
+
     except Exception:
         files = allFiles()
         options = []
     return (options, [f for f in files])
+
 
 def find_ruff_configFile(srcDir):
     config_files = {"pyproject.toml", "ruff.toml", ".ruff.toml"}
@@ -140,8 +151,8 @@ def find_ruff_configFile(srcDir):
 
     for file in root_files:
         if file.name in config_files and file.is_file():
-            return str(file) 
-    
+            return str(file)
+
     return None  # Return None if no config file is found
 
 
@@ -164,10 +175,10 @@ def results_to_json(results):
     return os.linesep.join([toJson(res) for res in results])
 
 
-if __name__ == '__main__':
-    with timeout(getTimeout(os.environ.get('TIMEOUT_SECONDS') or '')):
+if __name__ == "__main__":
+    with timeout(getTimeout(os.environ.get("TIMEOUT_SECONDS") or "")):
         try:
-            results = run_tool('/.codacyrc', '/src')
+            results = run_tool("/.codacyrc", "/src")
             results = results_to_json(results)
             print(results)
         except Exception:
