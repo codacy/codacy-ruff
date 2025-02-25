@@ -8,6 +8,8 @@ import signal
 from contextlib import contextmanager
 import traceback
 from pathlib import Path
+import toml
+import fnmatch
 
 
 @contextmanager
@@ -152,13 +154,38 @@ def find_ruff_configFile(srcDir):
 
     return None  # Return None if no config file is found
 
+def get_patterns_from_configFile(config_path):
+    """Load the Ruff configuration and extract 'exclude' and 'include' patterns."""
+    config = toml.load(config_path)
+    tool_config = config.get("tool", {}).get("ruff", {})
+    
+    exclude_patterns = tool_config.get("exclude", [])
+    include_patterns = tool_config.get("include", [])
+    
+    return exclude_patterns, include_patterns
+
+def filter_files(files, include_patterns, exclude_patterns):
+    """Filter files based on include and exclude patterns."""
+    if include_patterns:
+        files = [f for f in files if any(fnmatch.fnmatch(f, pat) for pat in include_patterns)]
+    
+    if exclude_patterns:
+        files = [f for f in files if not any(fnmatch.fnmatch(f, pat) for pat in exclude_patterns)]
+
+    return files
 
 def run_tool(configFile, srcDir):
     (options, files) = readConfiguration(configFile, srcDir)
     res = []
     filesWithPath = [os.path.join(f) for f in files]
     toolConfigFile = find_ruff_configFile(srcDir)
-    
+    # When we run Ruff Check command with files, all exclude/include patterns from the
+    # Configuration file is not considered, so we need to filter them somehow
+    (exclude, include) = get_patterns_from_configFile(toolConfigFile) if toolConfigFile else ([], [])
+
+    # Apply filtering
+    filesWithPath = filter_files(filesWithPath, include, exclude)
+
     for chunk in chunks(filesWithPath, 10):
         res.extend(run_ruff_parsed(toolConfigFile, options, chunk, srcDir))
 

@@ -1,10 +1,13 @@
 # Codacy Ruff
 
+Co-authored by @valeriupredoi
+
 This is the docker engine we use at Codacy to have [Ruff](https://docs.astral.sh/ruff/) support.
 You can also create a docker to integrate the tool and language of your choice!
 See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala-seed) repository for more information.
 
-### Ruff 0.9.7 - Python 3.13 compatibility
+## Python compatibility
+Ruff is compatible with Python 3.13
 
 ## Usage
 
