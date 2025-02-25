@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import jsonpickle
+import ast
 import subprocess
 import glob
 import signal
@@ -57,15 +58,12 @@ def readJsonFile(path):
 
 
 def run_ruff(options, files, cwd=None, configFile=None):
-    print(configFile)
     if configFile is not None:
         cmd = ['ruff', 'check', '--output-format=json', '--config',configFile]
         cmd = cmd + files
     else:
         cmd = ['ruff', 'check', '--output-format=json']
         cmd = cmd + options + files
-    
-    print(cmd)
     
     process = subprocess.Popen(
         cmd,

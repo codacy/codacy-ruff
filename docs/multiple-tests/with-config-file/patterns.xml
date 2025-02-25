@@ -1,6 +1,5 @@
 <module name="root">
     <module name="BeforeExecutionExclusionFileFilter">
-        <property name="fileNamePattern" value="\pyproject\.toml" />
+        <property name="fileNamePattern" value="pyproject\.toml" />
     </module>
-    <module name="F401_unused-import" />
 </module>
