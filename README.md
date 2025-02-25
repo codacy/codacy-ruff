@@ -27,7 +27,7 @@ The docker is ran with the following command:
 
  1. Update the version in `requirements.txt`
 
- 2. Run the DocGenerator:
+ 2. Run the DocGenerator to update all the patterns/descriptions and the patterns.xml (from all-patterns test)
 
     ```bash
     python<version> src/doc_generator.py
