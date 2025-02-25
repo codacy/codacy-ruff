@@ -1,0 +1,1 @@
+Ruff is a fast Python linter and code formatter designed to be a drop-in replacement for tools like Flake8, isort, and Black. It is written in Rust, making it significantly faster than traditional Python-based linters. Ruff supports a wide range of linting rules, autofixing, and configuration files.
