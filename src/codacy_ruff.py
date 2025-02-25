@@ -66,10 +66,10 @@ def readJsonFile(path):
 
 def run_ruff(options, files, cwd=None, configFile=None):
     if configFile is not None:
-        cmd = ["ruff", "check", "--output-format=json", "--config", configFile]
+        cmd = ["ruff", "check", "--output-format=json", "--no-cache", "--config", configFile]
         cmd = cmd + files
     else:
-        cmd = ["ruff", "check", "--output-format=json"]
+        cmd = ["ruff", "check", "--output-format=json", "--no-cache",]
         cmd = cmd + options + files
 
     process = subprocess.Popen(cmd, stdout=subprocess.PIPE, cwd=cwd)
