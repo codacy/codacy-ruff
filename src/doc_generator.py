@@ -413,7 +413,6 @@ def save_to_markdown(pattern_name, content):
 
     print(f"Description for {pattern_name} written to {md_file_path}")
 
-
 def main():
     """Main function to fetch patterns and generate files."""
     response = requests.get(base_pattern_url)
@@ -478,6 +477,28 @@ def main():
         print(f"Data successfully written to {output_file_path}")
     else:
         print(f"Failed to fetch page. Status code: {response.status_code}")
+
+    # Path to the output XML file
+    all_patterns_xml = os.path.join(os.getcwd(), "docs", "multiple-tests", "all-patterns", "patterns.xml")
+
+    # Create the directory if it doesn't exist
+    os.makedirs(os.path.dirname(all_patterns_xml), exist_ok=True)
+
+    with open(all_patterns_xml, "w") as xml_file:
+        # Start the root module
+        xml_file.write('<module name="root">\n')
+        
+        # Write the BeforeExecutionExclusionFileFilter module with property
+        xml_file.write('    <module name="BeforeExecutionExclusionFileFilter">\n')
+        xml_file.write('        <property name="fileNamePattern" value=".*\\.json" />\n')
+        xml_file.write('    </module>\n')
+        
+        # Write each pattern module on a new line with proper indentation
+        for pattern in patterns_data:
+            xml_file.write(f'    <module name="{pattern["patternId"]}" />\n')
+        
+        # Close the root module
+        xml_file.write('</module>\n')
 
 
 main()
