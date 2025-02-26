@@ -431,8 +431,8 @@ def main():
                 rule_id = td_elements[0].text.strip()
                 pattern_link = td_elements[1].find("a")
 
-                # Skip removed rules
-                if tr.find("span", attrs={"title": "This rule has been removed"}):
+                # Skip removed or unstable rules
+                if tr.find("span", attrs={"title": "This rule has been removed"}) or tr.find("span", attrs={"title": "Rule is in preview"}):
                     print(f"Skipping removed rule: {rule_id}")
                     continue
 
