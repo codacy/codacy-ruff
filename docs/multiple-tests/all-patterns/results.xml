@@ -3,7 +3,7 @@
   <!-- This test is specifically made to test that codacy-ruff -->
   <!-- should only return specific errors to test and/or empty files. -->
   <!-- Adding any other errors here means to test that a bug exists. -->
-  <file name="codacy-ruff.py">
+  <file name="test.py">
     <error source="F401_unused-import" line="5" message="`ast` imported but unused (F401)" severity="error" />
   </file>
 </checkstyle>
