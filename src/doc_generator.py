@@ -402,9 +402,9 @@ def extract_relevant_lines(full_description, pattern_name, rule_id):
     return relevant_lines
 
 
-def save_to_markdown(pattern_name, content):
+def save_docs_md(pattern_name, content):
     """Saves the pattern description to a Markdown file."""
-    output_dir = os.path.join(os.getcwd(), "docs", "descriptions")
+    output_dir = os.path.join(os.getcwd(), "docs", "description")
     os.makedirs(output_dir, exist_ok=True)
 
     md_file_path = os.path.join(output_dir, f"{pattern_name}.md")
@@ -412,6 +412,37 @@ def save_to_markdown(pattern_name, content):
         md_file.write(content)
 
     print(f"Description for {pattern_name} written to {md_file_path}")
+
+def save_description_json(descriptions,output_dir):
+    """Saves all pattern descriptions to description.json"""
+    description_json_path = os.path.join(output_dir, "description.json")
+    with open(description_json_path, 'w', encoding="utf-8") as json_file:
+        json.dump(descriptions, json_file, indent=4)
+
+    print("Description.json generated!")
+
+def extract_description(content):
+    """Extracts the 'What it does' section from the given markdown content."""
+    match = re.search(r"## What it does\s*\n(.*?)(?:\n## |\Z)", content, re.DOTALL)
+    
+    if match:
+        return match.group(1).strip()
+    return "'What it does' section not found."
+
+def get_ruff_version():
+    """Gets the version of the 'ruff' package from the requirements.txt file."""
+    try:
+        with open("requirements.txt", 'r') as file:
+            for line in file:
+                line = line.strip()
+                if line.startswith('ruff'):
+                    # Split the line at the first occurrence of '==' to get the version
+                    package, version = line.split('==') if '==' in line else (line, None)
+                    return version.strip() if version else None
+    except FileNotFoundError:
+        return "File not found."
+    except Exception as e:
+        return f"An error occurred: {e}"
 
 def main():
     """Main function to fetch patterns and generate files."""
@@ -421,8 +452,9 @@ def main():
         rows = soup.find_all("tr")
 
         patterns_data = []
+        descriptions = []
         active_patterns = set()
-        output_dir = os.path.join(os.getcwd(), "docs", "descriptions")
+        output_dir = os.path.join(os.getcwd(), "docs", "description")
         os.makedirs(output_dir, exist_ok=True)
 
         for tr in rows:
@@ -438,6 +470,7 @@ def main():
 
                 pattern_name = pattern_link.text.strip()
                 pattern_id = f"{rule_id}_{pattern_name}"
+                title_pattern = f"{pattern_name} ({rule_id})"
 
                 # Get severity based on rule acronym
                 severity = get_severity(rule_id)
@@ -456,8 +489,16 @@ def main():
 
                 # Fetch and save description
                 description = fetch_pattern_description(pattern_name, rule_id)
-                save_to_markdown(pattern_id, description)
+                save_docs_md(pattern_id, description)
 
+                descriptions.append(
+                    {
+                        "patternId": pattern_id,
+                        "title": title_pattern,
+                        "description": extract_description(description)
+                    }
+                )
+        save_description_json(descriptions,output_dir)
         # Remove outdated files
         for filename in os.listdir(output_dir):
             if filename.endswith(".md") and filename not in active_patterns:
@@ -466,7 +507,7 @@ def main():
                 os.remove(file_path)
 
         # Save patterns.json
-        output_data = {"name": "Codacy-Ruff", "patterns": patterns_data}
+        output_data = {"name": "Codacy-Ruff", "version": get_ruff_version(), "patterns": patterns_data}
 
         output_file_path = os.path.join(os.getcwd(), "docs", "patterns.json")
         os.makedirs(os.path.dirname(output_file_path), exist_ok=True)

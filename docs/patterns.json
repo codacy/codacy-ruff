@@ -1,5 +1,6 @@
 {
     "name": "Codacy-Ruff",
+    "version": "0.9.7",
     "patterns": [
         {
             "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
