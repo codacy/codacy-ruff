@@ -1,0 +1,4403 @@
+{
+    "name": "Codacy-Ruff",
+    "patterns": [
+        {
+            "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
+            "category": "Compatibility",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "ERA001_commented-out-code",
+            "category": "UnusedCode",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FAST001_fast-api-redundant-response-model",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "FAST002_fast-api-non-annotated-dependency",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT101_sys-version-slice3",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT102_sys-version2",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT103_sys-version-cmp-str3",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT201_sys-version-info0-eq3",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT202_six-py3",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT203_sys-version-info1-cmp-int",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT204_sys-version-info-minor-cmp-int",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT301_sys-version0",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT302_sys-version-cmp-str10",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "YTT303_sys-version-slice1",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN001_missing-type-function-argument",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN002_missing-type-args",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN003_missing-type-kwargs",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN201_missing-return-type-undocumented-public-function",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN202_missing-return-type-private-function",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN204_missing-return-type-special-method",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN205_missing-return-type-static-method",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN206_missing-return-type-class-method",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ANN401_any-type",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC100_cancel-scope-no-checkpoint",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC105_trio-sync-call",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC109_async-function-with-timeout",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC110_async-busy-wait",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC115_async-zero-sleep",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC210_blocking-http-call-in-async-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC220_create-subprocess-in-async-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC221_run-process-in-async-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC222_wait-for-process-in-async-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC230_blocking-open-call-in-async-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ASYNC251_blocking-sleep-in-async-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "S101_assert",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S102_exec-builtin",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S103_bad-file-permissions",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S104_hardcoded-bind-all-interfaces",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S105_hardcoded-password-string",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S106_hardcoded-password-func-arg",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S107_hardcoded-password-default",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S108_hardcoded-temp-file",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S110_try-except-pass",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S112_try-except-continue",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S113_request-without-timeout",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S201_flask-debug-true",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S202_tarfile-unsafe-members",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S301_suspicious-pickle-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S302_suspicious-marshal-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S303_suspicious-insecure-hash-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S304_suspicious-insecure-cipher-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S305_suspicious-insecure-cipher-mode-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S306_suspicious-mktemp-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S307_suspicious-eval-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S308_suspicious-mark-safe-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S310_suspicious-url-open-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S311_suspicious-non-cryptographic-random-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S312_suspicious-telnet-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S313_suspicious-xmlc-element-tree-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S314_suspicious-xml-element-tree-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S315_suspicious-xml-expat-reader-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S316_suspicious-xml-expat-builder-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S317_suspicious-xml-sax-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S318_suspicious-xml-mini-dom-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S319_suspicious-xml-pull-dom-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S320_suspicious-xmle-tree-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S321_suspicious-ftp-lib-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S323_suspicious-unverified-context-usage",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S324_hashlib-insecure-hash-function",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S501_request-with-no-cert-validation",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S502_ssl-insecure-version",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S503_ssl-with-bad-defaults",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S504_ssl-with-no-version",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S505_weak-cryptographic-key",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S506_unsafe-yaml-load",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S507_ssh-no-host-key-verification",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S508_snmp-insecure-version",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S509_snmp-weak-cryptography",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S601_paramiko-call",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S602_subprocess-popen-with-shell-equals-true",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S603_subprocess-without-shell-equals-true",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S604_call-with-shell-equals-true",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S605_start-process-with-a-shell",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S606_start-process-with-no-shell",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S607_start-process-with-partial-path",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S608_hardcoded-sql-expression",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S609_unix-command-wildcard-injection",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S610_django-extra",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S611_django-raw-sql",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S612_logging-config-insecure-listen",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S701_jinja2-autoescape-false",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "S702_mako-templates",
+            "category": "Security",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "BLE001_blind-except",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "FBT001_boolean-type-hint-positional-argument",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FBT002_boolean-default-value-positional-argument",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FBT003_boolean-positional-value-in-call",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "B002_unary-prefix-increment-decrement",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B003_assignment-to-os-environ",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B004_unreliable-callable-check",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B005_strip-with-multi-characters",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B006_mutable-argument-default",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B007_unused-loop-control-variable",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B008_function-call-in-default-argument",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B009_get-attr-with-constant",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B010_set-attr-with-constant",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B011_assert-false",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B012_jump-statement-in-finally",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B013_redundant-tuple-in-exception-handler",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B014_duplicate-handler-exception",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B015_useless-comparison",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B016_raise-literal",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B017_assert-raises-exception",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B018_useless-expression",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B019_cached-instance-method",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B020_loop-variable-overrides-iterator",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B021_f-string-docstring",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B022_useless-contextlib-suppress",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B023_function-uses-loop-variable",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B024_abstract-base-class-without-abstract-method",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B025_duplicate-try-block-exception",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B026_star-arg-unpacking-after-keyword-arg",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B027_empty-method-without-abstract-decorator",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B028_no-explicit-stacklevel",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B029_except-with-empty-tuple",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B030_except-with-non-exception-classes",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B031_reuse-of-groupby-generator",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B032_unintentional-type-annotation",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B033_duplicate-value",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B034_re-sub-positional-args",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B035_static-key-dict-comprehension",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B039_mutable-contextvar-default",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B904_raise-without-from-inside-except",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "B905_zip-without-explicit-strict",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "A001_builtin-variable-shadowing",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "A002_builtin-argument-shadowing",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "A003_builtin-attribute-shadowing",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "A004_builtin-import-shadowing",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "A005_stdlib-module-shadowing",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "A006_builtin-lambda-argument-shadowing",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "COM812_missing-trailing-comma",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "COM818_trailing-comma-on-bare-tuple",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "COM819_prohibited-trailing-comma",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "C400_unnecessary-generator-list",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C401_unnecessary-generator-set",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C402_unnecessary-generator-dict",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C403_unnecessary-list-comprehension-set",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C404_unnecessary-list-comprehension-dict",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C405_unnecessary-literal-set",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C406_unnecessary-literal-dict",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C408_unnecessary-collection-call",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C409_unnecessary-literal-within-tuple-call",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C410_unnecessary-literal-within-list-call",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C411_unnecessary-list-call",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C413_unnecessary-call-around-sorted",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C414_unnecessary-double-cast-or-process",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C415_unnecessary-subscript-reversal",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C416_unnecessary-comprehension",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C417_unnecessary-map",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C418_unnecessary-literal-within-dict-call",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "C419_unnecessary-comprehension-in-call",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ001_call-datetime-without-tzinfo",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ002_call-datetime-today",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ003_call-datetime-utcnow",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ004_call-datetime-utcfromtimestamp",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ005_call-datetime-now-without-tzinfo",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ006_call-datetime-fromtimestamp",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ007_call-datetime-strptime-without-zone",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ011_call-date-today",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ012_call-date-fromtimestamp",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "T100_debugger",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ001_django-nullable-model-string-field",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ003_django-locals-in-render-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ006_django-exclude-with-model-form",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ007_django-all-with-model-form",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ008_django-model-without-dunder-str",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ012_django-unordered-body-content-in-model",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "DJ013_django-non-leading-receiver-decorator",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "EM101_raw-string-in-exception",
+            "category": "CodeStyle",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "EM102_f-string-in-exception",
+            "category": "CodeStyle",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "EM103_dot-format-in-exception",
+            "category": "CodeStyle",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE001_shebang-not-executable",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE002_shebang-missing-executable-file",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE003_shebang-missing-python",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE004_shebang-leading-whitespace",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "EXE005_shebang-not-first-line",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX001_line-contains-fixme",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX002_line-contains-todo",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX003_line-contains-xxx",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FIX004_line-contains-hack",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FA100_future-rewritable-type-annotation",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "FA102_future-required-type-annotation",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "INT001_f-string-in-get-text-func-call",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "INT002_format-in-get-text-func-call",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "INT003_printf-in-get-text-func-call",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ISC001_single-line-implicit-string-concatenation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ISC002_multi-line-implicit-string-concatenation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ISC003_explicit-string-concatenation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ICN001_unconventional-import-alias",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ICN002_banned-import-alias",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "ICN003_banned-import-from",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG001_direct-logger-instantiation",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG002_invalid-get-logger-argument",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG007_exception-without-exc-info",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "LOG009_undocumented-warn",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G001_logging-string-format",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G002_logging-percent-format",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G003_logging-string-concat",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G004_logging-f-string",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G010_logging-warn",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G101_logging-extra-attr-clash",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G201_logging-exc-info",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "G202_logging-redundant-exc-info",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "INP001_implicit-namespace-package",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE790_unnecessary-placeholder",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE794_duplicate-class-field-definition",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE796_non-unique-enums",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE800_unnecessary-spread",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE804_unnecessary-dict-kwargs",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE807_reimplemented-container-builtin",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE808_unnecessary-range-start",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PIE810_multiple-starts-ends-with",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "T201_print",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "T203_p-print",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI001_unprefixed-type-param",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI002_complex-if-statement-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI003_unrecognized-version-info-check",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI004_patch-version-comparison",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI005_wrong-tuple-length-version-comparison",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI006_bad-version-info-comparison",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI007_unrecognized-platform-check",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI008_unrecognized-platform-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI009_pass-statement-stub-body",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI010_non-empty-stub-body",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI011_typed-argument-default-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI012_pass-in-class-body",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI013_ellipsis-in-non-empty-class-body",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI014_argument-default-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI015_assignment-default-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI016_duplicate-union-member",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI017_complex-assignment-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI018_unused-private-type-var",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI019_custom-type-var-for-self",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI020_quoted-annotation-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI021_docstring-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI024_collections-named-tuple",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI025_unaliased-collections-abc-set-import",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI026_type-alias-without-annotation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI029_str-or-repr-defined-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI030_unnecessary-literal-union",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI032_any-eq-ne-annotation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI033_type-comment-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI034_non-self-return-type",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI035_unassigned-special-variable-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI036_bad-exit-annotation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI041_redundant-numeric-union",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI042_snake-case-type-alias",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI043_t-suffixed-type-alias",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI044_future-annotations-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI045_iter-method-return-iterable",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI046_unused-private-protocol",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI047_unused-private-type-alias",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI048_stub-body-multiple-statements",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI049_unused-private-typed-dict",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI050_no-return-argument-annotation-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI051_redundant-literal-union",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI052_unannotated-assignment-in-stub",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI053_string-or-bytes-too-long",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI054_numeric-literal-too-long",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI055_unnecessary-type-union",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI056_unsupported-method-call-on-all",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI057_byte-string-usage",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI058_generator-return-from-iter-method",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI062_duplicate-literal-member",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI063_pep484-style-positional-only-parameter",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI064_redundant-final-literal",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PYI066_bad-version-info-order",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT001_pytest-fixture-incorrect-parentheses-style",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT002_pytest-fixture-positional-args",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT003_pytest-extraneous-scope-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT006_pytest-parametrize-names-wrong-type",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT007_pytest-parametrize-values-wrong-type",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT008_pytest-patch-with-lambda",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT009_pytest-unittest-assertion",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT010_pytest-raises-without-exception",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT011_pytest-raises-too-broad",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT012_pytest-raises-with-multiple-statements",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT013_pytest-incorrect-pytest-import",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT014_pytest-duplicate-parametrize-test-cases",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT015_pytest-assert-always-false",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT016_pytest-fail-without-message",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT017_pytest-assert-in-except",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT018_pytest-composite-assertion",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT019_pytest-fixture-param-without-value",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT020_pytest-deprecated-yield-fixture",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT021_pytest-fixture-finalizer-callback",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT022_pytest-useless-yield-fixture",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT023_pytest-incorrect-mark-parentheses-style",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT024_pytest-unnecessary-asyncio-mark-on-fixture",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT025_pytest-erroneous-use-fixtures-on-fixture",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT026_pytest-use-fixtures-without-parameters",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PT027_pytest-unittest-raises-assertion",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "Q000_bad-quotes-inline-string",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "Q001_bad-quotes-multiline-string",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "Q002_bad-quotes-docstring",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "Q003_avoidable-escaped-quote",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "Q004_unnecessary-escaped-quote",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "RSE102_unnecessary-paren-on-raise-exception",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET501_unnecessary-return-none",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET502_implicit-return-value",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET503_implicit-return",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET504_unnecessary-assign",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET505_superfluous-else-return",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET506_superfluous-else-raise",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET507_superfluous-else-continue",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RET508_superfluous-else-break",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "SLF001_private-member-access",
+            "category": "ErrorProne",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM101_duplicate-isinstance-call",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM102_collapsible-if",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM103_needless-bool",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM105_suppressible-exception",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM107_return-in-try-except-finally",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM108_if-else-block-instead-of-if-exp",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM109_compare-with-tuple",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM110_reimplemented-builtin",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM112_uncapitalized-environment-variables",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM113_enumerate-for-loop",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM114_if-with-same-arms",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM115_open-file-with-context-handler",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM116_if-else-block-instead-of-dict-lookup",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM117_multiple-with-statements",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM118_in-dict-keys",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM201_negate-equal-op",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM202_negate-not-equal-op",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM208_double-negation",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM210_if-expr-with-true-false",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM211_if-expr-with-false-true",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM212_if-expr-with-twisted-arms",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM220_expr-and-not-expr",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM221_expr-or-not-expr",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM222_expr-or-true",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM223_expr-and-false",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM300_yoda-conditions",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM401_if-else-block-instead-of-dict-get",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM910_dict-get-with-none-default",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SIM911_zip-dict-keys-and-values",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SLOT000_no-slots-in-str-subclass",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SLOT001_no-slots-in-tuple-subclass",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "SLOT002_no-slots-in-namedtuple-subclass",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TID251_banned-api",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TID252_relative-imports",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TID253_banned-module-level-imports",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD001_invalid-todo-tag",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD002_missing-todo-author",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD003_missing-todo-link",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD004_missing-todo-colon",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD005_missing-todo-description",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD006_invalid-todo-capitalization",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TD007_missing-space-after-todo-colon",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "TC001_typing-only-first-party-import",
+            "category": "Compatibility",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TC002_typing-only-third-party-import",
+            "category": "Compatibility",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TC003_typing-only-standard-library-import",
+            "category": "Compatibility",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TC004_runtime-import-in-type-checking-block",
+            "category": "Compatibility",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TC005_empty-type-checking-block",
+            "category": "Compatibility",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TC010_runtime-string-union",
+            "category": "Compatibility",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG001_unused-function-argument",
+            "category": "UnusedCode",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG002_unused-method-argument",
+            "category": "UnusedCode",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG003_unused-class-method-argument",
+            "category": "UnusedCode",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG004_unused-static-method-argument",
+            "category": "UnusedCode",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "ARG005_unused-lambda-argument",
+            "category": "UnusedCode",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH100_os-path-abspath",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH101_os-chmod",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH102_os-mkdir",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH103_os-makedirs",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH104_os-rename",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH105_os-replace",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH106_os-rmdir",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH107_os-remove",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH108_os-unlink",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH109_os-getcwd",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH110_os-path-exists",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH111_os-path-expanduser",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH112_os-path-isdir",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH113_os-path-isfile",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH114_os-path-islink",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH115_os-readlink",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH116_os-stat",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH117_os-path-isabs",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH118_os-path-join",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH119_os-path-basename",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH120_os-path-dirname",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH121_os-path-samefile",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH122_os-path-splitext",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH123_builtin-open",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH124_py-path",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH201_path-constructor-current-directory",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH202_os-path-getsize",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH203_os-path-getatime",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH204_os-path-getmtime",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH205_os-path-getctime",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH206_os-sep-split",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PTH207_glob",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "FLY002_static-join-to-f-string",
+            "category": "CodeStyle",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "I001_unsorted-imports",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "I002_missing-required-import",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "C901_complex-structure",
+            "category": "BestPractice",
+            "level": "Info",
+            "enabled": true
+        },
+        {
+            "patternId": "NPY001_numpy-deprecated-type-alias",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY002_numpy-legacy-random",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY003_numpy-deprecated-function",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "NPY201_numpy2-deprecation",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD002_pandas-use-of-inplace-argument",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD003_pandas-use-of-dot-is-null",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD004_pandas-use-of-dot-not-null",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD007_pandas-use-of-dot-ix",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD008_pandas-use-of-dot-at",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD009_pandas-use-of-dot-iat",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD010_pandas-use-of-dot-pivot-or-unstack",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD011_pandas-use-of-dot-values",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD012_pandas-use-of-dot-read-table",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD013_pandas-use-of-dot-stack",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD015_pandas-use-of-pd-merge",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD101_pandas-nunique-constant-series-check",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PD901_pandas-df-variable-name",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N801_invalid-class-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N802_invalid-function-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N803_invalid-argument-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N804_invalid-first-argument-name-for-class-method",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N805_invalid-first-argument-name-for-method",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N806_non-lowercase-variable-in-function",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N807_dunder-function-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N811_constant-imported-as-non-constant",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N812_lowercase-imported-as-non-lowercase",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N813_camelcase-imported-as-lowercase",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N814_camelcase-imported-as-constant",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N815_mixed-case-variable-in-class-scope",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N816_mixed-case-variable-in-global-scope",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N817_camelcase-imported-as-acronym",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N818_error-suffix-on-exception-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "N999_invalid-module-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF101_unnecessary-list-cast",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF102_incorrect-dict-iterator",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF203_try-except-in-loop",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF401_manual-list-comprehension",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF402_manual-list-copy",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PERF403_manual-dict-comprehension",
+            "category": "Performance",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "E101_mixed-spaces-and-tabs",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E401_multiple-imports-on-one-line",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E402_module-import-not-at-top-of-file",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E501_line-too-long",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E701_multiple-statements-on-one-line-colon",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E702_multiple-statements-on-one-line-semicolon",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E703_useless-semicolon",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E711_none-comparison",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E712_true-false-comparison",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E713_not-in-test",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E714_not-is-test",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E721_type-comparison",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E722_bare-except",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E731_lambda-assignment",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E741_ambiguous-variable-name",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E742_ambiguous-class-name",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E743_ambiguous-function-name",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "E902_io-error",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": true
+        },
+        {
+            "patternId": "W191_tab-indentation",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "W291_trailing-whitespace",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "W292_missing-newline-at-end-of-file",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "W293_blank-line-with-whitespace",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "W505_doc-line-too-long",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "W605_invalid-escape-sequence",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": true
+        },
+        {
+            "patternId": "D100_undocumented-public-module",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D101_undocumented-public-class",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D102_undocumented-public-method",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D103_undocumented-public-function",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D104_undocumented-public-package",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D105_undocumented-magic-method",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D106_undocumented-public-nested-class",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D107_undocumented-public-init",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D200_unnecessary-multiline-docstring",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D201_blank-line-before-function",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D202_blank-line-after-function",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D203_incorrect-blank-line-before-class",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D204_incorrect-blank-line-after-class",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D205_missing-blank-line-after-summary",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D206_docstring-tab-indentation",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D207_under-indentation",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D208_over-indentation",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D209_new-line-after-last-paragraph",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D210_surrounding-whitespace",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D211_blank-line-before-class",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D212_multi-line-summary-first-line",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D213_multi-line-summary-second-line",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D214_overindented-section",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D215_overindented-section-underline",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D300_triple-single-quotes",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D301_escape-sequence-in-docstring",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D400_missing-trailing-period",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D401_non-imperative-mood",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D402_signature-in-docstring",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D403_first-word-uncapitalized",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D404_docstring-starts-with-this",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D405_non-capitalized-section-name",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D406_missing-new-line-after-section-name",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D407_missing-dashed-underline-after-section",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D408_missing-section-underline-after-name",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D409_mismatched-section-underline-length",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D410_no-blank-line-after-section",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D411_no-blank-line-before-section",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D412_blank-lines-between-header-and-content",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D413_missing-blank-line-after-last-section",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D414_empty-docstring-section",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D415_missing-terminal-punctuation",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D416_missing-section-name-colon",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D417_undocumented-param",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D418_overload-with-docstring",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "D419_empty-docstring",
+            "category": "Documentation",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "F401_unused-import",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F402_import-shadowed-by-loop-var",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F403_undefined-local-with-import-star",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F404_late-future-import",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F405_undefined-local-with-import-star-usage",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F406_undefined-local-with-nested-import-star-usage",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F407_future-feature-not-defined",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F501_percent-format-invalid-format",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F502_percent-format-expected-mapping",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F503_percent-format-expected-sequence",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F504_percent-format-extra-named-arguments",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F505_percent-format-missing-argument",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F506_percent-format-mixed-positional-and-named",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F507_percent-format-positional-count-mismatch",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F508_percent-format-star-requires-sequence",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F509_percent-format-unsupported-format-character",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F521_string-dot-format-invalid-format",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F522_string-dot-format-extra-named-arguments",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F523_string-dot-format-extra-positional-arguments",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F524_string-dot-format-missing-arguments",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F525_string-dot-format-mixing-automatic",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F541_f-string-missing-placeholders",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F601_multi-value-repeated-key-literal",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F602_multi-value-repeated-key-variable",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F621_expressions-in-star-assignment",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F622_multiple-starred-expressions",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F631_assert-tuple",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F632_is-literal",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F633_invalid-print-syntax",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F634_if-tuple",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F701_break-outside-loop",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F702_continue-outside-loop",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F704_yield-outside-function",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F706_return-outside-function",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F707_default-except-not-last",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F722_forward-annotation-syntax-error",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F811_redefined-while-unused",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F821_undefined-name",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F822_undefined-export",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F823_undefined-local",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F841_unused-variable",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F842_unused-annotation",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "F901_raise-not-implemented",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PGH003_blanket-type-ignore",
+            "category": "Security",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PGH004_blanket-noqa",
+            "category": "Security",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PGH005_invalid-mock-access",
+            "category": "Security",
+            "level": "Info",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0105_type-name-incorrect-variance",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0131_type-bivariance",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0132_type-param-name-mismatch",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0205_single-string-slots",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0206_dict-index-missing-items",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0208_iteration-over-set",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0414_useless-import-alias",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC2401_non-ascii-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC2403_non-ascii-import-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLC3002_unnecessary-direct-lambda-call",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0100_yield-in-init",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0101_return-in-init",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0115_nonlocal-and-global",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0116_continue-in-finally",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0117_nonlocal-without-binding",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0118_load-before-global-declaration",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0237_non-slot-assignment",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0241_duplicate-bases",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0302_unexpected-special-method-signature",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0303_invalid-length-return-type",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0305_invalid-index-return-type",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0307_invalid-str-return-type",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0308_invalid-bytes-return-type",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0309_invalid-hash-return-type",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0604_invalid-all-object",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0605_invalid-all-format",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0643_potential-index-error",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE0704_misplaced-bare-raise",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1132_repeated-keyword-argument",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1142_await-outside-async",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1205_logging-too-many-args",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1206_logging-too-few-args",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1300_bad-string-format-character",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1307_bad-string-format-type",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1310_bad-str-strip-call",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1507_invalid-envvar-value",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1519_singledispatch-method",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1520_singledispatchmethod-function",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE1700_yield-from-in-async-function",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2502_bidirectional-unicode",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2510_invalid-character-backspace",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2512_invalid-character-sub",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2513_invalid-character-esc",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2514_invalid-character-nul",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLE2515_invalid-character-zero-width-space",
+            "category": "ErrorProne",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0124_comparison-with-itself",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0133_comparison-of-constant",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0206_property-with-parameters",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0402_manual-from-import",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0911_too-many-return-statements",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0912_too-many-branches",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0913_too-many-arguments",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR0915_too-many-statements",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1704_redefined-argument-from-local",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1711_useless-return",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1714_repeated-equality-comparison",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1716_boolean-chained-comparison",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1722_sys-exit-alias",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1730_if-stmt-min-max",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR1736_unnecessary-list-index-lookup",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR2004_magic-value-comparison",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR2044_empty-comment",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLR5501_collapsible-else-if",
+            "category": "Complexity",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0120_useless-else-on-loop",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0127_self-assigning-variable",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0128_redeclared-assigned-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0129_assert-on-string-literal",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0131_named-expr-without-context",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0133_useless-exception-statement",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0211_bad-staticmethod-argument",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0245_super-without-brackets",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0406_import-self",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0602_global-variable-not-assigned",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0603_global-statement",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0604_global-at-module-level",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0642_self-or-cls-assignment",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0711_binary-op-exception",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1501_bad-open-mode",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1508_invalid-envvar-default",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1509_subprocess-popen-preexec-fn",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1510_subprocess-run-without-check",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW2101_useless-with-lock",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW2901_redefined-loop-name",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "PLW3301_nested-min-max",
+            "category": "CodeStyle",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP001_useless-metaclass-type",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP003_type-of-primitive",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP004_useless-object-inheritance",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP005_deprecated-unittest-alias",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP006_non-pep585-annotation",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP007_non-pep604-annotation-union",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP008_super-call-with-parameters",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP009_utf8-encoding-declaration",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP010_unnecessary-future-import",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP011_lru-cache-without-parameters",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP012_unnecessary-encode-utf8",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP013_convert-typed-dict-functional-to-class",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP014_convert-named-tuple-functional-to-class",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP015_redundant-open-modes",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP017_datetime-timezone-utc",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP018_native-literals",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP019_typing-text-str-alias",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP020_open-alias",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP021_replace-universal-newlines",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP022_replace-stdout-stderr",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP023_deprecated-c-element-tree",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP024_os-error-alias",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP025_unicode-kind-prefix",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP026_deprecated-mock-import",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP028_yield-in-for-loop",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP029_unnecessary-builtin-import",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP030_format-literals",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP031_printf-string-formatting",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP032_f-string",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP033_lru-cache-with-maxsize-none",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP034_extraneous-parentheses",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP035_deprecated-import",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP036_outdated-version-block",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP037_quoted-annotation",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP038_non-pep604-isinstance",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP039_unnecessary-class-parentheses",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP040_non-pep695-type-alias",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP041_timeout-error-alias",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "UP043_unnecessary-default-type-args",
+            "category": "Compatibility",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB105_print-empty-string",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB129_readlines-in-for",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB136_if-expr-min-max",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB161_bit-count",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB163_redundant-log-base",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB167_regex-flag-alias",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB168_isinstance-type-none",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB169_type-none-comparison",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB177_implicit-cwd",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB181_hashlib-digest-hex",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB187_list-reverse-copy",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "FURB188_slice-to-remove-prefix-or-suffix",
+            "category": "BestPractice",
+            "level": "Warning",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF001_ambiguous-unicode-character-string",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF002_ambiguous-unicode-character-docstring",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF003_ambiguous-unicode-character-comment",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF005_collection-literal-concatenation",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF006_asyncio-dangling-task",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF007_zip-instead-of-pairwise",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF008_mutable-dataclass-default",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF009_function-call-in-dataclass-default-argument",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF010_explicit-f-string-type-conversion",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF012_mutable-class-default",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF013_implicit-optional",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF015_unnecessary-iterable-allocation-for-first-element",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF016_invalid-index-type",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF017_quadratic-list-summation",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF018_assignment-in-assert",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF019_unnecessary-key-check",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF020_never-union",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF021_parenthesize-chained-operators",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF022_unsorted-dunder-all",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF023_unsorted-dunder-slots",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF024_mutable-fromkeys-value",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF026_default-factory-kwarg",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF030_assert-with-print-message",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF032_decimal-from-float-literal",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF033_post-init-default",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF034_useless-if-else",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF100_unused-noqa",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF101_redirected-noqa",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "RUF200_invalid-pyproject-toml",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY002_raise-vanilla-class",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY003_raise-vanilla-args",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY004_type-check-without-type-error",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY201_verbose-raise",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY203_useless-try-except",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY300_try-consider-else",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY301_raise-within-try",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY400_error-instead-of-exception",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        },
+        {
+            "patternId": "TRY401_verbose-log-message",
+            "category": "BestPractice",
+            "level": "Error",
+            "enabled": false
+        }
+    ]
+}

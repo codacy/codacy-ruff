@@ -1,0 +1,6 @@
+ruff==0.9.7
+jsonpickle==4.0.2
+numpy==2.2.3
+pytest==8.3.4
+toml==0.10.2
+
