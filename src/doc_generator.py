@@ -446,7 +446,7 @@ def get_ruff_version():
 
 def main():
     """Main function to fetch patterns and generate files."""
-    response = requests.get(base_pattern_url)
+    response = requests.get(base_pattern_url,timeout=15)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, "html.parser")
         rows = soup.find_all("tr")
@@ -456,13 +456,11 @@ def main():
         active_patterns = set()
         output_dir = os.path.join(os.getcwd(), "docs", "description")
         os.makedirs(output_dir, exist_ok=True)
-
         for tr in rows:
             td_elements = tr.find_all("td")
             if len(td_elements) > 1:
                 rule_id = td_elements[0].text.strip()
                 pattern_link = td_elements[1].find("a")
-
                 # Skip removed or unstable rules
                 if tr.find("span", attrs={"title": "This rule has been removed"}) or tr.find("span", attrs={"title": "Rule is in preview"}):
                     print(f"Skipping removed rule: {rule_id}")
@@ -471,7 +469,6 @@ def main():
                 pattern_name = pattern_link.text.strip()
                 pattern_id = f"{rule_id}_{pattern_name}"
                 title_pattern = f"{pattern_name} ({rule_id})"
-
                 # Get severity based on rule acronym
                 severity = get_severity(rule_id)
                 category = get_category(rule_id)
@@ -479,14 +476,14 @@ def main():
                 patterns_data.append(
                     {
                         "patternId": pattern_id,
-                        "category": category,
                         "level": severity,
+                        "category": category,
+                        "parameters": [],
                         "enabled": True if pattern_id in enabled_rules else False,
                     }
                 )
 
                 active_patterns.add(f"{pattern_id}.md")
-
                 # Fetch and save description
                 description = fetch_pattern_description(pattern_name, rule_id)
                 save_docs_md(pattern_id, description)
@@ -495,10 +492,13 @@ def main():
                     {
                         "patternId": pattern_id,
                         "title": title_pattern,
-                        "description": extract_description(description)
+                        "description": extract_description(description),
+                        "parameters": [],
+                        "timeToFix": 5
                     }
                 )
         save_description_json(descriptions,output_dir)
+        
         # Remove outdated files
         for filename in os.listdir(output_dir):
             if filename.endswith(".md") and filename not in active_patterns:
@@ -507,28 +507,23 @@ def main():
                 os.remove(file_path)
 
         # Save patterns.json
-        output_data = {"name": "Codacy-Ruff", "version": get_ruff_version(), "patterns": patterns_data}
-
+        output_data = {"name": "ruff", "version": get_ruff_version(), "patterns": patterns_data}
         output_file_path = os.path.join(os.getcwd(), "docs", "patterns.json")
         os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
-
-        with open(output_file_path, "w") as json_file:
+        with open(output_file_path, "w", encoding="utf-8") as json_file:
             json.dump(output_data, json_file, indent=4)
-
         print(f"Data successfully written to {output_file_path}")
     else:
         print(f"Failed to fetch page. Status code: {response.status_code}")
 
     # Path to the output XML file
     all_patterns_xml = os.path.join(os.getcwd(), "docs", "multiple-tests", "all-patterns", "patterns.xml")
-
     # Create the directory if it doesn't exist
     os.makedirs(os.path.dirname(all_patterns_xml), exist_ok=True)
 
-    with open(all_patterns_xml, "w") as xml_file:
+    with open(all_patterns_xml, "w", encoding="utf-8") as xml_file:
         # Start the root module
         xml_file.write('<module name="root">\n')
-        
         # Write the BeforeExecutionExclusionFileFilter module with property
         xml_file.write('    <module name="BeforeExecutionExclusionFileFilter">\n')
         xml_file.write('        <property name="fileNamePattern" value=".*\\.json" />\n')
@@ -537,7 +532,6 @@ def main():
         # Write each pattern module on a new line with proper indentation
         for pattern in patterns_data:
             xml_file.write(f'    <module name="{pattern["patternId"]}" />\n')
-        
         # Close the root module
         xml_file.write('</module>\n')
 
