@@ -6,7 +6,7 @@ Checks for unnecessary dict, list, and set comprehension.
 ## Why is this bad?
 It's unnecessary to use a dict/list/set comprehension to build a data structure if the
 elements are unchanged. Wrap the iterable with dict(), list(), or set() instead.
-## Examples
+## Example
 ```
 {a: b for a, b in iterable}
 [x for x in iterable]

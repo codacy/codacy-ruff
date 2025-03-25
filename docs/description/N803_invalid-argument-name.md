@@ -10,7 +10,7 @@ as necessary to improve readability.
 Variable names follow the same convention as function names.
 mixedCase is allowed only in contexts where that’s already the
 prevailing style (e.g. threading.py), to retain backwards compatibility.
-In preview, overridden methods are ignored.
+Methods decorated with @typing.override are ignored.
 ## Example
 ```
 def my_function(A, myArg):

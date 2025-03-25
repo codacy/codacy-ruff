@@ -6,6 +6,7 @@
     <module name="ERA001_commented-out-code" />
     <module name="FAST001_fast-api-redundant-response-model" />
     <module name="FAST002_fast-api-non-annotated-dependency" />
+    <module name="FAST003_fast-api-unused-path-parameter" />
     <module name="YTT101_sys-version-slice3" />
     <module name="YTT102_sys-version2" />
     <module name="YTT103_sys-version-cmp-str3" />
@@ -94,6 +95,7 @@
     <module name="S612_logging-config-insecure-listen" />
     <module name="S701_jinja2-autoescape-false" />
     <module name="S702_mako-templates" />
+    <module name="S704_unsafe-markup-use" />
     <module name="BLE001_blind-except" />
     <module name="FBT001_boolean-type-hint-positional-argument" />
     <module name="FBT002_boolean-default-value-positional-argument" />
@@ -135,6 +137,7 @@
     <module name="B039_mutable-contextvar-default" />
     <module name="B904_raise-without-from-inside-except" />
     <module name="B905_zip-without-explicit-strict" />
+    <module name="B911_batched-without-explicit-strict" />
     <module name="A001_builtin-variable-shadowing" />
     <module name="A002_builtin-argument-shadowing" />
     <module name="A003_builtin-attribute-shadowing" />
@@ -162,6 +165,7 @@
     <module name="C417_unnecessary-map" />
     <module name="C418_unnecessary-literal-within-dict-call" />
     <module name="C419_unnecessary-comprehension-in-call" />
+    <module name="C420_unnecessary-dict-comprehension-for-iterable" />
     <module name="DTZ001_call-datetime-without-tzinfo" />
     <module name="DTZ002_call-datetime-today" />
     <module name="DTZ003_call-datetime-utcnow" />
@@ -171,6 +175,7 @@
     <module name="DTZ007_call-datetime-strptime-without-zone" />
     <module name="DTZ011_call-date-today" />
     <module name="DTZ012_call-date-fromtimestamp" />
+    <module name="DTZ901_datetime-min-max" />
     <module name="T100_debugger" />
     <module name="DJ001_django-nullable-model-string-field" />
     <module name="DJ003_django-locals-in-render-function" />
@@ -206,6 +211,7 @@
     <module name="LOG002_invalid-get-logger-argument" />
     <module name="LOG007_exception-without-exc-info" />
     <module name="LOG009_undocumented-warn" />
+    <module name="LOG015_root-logger-call" />
     <module name="G001_logging-string-format" />
     <module name="G002_logging-percent-format" />
     <module name="G003_logging-string-concat" />
@@ -345,6 +351,7 @@
     <module name="SIM223_expr-and-false" />
     <module name="SIM300_yoda-conditions" />
     <module name="SIM401_if-else-block-instead-of-dict-get" />
+    <module name="SIM905_split-static-string" />
     <module name="SIM910_dict-get-with-none-default" />
     <module name="SIM911_zip-dict-keys-and-values" />
     <module name="SLOT000_no-slots-in-str-subclass" />
@@ -365,6 +372,8 @@
     <module name="TC003_typing-only-standard-library-import" />
     <module name="TC004_runtime-import-in-type-checking-block" />
     <module name="TC005_empty-type-checking-block" />
+    <module name="TC006_runtime-cast-value" />
+    <module name="TC007_unquoted-type-alias" />
     <module name="TC010_runtime-string-union" />
     <module name="ARG001_unused-function-argument" />
     <module name="ARG002_unused-method-argument" />
@@ -403,6 +412,8 @@
     <module name="PTH205_os-path-getctime" />
     <module name="PTH206_os-sep-split" />
     <module name="PTH207_glob" />
+    <module name="PTH208_os-listdir" />
+    <module name="PTH210_invalid-pathlib-with-suffix" />
     <module name="FLY002_static-join-to-f-string" />
     <module name="I001_unsorted-imports" />
     <module name="I002_missing-required-import" />
@@ -569,6 +580,7 @@
     <module name="PLC0206_dict-index-missing-items" />
     <module name="PLC0208_iteration-over-set" />
     <module name="PLC0414_useless-import-alias" />
+    <module name="PLC1802_len-test" />
     <module name="PLC2401_non-ascii-name" />
     <module name="PLC2403_non-ascii-import-name" />
     <module name="PLC3002_unnecessary-direct-lambda-call" />
@@ -640,6 +652,7 @@
     <module name="PLW0642_self-or-cls-assignment" />
     <module name="PLW0711_binary-op-exception" />
     <module name="PLW1501_bad-open-mode" />
+    <module name="PLW1507_shallow-copy-environ" />
     <module name="PLW1508_invalid-envvar-default" />
     <module name="PLW1509_subprocess-popen-preexec-fn" />
     <module name="PLW1510_subprocess-run-without-check" />
@@ -685,6 +698,7 @@
     <module name="UP040_non-pep695-type-alias" />
     <module name="UP041_timeout-error-alias" />
     <module name="UP043_unnecessary-default-type-args" />
+    <module name="UP044_non-pep646-unpack" />
     <module name="FURB105_print-empty-string" />
     <module name="FURB129_readlines-in-for" />
     <module name="FURB136_if-expr-min-max" />
@@ -723,6 +737,11 @@
     <module name="RUF032_decimal-from-float-literal" />
     <module name="RUF033_post-init-default" />
     <module name="RUF034_useless-if-else" />
+    <module name="RUF040_invalid-assert-message-literal-argument" />
+    <module name="RUF041_unnecessary-nested-literal" />
+    <module name="RUF046_unnecessary-cast-to-int" />
+    <module name="RUF048_map-int-version-parsing" />
+    <module name="RUF051_if-key-in-dict-del" />
     <module name="RUF100_unused-noqa" />
     <module name="RUF101_redirected-noqa" />
     <module name="RUF200_invalid-pyproject-toml" />

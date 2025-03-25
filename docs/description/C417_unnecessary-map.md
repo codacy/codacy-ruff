@@ -15,7 +15,7 @@ Instead of set(map(lambda num: num % 2 == 0, nums)), use
     {num % 2 == 0 for num in nums}.
 Instead of dict(map(lambda v: (v, v ** 2), values)), use
     {v: v ** 2 for v in values}.
-## Examples
+## Example
 ```
 map(lambda x: x + 1, iterable)
 ```

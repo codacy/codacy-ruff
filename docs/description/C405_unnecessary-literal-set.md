@@ -7,7 +7,7 @@ as arguments.
 ## Why is this bad?
 It's unnecessary to use a list or tuple literal within a call to set().
 Instead, the expression can be rewritten as a set literal.
-## Examples
+## Example
 ```
 set([1, 2])
 set((1, 2))

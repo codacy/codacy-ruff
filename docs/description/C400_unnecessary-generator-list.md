@@ -11,7 +11,7 @@ comprehension is clearer and more idiomatic.
 Further, if the comprehension can be removed entirely, as in the case of
 list(x for x in foo), it's better to use list(foo) directly, since it's
 even more direct.
-## Examples
+## Example
 ```
 list(f(x) for x in foo)
 list(x for x in foo)

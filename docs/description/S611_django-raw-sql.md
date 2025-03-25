@@ -9,5 +9,5 @@ which can in turn lead to SQL injection vulnerabilities.
 ```
 from django.db.models.expressions import RawSQL
 from django.contrib.auth.models import User
-User.objects.annotate(val=("%secure" % "nos", []))
+User.objects.annotate(val=RawSQL("%s" % input_param, []))
 ```

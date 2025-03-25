@@ -5,7 +5,7 @@ Fix is always available.
 Checks for unnecessary list() calls around list comprehensions.
 ## Why is this bad?
 It is redundant to use a list() call around a list comprehension.
-## Examples
+## Example
 ```
 list([f(x) for x in foo])
 Use instead

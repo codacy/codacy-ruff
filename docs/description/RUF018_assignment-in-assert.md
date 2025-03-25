@@ -10,7 +10,7 @@ when the Python interpreter is run under the -O flag, assert statements
 are not executed. In this case, the named assignment will also be ignored,
 which may result in unexpected behavior (e.g., undefined variable
 accesses).
-## Examples
+## Example
 ```
 assert (x := 0) == 0
 print(x)

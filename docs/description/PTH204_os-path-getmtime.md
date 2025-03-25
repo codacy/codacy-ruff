@@ -8,7 +8,7 @@ the lower-level API offered by os.path.
 When possible, using Path object methods such as Path.stat() can
 improve readability over the os.path module's counterparts (e.g.,
 os.path.getmtime()).
-## Examples
+## Example
 ```
 import os
 os.path.getmtime(__file__)

@@ -24,7 +24,7 @@ necessarily greater than generator overhead.
 Applying this rule simplifies the code and will usually save memory, but in the absence of
 short-circuiting it may not improve performance. (It may even slightly regress performance,
 though the difference will usually be small.)
-## Examples
+## Example
 ```
 any([x.id for x in bar])
 all([x.id for x in bar])

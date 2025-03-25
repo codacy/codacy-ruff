@@ -6,7 +6,7 @@ itertools.groupby().
 ## Why is this bad?
 Using the generator more than once will do nothing on the second usage.
 If that data is needed later, it should be stored as a list.
-Examples:
+Example:
 import itertools
 for name, group in itertools.groupby(data):
     for _ in range(5):

@@ -9,8 +9,6 @@ Suppressing all diagnostics can hide issues in the code.
 Blanket noqa annotations are also more difficult to interpret and
 maintain, as the annotation does not clarify which diagnostics are intended
 to be suppressed.
-In preview, this rule also checks for blanket file-level annotations (e.g.,
-# ruff: noqa, as opposed to # ruff: noqa: F401).
 ## Example
 ```
 from .base import *  # noqa

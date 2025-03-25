@@ -6,7 +6,7 @@ Checks for unnecessary key checks prior to accessing a dictionary.
 When working with dictionaries, the get can be used to access a value
 without having to check if the dictionary contains the relevant key,
 returning None if the key is not present.
-## Examples
+## Example
 ```
 if "key" in dct and dct["key"]:
     ...

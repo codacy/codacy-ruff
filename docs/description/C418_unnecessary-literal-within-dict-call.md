@@ -8,7 +8,7 @@ comprehensions as arguments.
 It's unnecessary to wrap a dict literal or comprehension within a dict()
 call, since the literal or comprehension syntax already returns a
 dictionary.
-## Examples
+## Example
 ```
 dict({})
 dict({"a": 1})

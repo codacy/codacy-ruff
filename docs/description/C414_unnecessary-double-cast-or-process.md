@@ -8,7 +8,7 @@ tuple() call within list(), set(), sorted(), and tuple() calls.
 It's unnecessary to double-cast or double-process iterables by wrapping
 the listed functions within an additional list(), set(), sorted(), or
 tuple() call. Doing so is redundant and can be confusing for readers.
-## Examples
+## Example
 ```
 list(tuple(iterable))
 ```

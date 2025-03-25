@@ -13,7 +13,7 @@ def __str__()
 def save()
 def get_absolute_url()
 Any custom methods
-## Examples
+## Example
 ```
 from django.db import models
 class StrBeforeFieldModel(models.Model):

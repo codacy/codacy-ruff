@@ -7,7 +7,7 @@ When NumPy functions are deprecated, they are usually replaced with
 newer, more efficient versions, or with functions that are more
 consistent with the rest of the NumPy API.
 Prefer newer APIs over deprecated ones.
-## Examples
+## Example
 ```
 import numpy as np
 np.alltrue([True, False])

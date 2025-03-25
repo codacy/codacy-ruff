@@ -2,8 +2,7 @@
 Derived from the Pylint linter.
 ## What it does
 Checks for static methods that use self or cls as their first argument.
-If preview mode is enabled, this rule also applies to
-__new__ methods, which are implicitly static.
+This rule also applies to __new__ methods, which are implicitly static.
 ## Why is this bad?
 PEP 8 recommends the use of self and cls as the first arguments for
 instance methods and class methods, respectively. Naming the first argument

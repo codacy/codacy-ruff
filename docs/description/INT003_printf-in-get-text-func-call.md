@@ -16,7 +16,7 @@ its argument.
 ```
 from gettext import gettext as _
 name = "Maria"
-_("Hello, {}!".format(name))  # Looks for "Hello, Maria!".
+_("Hello, %s!" % name)  # Looks for "Hello, Maria!".
 ```
 ## Use instead:
 ```
