@@ -15,4 +15,14 @@ field: Literal[1] | Literal[2] | str
 ```
 from typing import Literal
 field: Literal[1, 2] | str
+Fix safety
+This fix is marked unsafe if it would delete any comments within the replacement range.
+An example to illustrate where comments are preserved and where they are not:
+from typing import Literal
+field: (
+    # deleted comment
+    Literal["a", "b"]  # deleted comment
+    # deleted comment
+    | Literal["c", "d"]  # preserved comment
+)
 ```

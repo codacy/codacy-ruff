@@ -14,7 +14,7 @@ to tuple() should be removed.
 In preview, this rule also checks for list comprehensions within tuple()
 calls. If a list comprehension is found, it should be rewritten as a
 generator expression.
-## Examples
+## Example
 ```
 tuple([1, 2])
 tuple((1, 2))

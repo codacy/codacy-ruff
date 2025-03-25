@@ -6,7 +6,7 @@ Checks for unnecessary list comprehensions.
 ## Why is this bad?
 It's unnecessary to use a list comprehension inside a call to set(),
 since there is an equivalent comprehension for this type.
-## Examples
+## Example
 ```
 set([f(x) for x in foo])
 ```

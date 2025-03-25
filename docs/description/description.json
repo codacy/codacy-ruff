@@ -28,6 +28,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "FAST003_fast-api-unused-path-parameter",
+        "title": "fast-api-unused-path-parameter (FAST003)",
+        "description": "Identifies FastAPI routes that declare path parameters in the route path\nthat are not included in the function signature.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "YTT101_sys-version-slice3",
         "title": "sys-version-slice3 (YTT101)",
         "description": "Checks for uses of sys.version[:3].",
@@ -644,6 +651,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "S704_unsafe-markup-use",
+        "title": "unsafe-markup-use (S704)",
+        "description": "Checks for non-literal strings being passed to markupsafe.Markup.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "BLE001_blind-except",
         "title": "blind-except (BLE001)",
         "description": "Checks for except clauses that catch all exceptions. This includes\nbare except, except BaseException and except Exception.",
@@ -931,6 +945,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "B911_batched-without-explicit-strict",
+        "title": "batched-without-explicit-strict (B911)",
+        "description": "Checks for itertools.batched calls without an explicit strict parameter.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "A001_builtin-variable-shadowing",
         "title": "builtin-variable-shadowing (A001)",
         "description": "Checks for variable (and function) assignments that use the same names\nas builtins.",
@@ -1120,6 +1141,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "C420_unnecessary-dict-comprehension-for-iterable",
+        "title": "unnecessary-dict-comprehension-for-iterable (C420)",
+        "description": "Checks for unnecessary dict comprehension when creating a dictionary from\nan iterable.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "DTZ001_call-datetime-without-tzinfo",
         "title": "call-datetime-without-tzinfo (DTZ001)",
         "description": "Checks for datetime instantiations that do not specify a timezone.",
@@ -1179,6 +1207,13 @@
         "patternId": "DTZ012_call-date-fromtimestamp",
         "title": "call-date-fromtimestamp (DTZ012)",
         "description": "Checks for usage of datetime.date.fromtimestamp().",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "DTZ901_datetime-min-max",
+        "title": "datetime-min-max (DTZ901)",
+        "description": "Checks for uses of datetime.datetime.min and datetime.datetime.max.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1276,7 +1311,7 @@
     {
         "patternId": "EXE003_shebang-missing-python",
         "title": "shebang-missing-python (EXE003)",
-        "description": "Checks for a shebang directive in .py files that does not contain python.",
+        "description": "Checks for a shebang directive in .py files that does not contain python,\npytest, or uv run.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1424,6 +1459,13 @@
         "patternId": "LOG009_undocumented-warn",
         "title": "undocumented-warn (LOG009)",
         "description": "Checks for uses of logging.WARN.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "LOG015_root-logger-call",
+        "title": "root-logger-call (LOG015)",
+        "description": "Checks for usages of the following logging top-level functions:\ndebug, info, warn, warning, error, critical, log, exception.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1857,7 +1899,7 @@
     {
         "patternId": "PYI052_unannotated-assignment-in-stub",
         "title": "unannotated-assignment-in-stub (PYI052)",
-        "description": "'What it does' section not found.",
+        "description": "Checks for unannotated assignments in stub (.pyi) files.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1997,7 +2039,7 @@
     {
         "patternId": "PT012_pytest-raises-with-multiple-statements",
         "title": "pytest-raises-with-multiple-statements (PT012)",
-        "description": "Checks for pytest.raises context managers with multiple statements.",
+        "description": "Checks for pytest.raises context managers with multiple statements.\nThis rule allows pytest.raises bodies to contain for\nloops with empty bodies (e.g., pass or ... statements), to test\niterator behavior.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -2401,6 +2443,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "SIM905_split-static-string",
+        "title": "split-static-string (SIM905)",
+        "description": "Checks for static str.split calls that can be replaced with list literals.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "SIM910_dict-get-with-none-default",
         "title": "dict-get-with-none-default (SIM910)",
         "description": "Checks for dict.get() calls that pass None as the default value.",
@@ -2537,6 +2586,20 @@
         "patternId": "TC005_empty-type-checking-block",
         "title": "empty-type-checking-block (TC005)",
         "description": "Checks for an empty type-checking block.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "TC006_runtime-cast-value",
+        "title": "runtime-cast-value (TC006)",
+        "description": "Checks for unquoted type expressions in typing.cast() calls.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "TC007_unquoted-type-alias",
+        "title": "unquoted-type-alias (TC007)",
+        "description": "Checks if PEP 613 explicit type aliases contain references to\nsymbols that are not available at runtime.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -2807,6 +2870,20 @@
         "timeToFix": 5
     },
     {
+        "patternId": "PTH208_os-listdir",
+        "title": "os-listdir (PTH208)",
+        "description": "Checks for uses of os.listdir.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PTH210_invalid-pathlib-with-suffix",
+        "title": "invalid-pathlib-with-suffix (PTH210)",
+        "description": "Checks for pathlib.Path.with_suffix() calls where\nthe given suffix does not have a leading dot\nor the given suffix is a single dot \".\".",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "FLY002_static-join-to-f-string",
         "title": "static-join-to-f-string (FLY002)",
         "description": "Checks for str.join calls that can be replaced with f-strings.",
@@ -2977,7 +3054,7 @@
     {
         "patternId": "N804_invalid-first-argument-name-for-class-method",
         "title": "invalid-first-argument-name-for-class-method (N804)",
-        "description": "Checks for class methods that use a name other than cls for their\nfirst argument.\nWith preview enabled, the method __new__ is exempted from this\ncheck and the corresponding violation is then caught by\nbad-staticmethod-argument.",
+        "description": "Checks for class methods that use a name other than cls for their\nfirst argument.\nThe method __new__ is exempted from this\ncheck and the corresponding violation is caught by\nbad-staticmethod-argument.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -3969,6 +4046,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "PLC1802_len-test",
+        "title": "len-test (PLC1802)",
+        "description": "Checks for len calls on sequences in a boolean test context.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "PLC2401_non-ascii-name",
         "title": "non-ascii-name (PLC2401)",
         "description": "Checks for the use of non-ASCII characters in variable names.",
@@ -4307,7 +4391,7 @@
     {
         "patternId": "PLR1714_repeated-equality-comparison",
         "title": "repeated-equality-comparison (PLR1714)",
-        "description": "Checks for repeated equality comparisons that can rewritten as a membership\ntest.",
+        "description": "Checks for repeated equality comparisons that can be rewritten as a membership\ntest.\nThis rule will try to determine if the values are hashable\nand the fix will use a set if they are. If unable to determine, the fix\nwill use a tuple and suggest the use of a set.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4405,7 +4489,7 @@
     {
         "patternId": "PLW0211_bad-staticmethod-argument",
         "title": "bad-staticmethod-argument (PLW0211)",
-        "description": "Checks for static methods that use self or cls as their first argument.\nIf preview mode is enabled, this rule also applies to\n__new__ methods, which are implicitly static.",
+        "description": "Checks for static methods that use self or cls as their first argument.\nThis rule also applies to __new__ methods, which are implicitly static.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4462,6 +4546,13 @@
         "patternId": "PLW1501_bad-open-mode",
         "title": "bad-open-mode (PLW1501)",
         "description": "Check for an invalid mode argument in open calls.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PLW1507_shallow-copy-environ",
+        "title": "shallow-copy-environ (PLW1507)",
+        "description": "Check for shallow os.environ copies.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4781,6 +4872,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "UP044_non-pep646-unpack",
+        "title": "non-pep646-unpack (UP044)",
+        "description": "Checks for uses of Unpack[] on Python 3.11 and above, and suggests\nusing * instead.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "FURB105_print-empty-string",
         "title": "print-empty-string (FURB105)",
         "description": "Checks for print calls with unnecessary empty strings as positional\narguments and unnecessary sep keyword arguments.",
@@ -5043,6 +5141,41 @@
         "patternId": "RUF034_useless-if-else",
         "title": "useless-if-else (RUF034)",
         "description": "Checks for useless if-else conditions with identical arms.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF040_invalid-assert-message-literal-argument",
+        "title": "invalid-assert-message-literal-argument (RUF040)",
+        "description": "Checks for invalid use of literals in assert message arguments.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF041_unnecessary-nested-literal",
+        "title": "unnecessary-nested-literal (RUF041)",
+        "description": "Checks for unnecessary nested Literal.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF046_unnecessary-cast-to-int",
+        "title": "unnecessary-cast-to-int (RUF046)",
+        "description": "Checks for int conversions of values that are already integers.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF048_map-int-version-parsing",
+        "title": "map-int-version-parsing (RUF048)",
+        "description": "Checks for calls of the form map(int, __version__.split(\".\")).",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF051_if-key-in-dict-del",
+        "title": "if-key-in-dict-del (RUF051)",
+        "description": "Checks for if key in dictionary: del dictionary[key].",
         "parameters": [],
         "timeToFix": 5
     },

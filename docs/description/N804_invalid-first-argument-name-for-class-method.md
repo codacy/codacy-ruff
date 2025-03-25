@@ -4,8 +4,8 @@ Fix is sometimes available.
 ## What it does
 Checks for class methods that use a name other than cls for their
 first argument.
-With preview enabled, the method __new__ is exempted from this
-check and the corresponding violation is then caught by
+The method __new__ is exempted from this
+check and the corresponding violation is caught by
 bad-staticmethod-argument.
 ## Why is this bad?
 PEP 8 recommends the use of cls as the first argument for all class

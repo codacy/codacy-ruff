@@ -16,7 +16,7 @@ numpy.lib.array_utils.byte_bounds, all such replacements are backwards
 compatible with earlier versions of NumPy.
 This rule flags all uses of removed members, along with automatic fixes for
 any backwards-compatible replacements.
-## Examples
+## Example
 ```
 import numpy as np
 arr1 = [np.Infinity, np.NaN, np.nan, np.PINF, np.inf]

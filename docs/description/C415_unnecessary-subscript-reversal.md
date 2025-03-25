@@ -6,7 +6,7 @@ Checks for unnecessary subscript reversal of iterable.
 It's unnecessary to reverse the order of an iterable when passing it
 into reversed(), set() or sorted() functions as they will change
 the order of the elements again.
-## Examples
+## Example
 ```
 sorted(iterable[::-1])
 set(iterable[::-1])

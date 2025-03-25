@@ -2,14 +2,14 @@
 Derived from the flake8-pytest-style linter.
 ## What it does
 Checks for pytest.raises context managers with multiple statements.
+This rule allows pytest.raises bodies to contain for
+loops with empty bodies (e.g., pass or ... statements), to test
+iterator behavior.
 ## Why is this bad?
 When a pytest.raises is used as a context manager and contains multiple
 statements, it can lead to the test passing when it actually should fail.
 A pytest.raises context manager should only contain a single simple
 statement that raises the expected exception.
-In preview, this rule allows pytest.raises bodies to contain for
-loops with empty bodies (e.g., pass or ... statements), to test
-iterator behavior.
 ## Example
 ```
 import pytest

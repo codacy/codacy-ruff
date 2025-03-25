@@ -15,7 +15,7 @@ the random module, as the new Generator is both faster and has
 better statistical properties.
 See the documentation on Random Sampling and NEP 19 for further
 details.
-## Examples
+## Example
 ```
 import numpy as np
 np.random.seed(1337)

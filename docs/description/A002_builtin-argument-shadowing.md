@@ -8,7 +8,7 @@ difficulty of reading and maintaining the code, and can cause
 non-obvious errors, as readers may mistake the argument for the
 builtin and vice versa.
 Builtins can be marked as exceptions to this rule via the
-lint.flake8-builtins.builtins-ignorelist configuration option.
+lint.flake8-builtins.ignorelist configuration option.
 ## Example
 ```
 def remove_duplicates(list, list2):

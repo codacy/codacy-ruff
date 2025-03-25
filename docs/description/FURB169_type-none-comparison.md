@@ -6,8 +6,6 @@ Checks for uses of type that compare the type of an object to the type of None.
 ## Why is this bad?
 There is only ever one instance of None, so it is more efficient and
 readable to use the is operator to check if an object is None.
-Only name expressions (e.g., type(foo) == type(None)) are reported.
-In preview, the rule will also report other kinds of expressions.
 ## Example
 ```
 type(obj) is type(None)

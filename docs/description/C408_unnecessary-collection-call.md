@@ -8,7 +8,7 @@ rewritten as empty literals.
 It's unnecessary to call, e.g., dict() as opposed to using an empty
 literal ({}). The former is slower because the name dict must be
 looked up in the global scope in case it has been rebound.
-## Examples
+## Example
 ```
 dict()
 dict(a=1, b=2)

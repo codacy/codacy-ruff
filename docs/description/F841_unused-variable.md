@@ -9,8 +9,6 @@ be removed to avoid confusion.
 If a variable is intentionally defined-but-not-used, it should be
 prefixed with an underscore, or some other value that adheres to the
 lint.dummy-variable-rgx pattern.
-Under preview mode, this rule also
-triggers on unused unpacked assignments (for example, x, y = foo()).
 ## Example
 ```
 def foo():

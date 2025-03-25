@@ -10,7 +10,7 @@ since there is a literal syntax for these types.
 If a list literal is passed in, then the outer call to list() should be
 removed. Otherwise, if a tuple literal is passed in, then it should be
 rewritten as a list literal.
-## Examples
+## Example
 ```
 list([1, 2])
 list((1, 2))

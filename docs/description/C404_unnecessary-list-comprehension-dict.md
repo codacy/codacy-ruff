@@ -6,7 +6,7 @@ Checks for unnecessary list comprehensions.
 ## Why is this bad?
 It's unnecessary to use a list comprehension inside a call to dict(),
 since there is an equivalent comprehension for this type.
-## Examples
+## Example
 ```
 dict([(x, f(x)) for x in foo])
 ```

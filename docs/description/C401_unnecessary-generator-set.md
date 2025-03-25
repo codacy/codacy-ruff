@@ -11,7 +11,7 @@ comprehension is clearer and more idiomatic.
 Further, if the comprehension can be removed entirely, as in the case of
 set(x for x in foo), it's better to use set(foo) directly, since it's
 even more direct.
-## Examples
+## Example
 ```
 set(f(x) for x in foo)
 set(x for x in foo)

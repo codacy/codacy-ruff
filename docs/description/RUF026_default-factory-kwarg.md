@@ -21,7 +21,7 @@ Fix safety
 This rule's fix is marked as unsafe, as converting default_factory from a
 keyword to a positional argument will change the behavior of the code, even
 if the keyword argument was used erroneously.
-## Examples
+## Example
 ```
 defaultdict(default_factory=int)
 defaultdict(default_factory=list)

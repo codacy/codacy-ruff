@@ -165,13 +165,12 @@ def get_patterns_from_configFile(config_path):
     return exclude_patterns, include_patterns
 
 def filter_files(files, include_patterns, exclude_patterns):
-    """Filter files based on include and exclude patterns."""
-    if include_patterns:
-        files = [f for f in files if any(fnmatch.fnmatch(f, pat) for pat in include_patterns)]
+    """Filter files based on include and exclude glob patterns."""
     
     if exclude_patterns:
         files = [f for f in files if not any(fnmatch.fnmatch(f, pat) for pat in exclude_patterns)]
-
+    if include_patterns:
+        files = [f for f in files if any(fnmatch.fnmatch(f, pat) for pat in include_patterns)]
     return files
 
 def run_tool(configFile, srcDir):
@@ -179,6 +178,7 @@ def run_tool(configFile, srcDir):
     res = []
     filesWithPath = [os.path.join(f) for f in files]
     toolConfigFile = find_ruff_configFile(srcDir)
+    
     # When we run Ruff Check command with files, all exclude/include patterns from the
     # Configuration file is not considered, so we need to filter them somehow
     (exclude, include) = get_patterns_from_configFile(toolConfigFile) if toolConfigFile else ([], [])

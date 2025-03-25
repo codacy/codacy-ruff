@@ -1,6 +1,6 @@
 {
     "name": "ruff",
-    "version": "0.9.7",
+    "version": "0.11.2",
     "patterns": [
         {
             "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
@@ -25,6 +25,13 @@
         },
         {
             "patternId": "FAST002_fast-api-non-annotated-dependency",
+            "level": "Info",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FAST003_fast-api-unused-path-parameter",
             "level": "Info",
             "category": "BestPractice",
             "parameters": [],
@@ -647,6 +654,13 @@
             "enabled": true
         },
         {
+            "patternId": "S704_unsafe-markup-use",
+            "level": "Error",
+            "category": "Security",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "BLE001_blind-except",
             "level": "Error",
             "category": "ErrorProne",
@@ -934,6 +948,13 @@
             "enabled": true
         },
         {
+            "patternId": "B911_batched-without-explicit-strict",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": true
+        },
+        {
             "patternId": "A001_builtin-variable-shadowing",
             "level": "Warning",
             "category": "ErrorProne",
@@ -1123,6 +1144,13 @@
             "enabled": false
         },
         {
+            "patternId": "C420_unnecessary-dict-comprehension-for-iterable",
+            "level": "Info",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "DTZ001_call-datetime-without-tzinfo",
             "level": "Error",
             "category": "BestPractice",
@@ -1180,6 +1208,13 @@
         },
         {
             "patternId": "DTZ012_call-date-fromtimestamp",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "DTZ901_datetime-min-max",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -1425,6 +1460,13 @@
         },
         {
             "patternId": "LOG009_undocumented-warn",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "LOG015_root-logger-call",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -2404,6 +2446,13 @@
             "enabled": false
         },
         {
+            "patternId": "SIM905_split-static-string",
+            "level": "Warning",
+            "category": "Complexity",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "SIM910_dict-get-with-none-default",
             "level": "Warning",
             "category": "Complexity",
@@ -2538,6 +2587,20 @@
         },
         {
             "patternId": "TC005_empty-type-checking-block",
+            "level": "Error",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "TC006_runtime-cast-value",
+            "level": "Error",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "TC007_unquoted-type-alias",
             "level": "Error",
             "category": "Compatibility",
             "parameters": [],
@@ -2804,6 +2867,20 @@
         },
         {
             "patternId": "PTH207_glob",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PTH208_os-listdir",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PTH210_invalid-pathlib-with-suffix",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -3972,6 +4049,13 @@
             "enabled": false
         },
         {
+            "patternId": "PLC1802_len-test",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "PLC2401_non-ascii-name",
             "level": "Warning",
             "category": "CodeStyle",
@@ -4469,6 +4553,13 @@
             "enabled": false
         },
         {
+            "patternId": "PLW1507_shallow-copy-environ",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "PLW1508_invalid-envvar-default",
             "level": "Warning",
             "category": "CodeStyle",
@@ -4784,6 +4875,13 @@
             "enabled": false
         },
         {
+            "patternId": "UP044_non-pep646-unpack",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB105_print-empty-string",
             "level": "Warning",
             "category": "BestPractice",
@@ -5044,6 +5142,41 @@
         },
         {
             "patternId": "RUF034_useless-if-else",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF040_invalid-assert-message-literal-argument",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF041_unnecessary-nested-literal",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF046_unnecessary-cast-to-int",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF048_map-int-version-parsing",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF051_if-key-in-dict-del",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],

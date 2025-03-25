@@ -21,7 +21,7 @@ class Class:
     def repeat(value: int, times: int) -> list[int]:
         return [value] * times
 Builtins can be marked as exceptions to this rule via the
-lint.flake8-builtins.builtins-ignorelist configuration option, or
+lint.flake8-builtins.ignorelist configuration option, or
 converted to the appropriate dunder method. Methods decorated with
 @typing.override or @typing_extensions.override are also
 ignored.

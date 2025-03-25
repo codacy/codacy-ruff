@@ -9,7 +9,7 @@ Instead of sharing mutable defaults, use the field(default_factory=...)
 pattern.
 If the default value is intended to be mutable, it must be annotated with
 typing.ClassVar; otherwise, a ValueError will be raised.
-## Examples
+## Example
 ```
 from dataclasses import dataclass
 @dataclass

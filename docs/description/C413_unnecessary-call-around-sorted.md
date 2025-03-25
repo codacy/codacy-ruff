@@ -11,7 +11,7 @@ It is also unnecessary to use reversed() around sorted(), as the latter
 has a reverse argument that can be used in lieu of an additional
 reversed() call.
 In both cases, it's clearer and more efficient to avoid the redundant call.
-## Examples
+## Example
 ```
 reversed(sorted(iterable))
 ```

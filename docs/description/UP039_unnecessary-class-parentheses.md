@@ -7,7 +7,7 @@ the class name.
 ## Why is this bad?
 If a class definition doesn't have any bases, the parentheses are
 unnecessary.
-## Examples
+## Example
 ```
 class Foo():
     ...

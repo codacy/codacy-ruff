@@ -10,7 +10,7 @@ for newcomers.
 These aliases were deprecated in 1.20, and removed in 1.24.
 Note, however, that np.bool and np.long were reintroduced in 2.0 with
 different semantics, and are thus omitted from this rule.
-## Examples
+## Example
 ```
 import numpy as np
 np.int

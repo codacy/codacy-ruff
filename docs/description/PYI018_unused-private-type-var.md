@@ -14,8 +14,7 @@ import typing
 import typing_extensions
 _T = typing.TypeVar("_T")
 _Ts = typing_extensions.TypeVarTuple("_Ts")
-Fix safety and availability
-This rule's fix is available when preview mode is enabled.
-It is always marked as unsafe, as it would break your code if the type
+Fix safety
+The fix is always marked as unsafe, as it would break your code if the type
 variable is imported by another module.
 ```
