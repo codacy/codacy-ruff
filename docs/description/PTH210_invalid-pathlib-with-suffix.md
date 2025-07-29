@@ -4,17 +4,22 @@ Fix is sometimes available.
 ## What it does
 Checks for pathlib.Path.with_suffix() calls where
 the given suffix does not have a leading dot
-or the given suffix is a single dot ".".
+or the given suffix is a single dot "." and the
+Python version is less than 3.14.
 ## Why is this bad?
 Path.with_suffix() will raise an error at runtime
 if the given suffix is not prefixed with a dot
-or it is a single dot ".".
+or, in versions prior to Python 3.14, if it is a single dot ".".
 ## Example
 ```
+from pathlib import Path
+path = Path()
 path.with_suffix("py")
 ```
 ## Use instead:
 ```
+from pathlib import Path
+path = Path()
 path.with_suffix(".py")
 Known problems
 This rule is likely to have false negatives, as Ruff can only emit the

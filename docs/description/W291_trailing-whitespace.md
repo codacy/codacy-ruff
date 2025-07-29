@@ -13,4 +13,7 @@ spam(1) \n#
 ## Use instead:
 ```
 spam(1)\n#
+Fix safety
+This fix is marked unsafe if the whitespace is inside a multiline string,
+as removing it changes the string's content.
 ```

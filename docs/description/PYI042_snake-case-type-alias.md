@@ -7,9 +7,11 @@ It's conventional to use the CamelCase naming convention for type aliases,
 to distinguish them from other variables.
 ## Example
 ```
+from typing import TypeAlias
 type_alias_name: TypeAlias = int
 ```
 ## Use instead:
 ```
+from typing import TypeAlias
 TypeAliasName: TypeAlias = int
 ```

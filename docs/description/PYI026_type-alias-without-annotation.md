@@ -18,4 +18,8 @@ Vector = list[float]
 ```
 from typing import TypeAlias
 Vector: TypeAlias = list[float]
+Availability
+Because this rule relies on the third-party typing_extensions module for Python versions
+before 3.10, its diagnostic will not be emitted, and no fix will be offered, if
+typing_extensions imports have been disabled by the lint.typing-extensions linter option.
 ```

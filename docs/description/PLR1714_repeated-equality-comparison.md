@@ -15,6 +15,11 @@ Instead, prefer to combine the values into a collection and use the in
 operator to check for membership, which is more performant and succinct.
 If the items are hashable, use a set for efficiency; otherwise, use a
 tuple.
+Fix safety
+This rule is always unsafe since literal sets and tuples
+evaluate their members eagerly whereas or comparisons
+are short-circuited. It is therefore possible that a fix
+will change behavior in the presence of side-effects.
 ## Example
 ```
 foo == "bar" or foo == "baz" or foo == "qux"

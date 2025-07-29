@@ -1,5 +1,5 @@
 # explicit-f-string-type-conversion (RUF010)
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for uses of str(), repr(), and ascii() as explicit type
 conversions within f-strings.

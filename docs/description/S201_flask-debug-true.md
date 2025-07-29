@@ -9,13 +9,14 @@ This could leak sensitive information, or allow an attacker to run
 arbitrary code.
 ## Example
 ```
-import flask
+from flask import Flask
 app = Flask()
 app.run(debug=True)
 ```
 ## Use instead:
 ```
-import flask
+import os
+from flask import Flask
 app = Flask()
 app.run(debug=os.environ["ENV"] == "dev")
 ```

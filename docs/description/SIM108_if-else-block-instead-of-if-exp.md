@@ -2,9 +2,10 @@
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does
-Check for if-else-blocks that can be replaced with a ternary operator.
-Moreover, in preview, check if these ternary expressions can be
-further simplified to binary expressions.
+Check for if-else-blocks that can be replaced with a ternary
+or binary operator.
+The lint is suppressed if the suggested replacement would exceed
+the maximum line length configured in pycodestyle.max-line-length.
 ## Why is this bad?
 if-else-blocks that assign a value to a variable in both branches can
 be expressed more concisely by using a ternary or binary operator.
@@ -18,7 +19,7 @@ else:
 ## Use instead:
 ```
 bar = x if foo else y
-Or, in preview:
+Or:
 if cond:
     z = cond
 else:

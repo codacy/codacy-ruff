@@ -8,6 +8,7 @@ to become true, it's preferable to await on an Event object such
 as: asyncio.Event, trio.Event, or anyio.Event.
 ## Example
 ```
+import asyncio
 DONE = False
 async def func():
     while not DONE:
@@ -15,6 +16,7 @@ async def func():
 ```
 ## Use instead:
 ```
+import asyncio
 DONE = asyncio.Event()
 async def func():
     await DONE.wait()

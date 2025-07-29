@@ -1,15 +1,17 @@
 # bidirectional-unicode (PLE2502)
 Derived from the Pylint linter.
 ## What it does
-Checks for bidirectional unicode characters.
+Checks for bidirectional formatting characters.
 ## Why is this bad?
-The interaction between bidirectional unicode characters and the
+The interaction between bidirectional formatting characters and the
 surrounding code can be surprising to those that are unfamiliar
 with right-to-left writing systems.
-In some cases, bidirectional unicode characters can also be used to
+In some cases, bidirectional formatting characters can also be used to
 obfuscate code and introduce or mask security vulnerabilities.
 ## Example
 ```
-s = "א" * 100  #  "א" is assigned
-print(s)  # prints a 100-character string
+example = "x‏" * 100  #    "‏x" is assigned
+The example uses two RIGHT-TO-LEFT MARKs to make the 100 * appear inside the comment.
+Without the RIGHT-TO-LEFT MARKs, the code looks like this:
+example = "x" * 100  #    "x" is assigned
 ```

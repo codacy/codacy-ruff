@@ -16,4 +16,7 @@ _ = Path(".")
 ```
 from pathlib import Path
 _ = Path()
+Fix safety
+This fix is marked unsafe if there are comments inside the parentheses, as applying
+the fix will delete them.
 ```

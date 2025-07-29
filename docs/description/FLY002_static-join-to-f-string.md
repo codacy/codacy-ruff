@@ -12,4 +12,11 @@ f-strings are more readable and generally preferred over str.join calls.
 ## Use instead:
 ```
 f"{foo} {bar}"
+Fix safety
+The fix is always marked unsafe because the evaluation of the f-string
+expressions will default to calling the __format__ method of each
+object, whereas str.join expects each object to be an instance of
+str and uses the corresponding string. Therefore it is possible for
+the values of the resulting strings to differ, or for one expression
+to raise an exception while the other does not.
 ```

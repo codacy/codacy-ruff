@@ -13,10 +13,12 @@ It's recommended to use a stacklevel of 2 or higher, to give the caller
 more context about the warning.
 ## Example
 ```
+import warnings
 warnings.warn("This is a warning")
 ```
 ## Use instead:
 ```
+import warnings
 warnings.warn("This is a warning", stacklevel=2)
 Fix safety
 This rule's fix is marked as unsafe because it changes

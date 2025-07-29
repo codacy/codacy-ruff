@@ -17,4 +17,6 @@ print("Hello, world!")
 ## Use instead:
 ```
 print("Hello, world!")
+Fix safety
+This fix is marked unsafe if applying it would delete a comment.
 ```

@@ -18,4 +18,13 @@ with open("file.txt") as fp:
 with open("file.txt") as fp:
     for line in fp:
         ...
+Fix safety
+This rule's fix is marked as unsafe if there's comments in the
+readlines() call, as comments may be removed.
+For example, the fix would be marked as unsafe in the following case:
+with open("file.txt") as fp:
+    for line in (  # comment
+        fp.readlines()  # comment
+    ):
+        ...
 ```

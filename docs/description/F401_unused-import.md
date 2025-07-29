@@ -42,4 +42,8 @@ if find_spec("numpy") is not None:
     print("numpy is installed")
 else:
     print("numpy is not installed")
+Preview
+When preview is enabled,
+the criterion for determining whether an import is first-party
+is stricter, which could affect the suggested fix. See this FAQ section for more details.
 ```

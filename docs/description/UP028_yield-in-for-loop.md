@@ -8,18 +8,20 @@ If a for loop only contains a yield statement, it can be replaced with a
 yield from expression, which is more concise and idiomatic.
 ## Example
 ```
-for x in foo:
-    yield x
-global y
-for y in foo:
-    yield y
+def bar():
+    for x in foo:
+        yield x
+    global y
+    for y in foo:
+        yield y
 ```
 ## Use instead:
 ```
-yield from foo
-for _element in foo:
-    y = _element
-    yield y
+def bar():
+    yield from foo
+    for _element in foo:
+        y = _element
+        yield y
 Fix safety
 This rule's fix is marked as unsafe, as converting a for loop to a yield from expression can change the behavior of the program in rare cases.
 For example, if a generator is being sent values via send, then rewriting

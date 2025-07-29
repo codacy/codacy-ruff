@@ -15,12 +15,20 @@ fixtures is fine, but it's best to be consistent.
 ## Example
 ```
 import pytest
-@pytest.mark.foo
+@pytest.mark.foo()
 def test_something(): ...
 ```
 ## Use instead:
 ```
 import pytest
-@pytest.mark.foo()
+@pytest.mark.foo
+def test_something(): ...
+Fix safety
+This rule's fix is marked as unsafe if there's comments in the
+pytest.mark.<marker> decorator.
+import pytest
+@pytest.mark.foo(
+    # comment
+)
 def test_something(): ...
 ```

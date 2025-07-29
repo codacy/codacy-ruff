@@ -1,5 +1,8 @@
 # pandas-df-variable-name (PD901)
 Derived from the pandas-vet linter.
+Warning: This rule is deprecated and will be removed in a future release.
+Deprecated
+This rule has been deprecated as it's highly opinionated and overly strict in most cases.
 ## What it does
 Checks for assignments to the variable df.
 ## Why is this bad?

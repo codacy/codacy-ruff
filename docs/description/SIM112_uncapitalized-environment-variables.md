@@ -16,4 +16,8 @@ os.environ["foo"]
 ```
 import os
 os.environ["FOO"]
+Fix safety
+This fix is always marked as unsafe because automatically capitalizing environment variable names
+can change program behavior in environments where the variable names are case-sensitive, such as most
+Unix-like systems.
 ```

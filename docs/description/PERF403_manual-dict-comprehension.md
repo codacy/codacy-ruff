@@ -1,5 +1,6 @@
 # manual-dict-comprehension (PERF403)
 Derived from the Perflint linter.
+Fix is sometimes available.
 ## What it does
 Checks for for loops that can be replaced by a dictionary comprehension.
 ## Why is this bad?

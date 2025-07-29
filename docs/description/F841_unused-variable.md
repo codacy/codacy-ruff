@@ -21,4 +21,7 @@ def foo():
 def foo():
     x = 1
     return x
+Fix safety
+This rule's fix is marked as unsafe because removing an unused variable assignment may
+delete comments that are attached to the assignment.
 ```

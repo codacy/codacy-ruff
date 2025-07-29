@@ -4,21 +4,26 @@ Fix is sometimes available.
 ## What it does
 Checks for print statements.
 ## Why is this bad?
-print statements are useful in some situations (e.g., debugging), but
-should typically be omitted from production code. print statements can
-lead to the accidental inclusion of sensitive information in logs, and are
-not configurable by clients, unlike logging statements.
+print statements used for debugging should be omitted from production
+code. They can lead the accidental inclusion of sensitive information in
+logs, and are not configurable by clients, unlike logging statements.
+print statements used to produce output as a part of a command-line
+interface program are not typically a problem.
 ## Example
 ```
-def add_numbers(a, b):
-    print(f"The sum of {a} and {b} is {a + b}")
-    return a + b
-```
-## Use instead:
-```
-def add_numbers(a, b):
-    return a + b
+def sum_less_than_four(a, b):
+    print(f"Calling sum_less_than_four")
+    return a + b < 4
+The automatic fix will remove the print statement entirely:
+def sum_less_than_four(a, b):
+    return a + b < 4
+To keep the line for logging purposes, instead use something like:
+import logging
+logging.basicConfig(level=logging.INFO)
+def sum_less_than_four(a, b):
+    logging.debug("Calling sum_less_than_four")
+    return a + b < 4
 Fix safety
-This rule's fix is marked as unsafe, as it may remove print statements
+This rule's fix is marked as unsafe, as it will remove print statements
 that are used beyond debugging purposes.
 ```

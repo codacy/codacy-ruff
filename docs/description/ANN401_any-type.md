@@ -11,10 +11,12 @@ It's better to be explicit about the type of an expression, and to use
 Any as an "escape hatch" only when it is really needed.
 ## Example
 ```
+from typing import Any
 def foo(x: Any): ...
 ```
 ## Use instead:
 ```
+from typing import Any
 def foo(x: int): ...
 Known problems
 Type aliases are unsupported and can lead to false positives.

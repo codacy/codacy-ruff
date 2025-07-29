@@ -22,4 +22,7 @@ def foo(bar):
     if not bar:
         return
     return
+Fix safety
+This rule's fix is marked as unsafe for cases in which comments would be
+dropped from the return statement.
 ```

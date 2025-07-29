@@ -4,11 +4,12 @@ Fix is sometimes available.
 ## What it does
 Checks for pprint statements.
 ## Why is this bad?
-Like print statements, pprint statements are useful in some situations
-(e.g., debugging), but should typically be omitted from production code.
-pprint statements can lead to the accidental inclusion of sensitive
-information in logs, and are not configurable by clients, unlike logging
-statements.
+Like print statements, pprint statements used for debugging should
+be omitted from production code. They can lead the accidental inclusion
+of sensitive information in logs, and are not configurable by clients,
+unlike logging statements.
+pprint statements used to produce output as a part of a command-line
+interface program are not typically a problem.
 ## Example
 ```
 import pprint
@@ -23,6 +24,6 @@ def merge_dicts(dict_a, dict_b):
     dict_c = {**dict_a, **dict_b}
     return dict_c
 Fix safety
-This rule's fix is marked as unsafe, as it may remove pprint statements
+This rule's fix is marked as unsafe, as it will remove pprint statements
 that are used beyond debugging purposes.
 ```

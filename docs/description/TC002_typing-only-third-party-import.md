@@ -32,4 +32,11 @@ if TYPE_CHECKING:
     import pandas as pd
 def func(df: pd.DataFrame) -> int:
     return len(df)
+Preview
+When preview is enabled,
+the criterion for determining whether an import is first-party
+is stricter, which could affect whether this lint is triggered vs TC001. See this FAQ section for more details.
+If lint.future-annotations is set to true, from __future__ import annotations will be added if doing so would enable an import to be moved into an if TYPE_CHECKING: block. This takes precedence over the
+lint.flake8-type-checking.quote-annotations setting described above if both settings are
+enabled.
 ```

@@ -11,11 +11,13 @@ or function, like trio.run_process()
 or anyio.run_process().
 ## Example
 ```
+import subprocess
 async def foo():
     subprocess.run(cmd)
 ```
 ## Use instead:
 ```
+import asyncio
 async def foo():
     asyncio.create_subprocess_shell(cmd)
 ```

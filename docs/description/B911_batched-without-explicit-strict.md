@@ -11,10 +11,13 @@ Pass strict=True to raise a ValueError if the batches are of non-uniform length.
 Otherwise, pass strict=False to make the intention explicit.
 ## Example
 ```
+import itertools
 itertools.batched(iterable, n)
 Use instead if the batches must be of uniform length:
+import itertools
 itertools.batched(iterable, n, strict=True)
 Or if the batches can be of non-uniform length:
+import itertools
 itertools.batched(iterable, n, strict=False)
 Known deviations
 Unlike the upstream B911, this rule will not report infinite iterators

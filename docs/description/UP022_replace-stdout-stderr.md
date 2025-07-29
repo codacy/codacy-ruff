@@ -18,4 +18,8 @@ subprocess.run(["foo"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 ```
 import subprocess
 subprocess.run(["foo"], capture_output=True)
+Fix safety
+This rule's fix is marked as unsafe because replacing stdout=subprocess.PIPE and
+stderr=subprocess.PIPE with capture_output=True may delete comments attached
+to the original arguments.
 ```

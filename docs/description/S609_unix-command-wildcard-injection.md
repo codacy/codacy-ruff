@@ -8,10 +8,10 @@ matched by the wildcard. Consider using a more specific path instead.
 ## Example
 ```
 import subprocess
-subprocess.Popen(["chmod", "777", "*.py"])
+subprocess.Popen(["chmod", "777", "*.py"], shell=True)
 ```
 ## Use instead:
 ```
 import subprocess
-subprocess.Popen(["chmod", "777", "main.py"])
+subprocess.Popen(["chmod", "777", "main.py"], shell=True)
 ```

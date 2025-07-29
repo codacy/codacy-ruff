@@ -32,4 +32,13 @@ async def common_parameters(q: str | None = None, skip: int = 0, limit: int = 10
 @app.get("/items/")
 async def read_items(commons: Annotated[dict, Depends(common_parameters)]):
     return commons
+Fix safety
+This fix is always unsafe, as adding/removing/changing a function parameter's
+default value can change runtime behavior. Additionally, comments inside the
+deprecated uses might be removed.
+Availability
+Because this rule relies on the third-party typing_extensions module for Python versions
+before 3.9, if the target version is < 3.9 and typing_extensions imports have been
+disabled by the lint.typing-extensions linter option the diagnostic will not be emitted
+and no fix will be offered.
 ```

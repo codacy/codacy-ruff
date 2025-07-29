@@ -68,7 +68,6 @@
     <module name="S317_suspicious-xml-sax-usage" />
     <module name="S318_suspicious-xml-mini-dom-usage" />
     <module name="S319_suspicious-xml-pull-dom-usage" />
-    <module name="S320_suspicious-xmle-tree-usage" />
     <module name="S321_suspicious-ftp-lib-usage" />
     <module name="S323_suspicious-unverified-context-usage" />
     <module name="S324_hashlib-insecure-hash-function" />
@@ -211,6 +210,7 @@
     <module name="LOG002_invalid-get-logger-argument" />
     <module name="LOG007_exception-without-exc-info" />
     <module name="LOG009_undocumented-warn" />
+    <module name="LOG014_exc-info-outside-except-handler" />
     <module name="LOG015_root-logger-call" />
     <module name="G001_logging-string-format" />
     <module name="G002_logging-percent-format" />
@@ -309,6 +309,9 @@
     <module name="PT025_pytest-erroneous-use-fixtures-on-fixture" />
     <module name="PT026_pytest-use-fixtures-without-parameters" />
     <module name="PT027_pytest-unittest-raises-assertion" />
+    <module name="PT028_pytest-parameter-with-default-argument" />
+    <module name="PT030_pytest-warns-too-broad" />
+    <module name="PT031_pytest-warns-with-multiple-statements" />
     <module name="Q000_bad-quotes-inline-string" />
     <module name="Q001_bad-quotes-multiline-string" />
     <module name="Q002_bad-quotes-docstring" />
@@ -580,6 +583,7 @@
     <module name="PLC0206_dict-index-missing-items" />
     <module name="PLC0208_iteration-over-set" />
     <module name="PLC0414_useless-import-alias" />
+    <module name="PLC0415_import-outside-top-level" />
     <module name="PLC1802_len-test" />
     <module name="PLC2401_non-ascii-name" />
     <module name="PLC2403_non-ascii-import-name" />
@@ -633,6 +637,7 @@
     <module name="PLR1716_boolean-chained-comparison" />
     <module name="PLR1722_sys-exit-alias" />
     <module name="PLR1730_if-stmt-min-max" />
+    <module name="PLR1733_unnecessary-dict-index-lookup" />
     <module name="PLR1736_unnecessary-list-index-lookup" />
     <module name="PLR2004_magic-value-comparison" />
     <module name="PLR2044_empty-comment" />
@@ -643,6 +648,7 @@
     <module name="PLW0129_assert-on-string-literal" />
     <module name="PLW0131_named-expr-without-context" />
     <module name="PLW0133_useless-exception-statement" />
+    <module name="PLW0177_nan-comparison" />
     <module name="PLW0211_bad-staticmethod-argument" />
     <module name="PLW0245_super-without-brackets" />
     <module name="PLW0406_import-self" />
@@ -656,6 +662,7 @@
     <module name="PLW1508_invalid-envvar-default" />
     <module name="PLW1509_subprocess-popen-preexec-fn" />
     <module name="PLW1510_subprocess-run-without-check" />
+    <module name="PLW1641_eq-without-hash" />
     <module name="PLW2101_useless-with-lock" />
     <module name="PLW2901_redefined-loop-name" />
     <module name="PLW3301_nested-min-max" />
@@ -699,11 +706,20 @@
     <module name="UP041_timeout-error-alias" />
     <module name="UP043_unnecessary-default-type-args" />
     <module name="UP044_non-pep646-unpack" />
+    <module name="UP045_non-pep604-annotation-optional" />
+    <module name="UP046_non-pep695-generic-class" />
+    <module name="UP047_non-pep695-generic-function" />
+    <module name="UP049_private-type-parameter" />
     <module name="FURB105_print-empty-string" />
+    <module name="FURB122_for-loop-writes" />
     <module name="FURB129_readlines-in-for" />
+    <module name="FURB132_check-and-remove-from-set" />
     <module name="FURB136_if-expr-min-max" />
+    <module name="FURB157_verbose-decimal-constructor" />
     <module name="FURB161_bit-count" />
+    <module name="FURB162_fromisoformat-replace-z" />
     <module name="FURB163_redundant-log-base" />
+    <module name="FURB166_int-on-sliced-str" />
     <module name="FURB167_regex-flag-alias" />
     <module name="FURB168_isinstance-type-none" />
     <module name="FURB169_type-none-comparison" />
@@ -733,6 +749,7 @@
     <module name="RUF023_unsorted-dunder-slots" />
     <module name="RUF024_mutable-fromkeys-value" />
     <module name="RUF026_default-factory-kwarg" />
+    <module name="RUF028_invalid-formatter-suppression-comment" />
     <module name="RUF030_assert-with-print-message" />
     <module name="RUF032_decimal-from-float-literal" />
     <module name="RUF033_post-init-default" />
@@ -741,7 +758,11 @@
     <module name="RUF041_unnecessary-nested-literal" />
     <module name="RUF046_unnecessary-cast-to-int" />
     <module name="RUF048_map-int-version-parsing" />
+    <module name="RUF049_dataclass-enum" />
     <module name="RUF051_if-key-in-dict-del" />
+    <module name="RUF053_class-with-mixed-type-vars" />
+    <module name="RUF057_unnecessary-round" />
+    <module name="RUF058_starmap-zip" />
     <module name="RUF100_unused-noqa" />
     <module name="RUF101_redirected-noqa" />
     <module name="RUF200_invalid-pyproject-toml" />

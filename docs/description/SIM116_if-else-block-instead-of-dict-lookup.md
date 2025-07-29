@@ -6,14 +6,19 @@ Checks for three or more consecutive if-statements with direct returns
 These can be simplified by using a dictionary
 ## Example
 ```
-if x == 1:
-    return "Hello"
-elif x == 2:
-    return "Goodbye"
-else:
-    return "Goodnight"
+def find_phrase(x):
+    if x == 1:
+        return "Hello"
+    elif x == 2:
+        return "Goodbye"
+    elif x == 3:
+        return "Good morning"
+    else:
+        return "Goodnight"
 ```
 ## Use instead:
 ```
-return {1: "Hello", 2: "Goodbye"}.get(x, "Goodnight")
+def find_phrase(x):
+    phrases = {1: "Hello", 2: "Goodye", 3: "Good morning"}
+    return phrases.get(x, "Goodnight")
 ```

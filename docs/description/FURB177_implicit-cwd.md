@@ -8,9 +8,11 @@ When looking up the current directory, prefer Path.cwd() over
 Path().resolve(), as Path.cwd() is more explicit in its intent.
 ## Example
 ```
+from pathlib import Path
 cwd = Path().resolve()
 ```
 ## Use instead:
 ```
+from pathlib import Path
 cwd = Path.cwd()
 ```

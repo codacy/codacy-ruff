@@ -8,12 +8,16 @@ any or all.
 Using a builtin function is more concise and readable.
 ## Example
 ```
-for item in iterable:
-    if predicate(item):
-        return True
-return False
+def foo():
+    for item in iterable:
+        if predicate(item):
+            return True
+    return False
 ```
 ## Use instead:
 ```
-return any(predicate(item) for item in iterable)
+def foo():
+    return any(predicate(item) for item in iterable)
+Fix safety
+This fix is always marked as unsafe because it might remove comments.
 ```

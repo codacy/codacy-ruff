@@ -13,4 +13,10 @@ and likely indicative of a mistake. They should be removed.
 ## Use instead:
 ```
 "Hello, %(name)s" % {"name": "World"}
+Fix safety
+This rule's fix is marked as unsafe for mapping key
+containing function calls with potential side effects,
+because removing such arguments could change the behavior of the code.
+For example, the fix would be marked as unsafe in the following case:
+"Hello, %(name)s" % {"greeting": print(1), "name": "World"}
 ```

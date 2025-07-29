@@ -10,11 +10,13 @@ Instead of making a blocking HTTP call, use an asynchronous HTTP client
 library such as aiohttp or httpx.
 ## Example
 ```
+import urllib
 async def fetch():
     urllib.request.urlopen("https://example.com/foo/bar").read()
 ```
 ## Use instead:
 ```
+import aiohttp
 async def fetch():
     async with aiohttp.ClientSession() as session:
         async with session.get("https://example.com/foo/bar") as resp:

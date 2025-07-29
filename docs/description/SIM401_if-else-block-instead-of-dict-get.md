@@ -12,6 +12,7 @@ Under preview mode, this rule will
 also suggest replacing if-else expressions with dict.get calls.
 ## Example
 ```
+foo = {}
 if "bar" in foo:
     value = foo["bar"]
 else:
@@ -19,6 +20,7 @@ else:
 ```
 ## Use instead:
 ```
+foo = {}
 value = foo.get("bar", 0)
 If preview mode is enabled:
 value = foo["bar"] if "bar" in foo else 0

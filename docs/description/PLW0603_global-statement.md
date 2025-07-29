@@ -19,8 +19,9 @@ print(var)
 ```
 var = 1
 def foo():
+    var = 10
     print(var)
-    return 10
+    return var
 var = foo()
 print(var)
 ```

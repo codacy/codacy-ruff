@@ -1,6 +1,6 @@
 {
     "name": "ruff",
-    "version": "0.11.2",
+    "version": "0.12.5",
     "patterns": [
         {
             "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
@@ -459,13 +459,6 @@
         },
         {
             "patternId": "S319_suspicious-xml-pull-dom-usage",
-            "level": "Error",
-            "category": "Security",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S320_suspicious-xmle-tree-usage",
             "level": "Error",
             "category": "Security",
             "parameters": [],
@@ -1466,6 +1459,13 @@
             "enabled": false
         },
         {
+            "patternId": "LOG014_exc-info-outside-except-handler",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "LOG015_root-logger-call",
             "level": "Warning",
             "category": "BestPractice",
@@ -2146,6 +2146,27 @@
         },
         {
             "patternId": "PT027_pytest-unittest-raises-assertion",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PT028_pytest-parameter-with-default-argument",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PT030_pytest-warns-too-broad",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PT031_pytest-warns-with-multiple-statements",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -4049,6 +4070,13 @@
             "enabled": false
         },
         {
+            "patternId": "PLC0415_import-outside-top-level",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "PLC1802_len-test",
             "level": "Warning",
             "category": "CodeStyle",
@@ -4420,6 +4448,13 @@
             "enabled": false
         },
         {
+            "patternId": "PLR1733_unnecessary-dict-index-lookup",
+            "level": "Warning",
+            "category": "Complexity",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "PLR1736_unnecessary-list-index-lookup",
             "level": "Warning",
             "category": "Complexity",
@@ -4484,6 +4519,13 @@
         },
         {
             "patternId": "PLW0133_useless-exception-statement",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0177_nan-comparison",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -4575,6 +4617,13 @@
         },
         {
             "patternId": "PLW1510_subprocess-run-without-check",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1641_eq-without-hash",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -4882,7 +4931,42 @@
             "enabled": false
         },
         {
+            "patternId": "UP045_non-pep604-annotation-optional",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "UP046_non-pep695-generic-class",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "UP047_non-pep695-generic-function",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "UP049_private-type-parameter",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB105_print-empty-string",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FURB122_for-loop-writes",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -4896,7 +4980,21 @@
             "enabled": false
         },
         {
+            "patternId": "FURB132_check-and-remove-from-set",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB136_if-expr-min-max",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FURB157_verbose-decimal-constructor",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -4910,7 +5008,21 @@
             "enabled": false
         },
         {
+            "patternId": "FURB162_fromisoformat-replace-z",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB163_redundant-log-base",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FURB166_int-on-sliced-str",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -5120,6 +5232,13 @@
             "enabled": false
         },
         {
+            "patternId": "RUF028_invalid-formatter-suppression-comment",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "RUF030_assert-with-print-message",
             "level": "Error",
             "category": "BestPractice",
@@ -5176,7 +5295,35 @@
             "enabled": false
         },
         {
+            "patternId": "RUF049_dataclass-enum",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "RUF051_if-key-in-dict-del",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF053_class-with-mixed-type-vars",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF057_unnecessary-round",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF058_starmap-zip",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],

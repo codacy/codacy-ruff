@@ -1,5 +1,6 @@
 # os-path-isabs (PTH117)
 Derived from the flake8-use-pathlib linter.
+Fix is sometimes available.
 ## What it does
 Checks for uses of os.path.isabs.
 ## Why is this bad?

@@ -17,4 +17,11 @@ if score > highest_score:
 ## Use instead:
 ```
 highest_score = max(highest_score, score)
+Fix safety
+This fix is marked unsafe if it would delete any comments within the replacement range.
+An example to illustrate where comments are preserved and where they are not:
+a, b = 0, 10
+if a >= b: # deleted comment
+    # deleted comment
+    a = b # preserved comment
 ```

@@ -30,7 +30,7 @@ class Foo:
     def foo(self, arg: bytes) -> Self: ...
     @classmethod
     def bar(cls, arg: int) -> Self: ...
-Fix behaviour and safety
+Fix behaviour
 The fix replaces all references to the custom type variable in the method's header and body
 with references to Self. The fix also adds an import of Self if neither Self nor typing
 is already imported in the module. If your target-version setting is set to Python 3.11 or
@@ -42,6 +42,11 @@ old-style TypeVar, the declaration of the type variable will not be removed by t
 fix, as the type variable could still be used by other functions, methods or classes. See
 unused-private-type-var for a rule that will clean up unused private type
 variables.
+Fix safety
 The fix is only marked as unsafe if there is the possibility that it might delete a comment
 from your code.
+Availability
+Because this rule relies on the third-party typing_extensions module for Python versions
+before 3.11, its diagnostic will not be emitted, and no fix will be offered, if
+typing_extensions imports have been disabled by the lint.typing-extensions linter option.
 ```

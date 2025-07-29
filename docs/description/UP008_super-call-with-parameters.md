@@ -1,6 +1,6 @@
 # super-call-with-parameters (UP008)
 Derived from the pyupgrade linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for super calls that pass redundant arguments.
 ## Why is this bad?
@@ -26,4 +26,8 @@ class A:
 class B(A):
     def bar(self):
         super().foo()
+Fix safety
+This rule's fix is marked as unsafe because removing the arguments from a call
+may delete comments that are attached to the arguments.
+In preview, the fix is marked safe if no comments are present.
 ```

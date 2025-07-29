@@ -13,4 +13,10 @@ They should be removed.
 ## Use instead:
 ```
 "Hello, {0}".format("world")
+Fix safety
+This rule's fix is marked as unsafe if the unused positional argument
+contains a function call with potential side effects,
+because removing such arguments could change the behavior of the code.
+For example, the fix would be marked as unsafe in the following case:
+"Hello, {0}".format("world", print(1))
 ```

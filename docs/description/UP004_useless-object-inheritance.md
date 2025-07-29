@@ -13,4 +13,6 @@ class Foo(object): ...
 ## Use instead:
 ```
 class Foo: ...
+Fix safety
+This fix is unsafe if it would cause comments to be deleted.
 ```

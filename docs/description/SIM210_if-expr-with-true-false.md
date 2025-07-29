@@ -14,4 +14,9 @@ True if a else False
 ## Use instead:
 ```
 bool(a)
+Fix safety
+This fix is marked as unsafe because it may change the program’s behavior if the condition does not
+return a proper Boolean. While the fix will try to wrap non-boolean values in a call to bool,
+custom implementations of comparison functions like __eq__ can avoid the bool call and still
+lead to altered behavior. Moreover, the fix may remove comments.
 ```

@@ -21,4 +21,7 @@ logger = logging.getLogger(__file__)
 ```
 import logging
 logger = logging.getLogger(__name__)
+Fix safety
+This fix is always unsafe, as changing the arguments to getLogger can change the
+received logger object, and thus program behavior.
 ```

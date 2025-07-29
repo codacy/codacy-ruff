@@ -13,7 +13,7 @@ num = Decimal(1.2345)
 ## Use instead:
 ```
 num = Decimal("1.2345")
-Fix Safety
+Fix safety
 This rule's fix is marked as unsafe because it changes the underlying value
 of the Decimal instance that is constructed. This can lead to unexpected
 behavior if your program relies on the previous value (whether deliberately or not).
