@@ -1,5 +1,6 @@
 # future-rewritable-type-annotation (FA100)
 Derived from the flake8-future-annotations linter.
+Fix is always available.
 ## What it does
 Checks for missing from __future__ import annotations imports upon
 detecting type annotations that can be written more succinctly under
@@ -34,4 +35,7 @@ def func(obj: Dict[str, Optional[int]]) -> None: ...
 After running the additional pyupgrade rules:
 from __future__ import annotations
 def func(obj: dict[str, int | None]) -> None: ...
+Fix safety
+This rule's fix is marked as unsafe, as adding from __future__ import annotations
+may change the semantics of the program.
 ```

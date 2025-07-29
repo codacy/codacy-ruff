@@ -13,6 +13,7 @@ Python, but may be removed in future versions.
 Prefer using TimeoutError directly, as it is more idiomatic and future-proof.
 ## Example
 ```
+import asyncio
 raise asyncio.TimeoutError
 ```
 ## Use instead:

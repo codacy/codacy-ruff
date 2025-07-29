@@ -17,7 +17,7 @@ that the assignment has a default value, but that the value is non-simple
 or varies according to the current platform or Python version.
 ## Example
 ```
-def foo(arg=[]) -> None: ...
+def foo(arg=bar()) -> None: ...
 ```
 ## Use instead:
 ```

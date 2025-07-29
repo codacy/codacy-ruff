@@ -30,9 +30,12 @@ def foo() -> None:
 ```
 def foo() -> None:
     bar: Bar
-See also
-quoted-annotation-in-stub: A rule that
-    removes all quoted annotations from stub files
-quoted-type-alias: A rule that removes unnecessary quotes
-    from type aliases.
+Preview
+When preview is enabled, if lint.future-annotations is set to true,
+from __future__ import annotations will be added if doing so would allow an annotation to be
+unquoted.
+Fix safety
+The rule's fix is marked as safe, unless preview and
+[lint.future_annotations][lint.future_annotations] are enabled and a from __future__ import annotations import is added. Such an import may change the behavior of all annotations in the
+file.
 ```

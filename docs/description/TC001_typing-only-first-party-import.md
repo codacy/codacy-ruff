@@ -20,7 +20,7 @@ as such.
 ## Example
 ```
 from __future__ import annotations
-import local_module
+from . import local_module
 def func(sized: local_module.Container) -> int:
     return len(sized)
 ```
@@ -29,7 +29,14 @@ def func(sized: local_module.Container) -> int:
 from __future__ import annotations
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    import local_module
+    from . import local_module
 def func(sized: local_module.Container) -> int:
     return len(sized)
+Preview
+When preview is enabled,
+the criterion for determining whether an import is first-party
+is stricter, which could affect whether this lint is triggered vs TC001. See this FAQ section for more details.
+If lint.future-annotations is set to true, from __future__ import annotations will be added if doing so would enable an import to be moved into an if TYPE_CHECKING: block. This takes precedence over the
+lint.flake8-type-checking.quote-annotations setting described above if both settings are
+enabled.
 ```

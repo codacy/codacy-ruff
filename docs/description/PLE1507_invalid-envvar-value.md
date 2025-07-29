@@ -8,9 +8,11 @@ If the provided argument is not a string, os.getenv will throw a
 TypeError at runtime.
 ## Example
 ```
+import os
 os.getenv(1)
 ```
 ## Use instead:
 ```
+import os
 os.getenv("1")
 ```

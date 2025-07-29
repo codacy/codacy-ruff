@@ -32,4 +32,9 @@ if TYPE_CHECKING:
     from pathlib import Path
 def func(path: Path) -> str:
     return str(path)
+Preview
+When preview is enabled, if
+lint.future-annotations is set to true, from __future__ import annotations will be added if doing so would enable an import to be moved into an if TYPE_CHECKING: block. This takes precedence over the
+lint.flake8-type-checking.quote-annotations setting described above if both settings are
+enabled.
 ```

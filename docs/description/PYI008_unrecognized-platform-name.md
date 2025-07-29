@@ -10,9 +10,11 @@ a typo or a platform name that is not recognized by type checkers.
 The list of known platforms is: "linux", "win32", "cygwin", "darwin".
 ## Example
 ```
+import sys
 if sys.platform == "linus": ...
 ```
 ## Use instead:
 ```
+import sys
 if sys.platform == "linux": ...
 ```

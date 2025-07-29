@@ -16,7 +16,7 @@ Prone to false positives as it is triggered on any function call with a
 shell=True parameter.
 ## Example
 ```
-import subprocess
+import my_custom_subprocess
 user_input = input("Enter a command: ")
-subprocess.run(user_input, shell=True)
+my_custom_subprocess.run(user_input, shell=True)
 ```

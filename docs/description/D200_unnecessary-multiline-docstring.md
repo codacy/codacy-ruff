@@ -17,4 +17,8 @@ def average(values: list[float]) -> float:
 ```
 def average(values: list[float]) -> float:
     """Return the mean of the given values."""
+Fix safety
+The fix is marked as unsafe because it could affect tools that parse docstrings,
+documentation generators, or custom introspection utilities that rely on
+specific docstring formatting.
 ```

@@ -18,4 +18,13 @@ as dict.fromkeys is more readable and efficient.
 ```
 dict.fromkeys(iterable)
 dict.fromkeys(iterable, 1)
+Fix safety
+This rule's fix is marked as unsafe if there's comments inside the dict comprehension,
+as comments may be removed.
+For example, the fix would be marked as unsafe in the following case:
+{  # comment 1
+    a:  # comment 2
+    None  # comment 3
+    for a in iterable  # comment 4
+}
 ```

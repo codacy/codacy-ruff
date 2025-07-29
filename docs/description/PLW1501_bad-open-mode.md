@@ -14,10 +14,10 @@ itself.
 ## Example
 ```
 with open("file", "rwx") as f:
-    return f.read()
+    content = f.read()
 ```
 ## Use instead:
 ```
 with open("file", "r") as f:
-    return f.read()
+    content = f.read()
 ```

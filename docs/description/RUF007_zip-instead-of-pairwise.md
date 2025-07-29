@@ -17,4 +17,10 @@ zip(letters, letters[1:])  # ("A", "B"), ("B", "C"), ("C", "D")
 from itertools import pairwise
 letters = "ABCD"
 pairwise(letters)  # ("A", "B"), ("B", "C"), ("C", "D")
+Fix safety
+The fix is always marked unsafe because it assumes that slicing an object
+(e.g., obj[1:]) produces a value with the same type and iteration behavior
+as the original object, which is not guaranteed for user-defined types that
+override __getitem__ without properly handling slices. Moreover, the fix
+could delete comments.
 ```

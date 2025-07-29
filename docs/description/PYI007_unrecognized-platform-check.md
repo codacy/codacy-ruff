@@ -11,13 +11,15 @@ sys.platform checks should be simple string comparisons, like
 if sys.platform == "linux".
 ## Example
 ```
-if sys.platform.startswith("linux"):
+import sys
+if sys.platform == "xunil"[::-1]:
     # Linux specific definitions
     ...
 else:
     # Posix specific definitions
     ...
 Instead, use a simple string comparison, such as == or !=:
+import sys
 if sys.platform == "linux":
     # Linux specific definitions
     ...

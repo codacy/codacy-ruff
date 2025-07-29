@@ -1,5 +1,6 @@
 # os-path-dirname (PTH120)
 Derived from the flake8-use-pathlib linter.
+Fix is sometimes available.
 ## What it does
 Checks for uses of os.path.dirname.
 ## Why is this bad?
@@ -16,6 +17,8 @@ os.path.dirname(__file__)
 ```
 from pathlib import Path
 Path(__file__).parent
+Fix Safety
+This rule's fix is marked as unsafe if the replacement would remove comments attached to the original expression.
 Known issues
 While using pathlib can improve the readability and type safety of your code,
 it can be less performant than the lower-level alternatives that work directly with strings,

@@ -23,4 +23,7 @@ raise TypeError()
 ## Use instead:
 ```
 raise TypeError
+Fix Safety
+This rule's fix is marked as unsafe if removing the parentheses would also remove comments
+or if it’s unclear whether the expression is a class or a function call.
 ```

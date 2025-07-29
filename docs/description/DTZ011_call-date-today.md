@@ -13,7 +13,7 @@ datetime.datetime.now(tz=...).date() to create a timezone-aware object.
 ## Example
 ```
 import datetime
-datetime.datetime.today()
+datetime.date.today()
 ```
 ## Use instead:
 ```

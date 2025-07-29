@@ -1,6 +1,6 @@
 # blank-line-before-function (D201)
 Derived from the pydocstyle linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for docstrings on functions that are separated by one or more blank
 lines from the function definition.

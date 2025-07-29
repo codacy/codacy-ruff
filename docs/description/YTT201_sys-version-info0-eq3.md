@@ -2,15 +2,18 @@
 Derived from the flake8-2020 linter.
 ## What it does
 Checks for equality comparisons against the major version returned by
-sys.version_info (e.g., sys.version_info[0] == 3).
+sys.version_info (e.g., sys.version_info[0] == 3 or sys.version_info[0] != 3).
 ## Why is this bad?
 Using sys.version_info[0] == 3 to verify that the major version is
 Python 3 or greater will fail if the major version number is ever
 incremented (e.g., to Python 4). This is likely unintended, as code
 that uses this comparison is likely intended to be run on Python 2,
-but would now run on Python 4 too.
+but would now run on Python 4 too. Similarly, using sys.version_info[0] != 3
+to check for Python 2 will also fail if the major version number is
+incremented.
 Instead, use >= to check if the major version number is 3 or greater,
-to future-proof the code.
+or < to check if the major version number is less than 3, to future-proof
+the code.
 ## Example
 ```
 import sys

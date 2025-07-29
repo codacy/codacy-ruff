@@ -23,4 +23,13 @@ for i in list(items):
 items = (1, 2, 3)
 for i in items:
     print(i)
+Fix safety
+This rule's fix is marked as unsafe if there's comments in the
+list() call, as comments may be removed.
+For example, the fix would be marked as unsafe in the following case:
+items = (1, 2, 3)
+for i in list(  # comment
+    items
+):
+    print(i)
 ```

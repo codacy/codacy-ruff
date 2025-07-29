@@ -32,4 +32,8 @@ class Foo:
     def __post_init__(self, bar: int, baz: int) -> None:
         print(bar, baz)
 foo = Foo()  # Prints '1 2'.
+Fix safety
+This fix is always marked as unsafe because, although switching to InitVar is usually correct,
+it is incorrect when the parameter is not intended to be part of the public API or when the value
+is meant to be shared across all instances.
 ```

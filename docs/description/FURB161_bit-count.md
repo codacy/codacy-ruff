@@ -16,4 +16,8 @@ y = bin(0b1111011).count("1")
 ```
 x = (123).bit_count()
 y = 0b1111011.bit_count()
+Fix safety
+This rule's fix is marked as unsafe unless the argument to bin can be inferred as
+an instance of a type that implements the __index__ and bit_count methods because this can
+change the exception raised at runtime for an invalid argument.
 ```

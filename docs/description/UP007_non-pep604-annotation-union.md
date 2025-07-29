@@ -22,8 +22,7 @@ foo: Union[int, str] = 1
 ## Use instead:
 ```
 foo: int | str = 1
-Preview
-In preview mode, this rule only checks for usages of typing.Union,
+Note that this rule only checks for usages of typing.Union,
 while UP045 checks for typing.Optional.
 Fix safety
 This rule's fix is marked as unsafe, as it may lead to runtime errors when

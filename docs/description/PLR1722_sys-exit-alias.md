@@ -11,6 +11,17 @@ runtime. Generally, these constants are intended to be used in an interactive
 interpreter, and not in programs.
 Prefer sys.exit(), as the sys module is guaranteed to exist in all
 contexts.
+Fix safety
+This fix is always unsafe. When replacing exit or quit with sys.exit,
+the behavior can change in the following ways:
+If the code runs in an environment where the site module is not imported
+    (e.g., with python -S), the original code would raise a NameError, while
+    the fixed code would execute normally.
+site.exit and sys.exit handle tuple arguments differently. site.exit
+    treats tuples as regular objects and always returns exit code 1, while sys.exit
+    interprets tuple contents to determine the exit code: an empty tuple () results in
+    exit code 0, and a single-element tuple like (2,) uses that element's value (2) as
+    the exit code.
 ## Example
 ```
 if __name__ == "__main__":

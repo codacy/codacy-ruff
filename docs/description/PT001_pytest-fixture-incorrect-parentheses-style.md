@@ -23,4 +23,14 @@ def my_fixture(): ...
 import pytest
 @pytest.fixture
 def my_fixture(): ...
+Fix safety
+This rule's fix is marked as unsafe if there's comments in the
+pytest.fixture decorator.
+For example, the fix would be marked as unsafe in the following case:
+import pytest
+@pytest.fixture(
+    # comment
+    # scope = "module"
+)
+def my_fixture(): ...
 ```

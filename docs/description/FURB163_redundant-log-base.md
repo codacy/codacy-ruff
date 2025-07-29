@@ -22,4 +22,10 @@ import math
 math.log(4)
 math.log2(4)
 math.log10(4)
+Fix safety
+This fix is marked unsafe when the argument is a starred expression, as this changes
+the call semantics and may raise runtime errors. It is also unsafe if comments are
+present within the call, as they will be removed. Additionally, math.log(x, base)
+and math.log2(x) / math.log10(x) may differ due to floating-point rounding, so
+the fix is also unsafe when making this transformation.
 ```

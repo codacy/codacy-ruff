@@ -58,7 +58,7 @@
     {
         "patternId": "YTT201_sys-version-info0-eq3",
         "title": "sys-version-info0-eq3 (YTT201)",
-        "description": "Checks for equality comparisons against the major version returned by\nsys.version_info (e.g., sys.version_info[0] == 3).",
+        "description": "Checks for equality comparisons against the major version returned by\nsys.version_info (e.g., sys.version_info[0] == 3 or sys.version_info[0] != 3).",
         "parameters": [],
         "timeToFix": 5
     },
@@ -462,13 +462,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "S320_suspicious-xmle-tree-usage",
-        "title": "suspicious-xmle-tree-usage (S320)",
-        "description": "Checks for uses of insecure XML parsers.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "S321_suspicious-ftp-lib-usage",
         "title": "suspicious-ftp-lib-usage (S321)",
         "description": "Checks for the use of FTP-related functions.",
@@ -667,7 +660,7 @@
     {
         "patternId": "FBT001_boolean-type-hint-positional-argument",
         "title": "boolean-type-hint-positional-argument (FBT001)",
-        "description": "Checks for the use of boolean positional arguments in function definitions,\nas determined by the presence of a bool type hint.",
+        "description": "Checks for the use of boolean positional arguments in function definitions,\nas determined by the presence of a type hint containing bool as an\nevident subtype - e.g. bool, bool | int, typing.Optional[bool], etc.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1276,7 +1269,7 @@
     {
         "patternId": "EM101_raw-string-in-exception",
         "title": "raw-string-in-exception (EM101)",
-        "description": "Checks for the use of string literals in exception constructors.",
+        "description": "Checks for the use of string literals in exception constructors.\nIn preview, this rule checks for byte string literals in\nexception constructors.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1459,6 +1452,13 @@
         "patternId": "LOG009_undocumented-warn",
         "title": "undocumented-warn (LOG009)",
         "description": "Checks for uses of logging.WARN.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "LOG014_exc-info-outside-except-handler",
+        "title": "exc-info-outside-except-handler (LOG014)",
+        "description": "Checks for logging calls with exc_info= outside exception handlers.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -2149,6 +2149,27 @@
         "timeToFix": 5
     },
     {
+        "patternId": "PT028_pytest-parameter-with-default-argument",
+        "title": "pytest-parameter-with-default-argument (PT028)",
+        "description": "Checks for parameters of test functions with default arguments.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PT030_pytest-warns-too-broad",
+        "title": "pytest-warns-too-broad (PT030)",
+        "description": "Checks for pytest.warns calls without a match parameter.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PT031_pytest-warns-with-multiple-statements",
+        "title": "pytest-warns-with-multiple-statements (PT031)",
+        "description": "Checks for pytest.warns context managers with multiple statements.\nThis rule allows pytest.warns bodies to contain for\nloops with empty bodies (e.g., pass or ... statements), to test\niterator behavior.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "Q000_bad-quotes-inline-string",
         "title": "bad-quotes-inline-string (Q000)",
         "description": "Checks for inline strings that use single quotes or double quotes,\ndepending on the value of the lint.flake8-quotes.inline-quotes option.",
@@ -2291,7 +2312,7 @@
     {
         "patternId": "SIM108_if-else-block-instead-of-if-exp",
         "title": "if-else-block-instead-of-if-exp (SIM108)",
-        "description": "Check for if-else-blocks that can be replaced with a ternary operator.\nMoreover, in preview, check if these ternary expressions can be\nfurther simplified to binary expressions.",
+        "description": "Check for if-else-blocks that can be replaced with a ternary\nor binary operator.\nThe lint is suppressed if the suggested replacement would exceed\nthe maximum line length configured in pycodestyle.max-line-length.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -2879,7 +2900,7 @@
     {
         "patternId": "PTH210_invalid-pathlib-with-suffix",
         "title": "invalid-pathlib-with-suffix (PTH210)",
-        "description": "Checks for pathlib.Path.with_suffix() calls where\nthe given suffix does not have a leading dot\nor the given suffix is a single dot \".\".",
+        "description": "Checks for pathlib.Path.with_suffix() calls where\nthe given suffix does not have a leading dot\nor the given suffix is a single dot \".\" and the\nPython version is less than 3.14.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4041,7 +4062,14 @@
     {
         "patternId": "PLC0414_useless-import-alias",
         "title": "useless-import-alias (PLC0414)",
-        "description": "Checks for import aliases that do not rename the original package.",
+        "description": "Checks for import aliases that do not rename the original package.\nIn preview this rule does not apply in __init__.py files.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PLC0415_import-outside-top-level",
+        "title": "import-outside-top-level (PLC0415)",
+        "description": "Checks for import statements outside of a module's top-level scope, such\nas within a function or class definition.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4279,7 +4307,7 @@
     {
         "patternId": "PLE2502_bidirectional-unicode",
         "title": "bidirectional-unicode (PLE2502)",
-        "description": "Checks for bidirectional unicode characters.",
+        "description": "Checks for bidirectional formatting characters.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4417,6 +4445,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "PLR1733_unnecessary-dict-index-lookup",
+        "title": "unnecessary-dict-index-lookup (PLR1733)",
+        "description": "Checks for key-based dict accesses during .items() iterations.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "PLR1736_unnecessary-list-index-lookup",
         "title": "unnecessary-list-index-lookup (PLR1736)",
         "description": "Checks for index-based list accesses during enumerate iterations.",
@@ -4483,6 +4518,13 @@
         "patternId": "PLW0133_useless-exception-statement",
         "title": "useless-exception-statement (PLW0133)",
         "description": "Checks for an exception that is not raised.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PLW0177_nan-comparison",
+        "title": "nan-comparison (PLW0177)",
+        "description": "Checks for comparisons against NaN values.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4574,6 +4616,13 @@
         "patternId": "PLW1510_subprocess-run-without-check",
         "title": "subprocess-run-without-check (PLW1510)",
         "description": "Checks for uses of subprocess.run without an explicit check argument.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "PLW1641_eq-without-hash",
+        "title": "eq-without-hash (PLW1641)",
+        "description": "Checks for classes that implement __eq__ but not __hash__.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4879,9 +4928,44 @@
         "timeToFix": 5
     },
     {
+        "patternId": "UP045_non-pep604-annotation-optional",
+        "title": "non-pep604-annotation-optional (UP045)",
+        "description": "Check for typing.Optional annotations that can be rewritten based on PEP 604 syntax.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "UP046_non-pep695-generic-class",
+        "title": "non-pep695-generic-class (UP046)",
+        "description": "Checks for use of standalone type variables and parameter specifications in generic classes.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "UP047_non-pep695-generic-function",
+        "title": "non-pep695-generic-function (UP047)",
+        "description": "Checks for use of standalone type variables and parameter specifications in generic functions.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "UP049_private-type-parameter",
+        "title": "private-type-parameter (UP049)",
+        "description": "Checks for use of PEP 695 type parameters with leading underscores in generic classes and\nfunctions.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "FURB105_print-empty-string",
         "title": "print-empty-string (FURB105)",
         "description": "Checks for print calls with unnecessary empty strings as positional\narguments and unnecessary sep keyword arguments.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "FURB122_for-loop-writes",
+        "title": "for-loop-writes (FURB122)",
+        "description": "Checks for the use of IOBase.write in a for loop.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4893,9 +4977,23 @@
         "timeToFix": 5
     },
     {
+        "patternId": "FURB132_check-and-remove-from-set",
+        "title": "check-and-remove-from-set (FURB132)",
+        "description": "Checks for uses of set.remove that can be replaced with set.discard.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "FURB136_if-expr-min-max",
         "title": "if-expr-min-max (FURB136)",
         "description": "Checks for if expressions that can be replaced with min() or max()\ncalls.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "FURB157_verbose-decimal-constructor",
+        "title": "verbose-decimal-constructor (FURB157)",
+        "description": "Checks for unnecessary string literal or float casts in Decimal\nconstructors.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4907,9 +5005,23 @@
         "timeToFix": 5
     },
     {
+        "patternId": "FURB162_fromisoformat-replace-z",
+        "title": "fromisoformat-replace-z (FURB162)",
+        "description": "Checks for datetime.fromisoformat() calls\nwhere the only argument is an inline replacement\nof Z with a zero offset timezone.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "FURB163_redundant-log-base",
         "title": "redundant-log-base (FURB163)",
         "description": "Checks for math.log calls with a redundant base.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "FURB166_int-on-sliced-str",
+        "title": "int-on-sliced-str (FURB166)",
+        "description": "Checks for uses of int with an explicit base in which a string expression\nis stripped of its leading prefix (i.e., 0b, 0o, or 0x).",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5117,6 +5229,13 @@
         "timeToFix": 5
     },
     {
+        "patternId": "RUF028_invalid-formatter-suppression-comment",
+        "title": "invalid-formatter-suppression-comment (RUF028)",
+        "description": "Checks for formatter suppression comments that are ineffective or incompatible\nwith Ruff's formatter.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "RUF030_assert-with-print-message",
         "title": "assert-with-print-message (RUF030)",
         "description": "Checks for uses of assert expression, print(message).",
@@ -5173,9 +5292,37 @@
         "timeToFix": 5
     },
     {
+        "patternId": "RUF049_dataclass-enum",
+        "title": "dataclass-enum (RUF049)",
+        "description": "Checks for enum classes which are also decorated with @dataclass.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
         "patternId": "RUF051_if-key-in-dict-del",
         "title": "if-key-in-dict-del (RUF051)",
         "description": "Checks for if key in dictionary: del dictionary[key].",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF053_class-with-mixed-type-vars",
+        "title": "class-with-mixed-type-vars (RUF053)",
+        "description": "Checks for classes that have PEP 695\nwhile also inheriting from typing.Generic or typing_extensions.Generic.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF057_unnecessary-round",
+        "title": "unnecessary-round (RUF057)",
+        "description": "Checks for round() calls that have no effect on the input.",
+        "parameters": [],
+        "timeToFix": 5
+    },
+    {
+        "patternId": "RUF058_starmap-zip",
+        "title": "starmap-zip (RUF058)",
+        "description": "Checks for itertools.starmap calls where the second argument is a zip call.",
         "parameters": [],
         "timeToFix": 5
     },

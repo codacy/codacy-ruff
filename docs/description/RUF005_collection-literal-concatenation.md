@@ -20,4 +20,8 @@ bar = [1] + foo + [5, 6]
 ```
 foo = [2, 3, 4]
 bar = [1, *foo, 5, 6]
+Fix safety
+The fix is always marked as unsafe because the + operator uses the __add__ magic method and
+*-unpacking uses the __iter__ magic method. Both of these could have custom
+implementations, causing the fix to change program behaviour.
 ```

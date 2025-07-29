@@ -16,4 +16,7 @@ in favor of automatic indices to improve readability.
 ## Use instead:
 ```
 "{}, {}".format("Hello", "World")  # "Hello, World"
+This fix is marked as unsafe because:
+Comments attached to arguments are not moved, which can cause comments to mismatch the actual arguments.
+If arguments have side effects (e.g., print), reordering may change program behavior.
 ```

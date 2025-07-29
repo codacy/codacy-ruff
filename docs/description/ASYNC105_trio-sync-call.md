@@ -9,11 +9,13 @@ to take effect. Calling a trio function without an await can lead to
 RuntimeWarning diagnostics and unexpected behaviour.
 ## Example
 ```
+import trio
 async def double_sleep(x):
     trio.sleep(2 * x)
 ```
 ## Use instead:
 ```
+import trio
 async def double_sleep(x):
     await trio.sleep(2 * x)
 Fix safety

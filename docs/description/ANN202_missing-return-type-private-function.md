@@ -16,4 +16,8 @@ def _add(a, b):
 ```
 def _add(a: int, b: int) -> int:
     return a + b
+Availability
+Because this rule relies on the third-party typing_extensions module for some Python versions,
+its diagnostic will not be emitted, and no fix will be offered, if typing_extensions imports
+have been disabled by the lint.typing-extensions linter option.
 ```

@@ -11,12 +11,14 @@ The use of such context managers without an await, async with or
 async for statement is likely a mistake.
 ## Example
 ```
+import asyncio
 async def func():
     async with asyncio.timeout(2):
         do_something()
 ```
 ## Use instead:
 ```
+import asyncio
 async def func():
     async with asyncio.timeout(2):
         do_something()

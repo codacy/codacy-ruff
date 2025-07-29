@@ -21,4 +21,7 @@ logger = logging.Logger(__name__)
 ```
 import logging
 logger = logging.getLogger(__name__)
+Fix safety
+This fix is always unsafe, as changing from Logger to getLogger
+changes program behavior by will adding the logger to the logging tree.
 ```

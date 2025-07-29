@@ -17,4 +17,14 @@ async def func():
 import trio
 async def func():
     await trio.lowlevel.checkpoint()
+Fix safety
+This rule's fix is marked as unsafe if there's comments in the
+trio.sleep(0) expression, as comments may be removed.
+For example, the fix would be marked as unsafe in the following case:
+import trio
+async def func():
+    await trio.sleep(  # comment
+        # comment
+        0
+    )
 ```

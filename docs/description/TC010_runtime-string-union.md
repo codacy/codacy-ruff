@@ -13,11 +13,15 @@ from __future__ import annotations to disable runtime evaluation of
 annotations entirely.
 ## Example
 ```
-var: str | "int"
+var: "Foo" | None
+class Foo: ...
 ```
 ## Use instead:
 ```
-var: str | int
+from __future__ import annotations
+var: Foo | None
+class Foo: ...
 Or, extend the quotes to include the entire union:
-var: "str | int"
+var: "Foo | None"
+class Foo: ...
 ```

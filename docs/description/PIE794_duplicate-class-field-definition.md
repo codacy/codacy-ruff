@@ -18,4 +18,7 @@ class Person:
 class Person:
     name = Tom
     ...
+Fix safety
+This fix is always marked as unsafe since we cannot know
+for certain which assignment was intended.
 ```

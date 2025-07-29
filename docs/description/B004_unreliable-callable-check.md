@@ -16,4 +16,15 @@ hasattr(obj, "__call__")
 ## Use instead:
 ```
 callable(obj)
+Fix safety
+This rule's fix is marked as unsafe if there's comments in the hasattr call
+expression, as comments may be removed.
+For example, the fix would be marked as unsafe in the following case:
+hasattr(
+    # comment 1
+    obj,  # comment 2
+    # comment 3
+    "__call__",  # comment 4
+    # comment 5
+)
 ```

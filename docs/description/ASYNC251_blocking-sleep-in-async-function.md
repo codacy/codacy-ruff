@@ -9,11 +9,13 @@ time.sleep, negating the benefits of asynchronous programming.
 Instead of time.sleep, use asyncio.sleep.
 ## Example
 ```
+import time
 async def fetch():
     time.sleep(1)
 ```
 ## Use instead:
 ```
+import asyncio
 async def fetch():
     await asyncio.sleep(1)
 ```

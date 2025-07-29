@@ -2,7 +2,8 @@
 Derived from the flake8-boolean-trap linter.
 ## What it does
 Checks for the use of boolean positional arguments in function definitions,
-as determined by the presence of a bool type hint.
+as determined by the presence of a type hint containing bool as an
+evident subtype - e.g. bool, bool | int, typing.Optional[bool], etc.
 ## Why is this bad?
 Calling a function with boolean positional arguments is confusing as the
 meaning of the boolean value is not clear to the caller and to future
@@ -15,8 +16,6 @@ keyword-only argument, to force callers to be explicit when providing
 the argument.
 Dunder methods that define operators are exempt from this rule, as are
 setters and @override definitions.
-In preview, this rule will also flag annotations that include boolean
-variants, like bool | int.
 ## Example
 ```
 from math import ceil, floor

@@ -6,14 +6,17 @@ Checks for uses of datetime.datetime.min and datetime.datetime.max.
 datetime.min and datetime.max are non-timezone-aware datetime objects.
 As such, operations on datetime.min and datetime.max may behave
 unexpectedly, as in:
+import datetime
 # Timezone: UTC-14
-datetime.min.timestamp()  # ValueError: year 0 is out of range
-datetime.max.timestamp()  # ValueError: year 10000 is out of range
+datetime.datetime.min.timestamp()  # ValueError: year 0 is out of range
+datetime.datetime.max.timestamp()  # ValueError: year 10000 is out of range
 ## Example
 ```
-datetime.max
+import datetime
+datetime.datetime.max
 ```
 ## Use instead:
 ```
-datetime.max.replace(tzinfo=datetime.UTC)
+import datetime
+datetime.datetime.max.replace(tzinfo=datetime.UTC)
 ```

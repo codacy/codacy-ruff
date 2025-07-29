@@ -11,11 +11,14 @@ or function, like trio.to_thread.run_sync()
 or anyio.to_thread.run_sync().
 ## Example
 ```
+import os
 async def foo():
     os.waitpid(0)
 ```
 ## Use instead:
 ```
+import asyncio
+import os
 def wait_for_process():
     os.waitpid(0)
 async def foo():

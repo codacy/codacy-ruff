@@ -19,8 +19,9 @@ annotation than Any for the second parameter of the methods implementing
 these comparison operators -- __eq__ and __ne__.
 ## Example
 ```
+from typing import Any
 class Foo:
-    def __eq__(self, obj: typing.Any) -> bool: ...
+    def __eq__(self, obj: Any) -> bool: ...
 ```
 ## Use instead:
 ```

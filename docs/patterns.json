@@ -1,6 +1,6 @@
 {
     "name": "ruff",
-    "version": "0.11.2",
+    "version": "0.12.5",
     "patterns": [
         {
             "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
@@ -251,6 +251,7 @@
             "patternId": "S101_assert",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -258,6 +259,7 @@
             "patternId": "S102_exec-builtin",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -265,6 +267,7 @@
             "patternId": "S103_bad-file-permissions",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -272,6 +275,7 @@
             "patternId": "S104_hardcoded-bind-all-interfaces",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -279,6 +283,7 @@
             "patternId": "S105_hardcoded-password-string",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -286,6 +291,7 @@
             "patternId": "S106_hardcoded-password-func-arg",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -293,6 +299,7 @@
             "patternId": "S107_hardcoded-password-default",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -300,6 +307,7 @@
             "patternId": "S108_hardcoded-temp-file",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -307,6 +315,7 @@
             "patternId": "S110_try-except-pass",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -314,6 +323,7 @@
             "patternId": "S112_try-except-continue",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -321,6 +331,7 @@
             "patternId": "S113_request-without-timeout",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -328,6 +339,7 @@
             "patternId": "S201_flask-debug-true",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -335,6 +347,7 @@
             "patternId": "S202_tarfile-unsafe-members",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -342,6 +355,7 @@
             "patternId": "S301_suspicious-pickle-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -349,6 +363,7 @@
             "patternId": "S302_suspicious-marshal-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -356,6 +371,7 @@
             "patternId": "S303_suspicious-insecure-hash-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -363,6 +379,7 @@
             "patternId": "S304_suspicious-insecure-cipher-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -370,6 +387,7 @@
             "patternId": "S305_suspicious-insecure-cipher-mode-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -377,6 +395,7 @@
             "patternId": "S306_suspicious-mktemp-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -384,6 +403,7 @@
             "patternId": "S307_suspicious-eval-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -391,6 +411,7 @@
             "patternId": "S308_suspicious-mark-safe-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -398,6 +419,7 @@
             "patternId": "S310_suspicious-url-open-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -405,6 +427,7 @@
             "patternId": "S311_suspicious-non-cryptographic-random-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -412,6 +435,7 @@
             "patternId": "S312_suspicious-telnet-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -419,6 +443,7 @@
             "patternId": "S313_suspicious-xmlc-element-tree-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -426,6 +451,7 @@
             "patternId": "S314_suspicious-xml-element-tree-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -433,6 +459,7 @@
             "patternId": "S315_suspicious-xml-expat-reader-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -440,6 +467,7 @@
             "patternId": "S316_suspicious-xml-expat-builder-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -447,6 +475,7 @@
             "patternId": "S317_suspicious-xml-sax-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -454,6 +483,7 @@
             "patternId": "S318_suspicious-xml-mini-dom-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -461,13 +491,7 @@
             "patternId": "S319_suspicious-xml-pull-dom-usage",
             "level": "Error",
             "category": "Security",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S320_suspicious-xmle-tree-usage",
-            "level": "Error",
-            "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -475,6 +499,7 @@
             "patternId": "S321_suspicious-ftp-lib-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -482,6 +507,7 @@
             "patternId": "S323_suspicious-unverified-context-usage",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -489,6 +515,7 @@
             "patternId": "S324_hashlib-insecure-hash-function",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -496,6 +523,7 @@
             "patternId": "S501_request-with-no-cert-validation",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -503,6 +531,7 @@
             "patternId": "S502_ssl-insecure-version",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -510,6 +539,7 @@
             "patternId": "S503_ssl-with-bad-defaults",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -517,6 +547,7 @@
             "patternId": "S504_ssl-with-no-version",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -524,6 +555,7 @@
             "patternId": "S505_weak-cryptographic-key",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -531,6 +563,7 @@
             "patternId": "S506_unsafe-yaml-load",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -538,6 +571,7 @@
             "patternId": "S507_ssh-no-host-key-verification",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -545,6 +579,7 @@
             "patternId": "S508_snmp-insecure-version",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -552,6 +587,7 @@
             "patternId": "S509_snmp-weak-cryptography",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -559,6 +595,7 @@
             "patternId": "S601_paramiko-call",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -566,6 +603,7 @@
             "patternId": "S602_subprocess-popen-with-shell-equals-true",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -573,6 +611,7 @@
             "patternId": "S603_subprocess-without-shell-equals-true",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -580,6 +619,7 @@
             "patternId": "S604_call-with-shell-equals-true",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -587,6 +627,7 @@
             "patternId": "S605_start-process-with-a-shell",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -594,6 +635,7 @@
             "patternId": "S606_start-process-with-no-shell",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -601,6 +643,7 @@
             "patternId": "S607_start-process-with-partial-path",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -608,6 +651,7 @@
             "patternId": "S608_hardcoded-sql-expression",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -615,6 +659,7 @@
             "patternId": "S609_unix-command-wildcard-injection",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -622,6 +667,7 @@
             "patternId": "S610_django-extra",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -629,6 +675,7 @@
             "patternId": "S611_django-raw-sql",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -636,6 +683,7 @@
             "patternId": "S612_logging-config-insecure-listen",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -643,6 +691,7 @@
             "patternId": "S701_jinja2-autoescape-false",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -650,6 +699,7 @@
             "patternId": "S702_mako-templates",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": true
         },
@@ -657,6 +707,7 @@
             "patternId": "S704_unsafe-markup-use",
             "level": "Error",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": false
         },
@@ -1466,6 +1517,13 @@
             "enabled": false
         },
         {
+            "patternId": "LOG014_exc-info-outside-except-handler",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "LOG015_root-logger-call",
             "level": "Warning",
             "category": "BestPractice",
@@ -2146,6 +2204,27 @@
         },
         {
             "patternId": "PT027_pytest-unittest-raises-assertion",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PT028_pytest-parameter-with-default-argument",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PT030_pytest-warns-too-broad",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PT031_pytest-warns-with-multiple-statements",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -3982,6 +4061,7 @@
             "patternId": "PGH003_blanket-type-ignore",
             "level": "Info",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": false
         },
@@ -3989,6 +4069,7 @@
             "patternId": "PGH004_blanket-noqa",
             "level": "Info",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": false
         },
@@ -3996,6 +4077,7 @@
             "patternId": "PGH005_invalid-mock-access",
             "level": "Info",
             "category": "Security",
+            "scanType": "SAST",
             "parameters": [],
             "enabled": false
         },
@@ -4043,6 +4125,13 @@
         },
         {
             "patternId": "PLC0414_useless-import-alias",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PLC0415_import-outside-top-level",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -4420,6 +4509,13 @@
             "enabled": false
         },
         {
+            "patternId": "PLR1733_unnecessary-dict-index-lookup",
+            "level": "Warning",
+            "category": "Complexity",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "PLR1736_unnecessary-list-index-lookup",
             "level": "Warning",
             "category": "Complexity",
@@ -4484,6 +4580,13 @@
         },
         {
             "patternId": "PLW0133_useless-exception-statement",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PLW0177_nan-comparison",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -4575,6 +4678,13 @@
         },
         {
             "patternId": "PLW1510_subprocess-run-without-check",
+            "level": "Warning",
+            "category": "CodeStyle",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "PLW1641_eq-without-hash",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -4882,7 +4992,42 @@
             "enabled": false
         },
         {
+            "patternId": "UP045_non-pep604-annotation-optional",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "UP046_non-pep695-generic-class",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "UP047_non-pep695-generic-function",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "UP049_private-type-parameter",
+            "level": "Warning",
+            "category": "Compatibility",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB105_print-empty-string",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FURB122_for-loop-writes",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -4896,7 +5041,21 @@
             "enabled": false
         },
         {
+            "patternId": "FURB132_check-and-remove-from-set",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB136_if-expr-min-max",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FURB157_verbose-decimal-constructor",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -4910,7 +5069,21 @@
             "enabled": false
         },
         {
+            "patternId": "FURB162_fromisoformat-replace-z",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "FURB163_redundant-log-base",
+            "level": "Warning",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "FURB166_int-on-sliced-str",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -5120,6 +5293,13 @@
             "enabled": false
         },
         {
+            "patternId": "RUF028_invalid-formatter-suppression-comment",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "RUF030_assert-with-print-message",
             "level": "Error",
             "category": "BestPractice",
@@ -5176,7 +5356,35 @@
             "enabled": false
         },
         {
+            "patternId": "RUF049_dataclass-enum",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
             "patternId": "RUF051_if-key-in-dict-del",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF053_class-with-mixed-type-vars",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF057_unnecessary-round",
+            "level": "Error",
+            "category": "BestPractice",
+            "parameters": [],
+            "enabled": false
+        },
+        {
+            "patternId": "RUF058_starmap-zip",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],

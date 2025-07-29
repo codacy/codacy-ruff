@@ -48,4 +48,8 @@ class Foo:
     def __iadd__(self, other: Foo) -> Self: ...
 Fix safety
 This rule's fix is marked as unsafe as it changes the meaning of your type annotations.
+Availability
+Because this rule relies on the third-party typing_extensions module for Python versions
+before 3.11, its diagnostic will not be emitted, and no fix will be offered, if
+typing_extensions imports have been disabled by the lint.typing-extensions linter option.
 ```

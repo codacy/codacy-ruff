@@ -13,7 +13,7 @@ precisely.
 ## Example
 ```
 from collections import namedtuple
-person = namedtuple("Person", ["name", "age"])
+Person = namedtuple("Person", ["name", "age"])
 ```
 ## Use instead:
 ```

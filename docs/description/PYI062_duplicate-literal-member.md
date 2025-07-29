@@ -7,10 +7,12 @@ Checks for duplicate members in a typing.Literal[] slice.
 Duplicate literal members are redundant and should be removed.
 ## Example
 ```
+from typing import Literal
 foo: Literal["a", "b", "a"]
 ```
 ## Use instead:
 ```
+from typing import Literal
 foo: Literal["a", "b"]
 Fix safety
 This rule's fix is marked as safe, unless the type annotation contains comments.
