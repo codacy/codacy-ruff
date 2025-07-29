@@ -5,7 +5,7 @@ import os
 import re
 
 # Base URL of the patterns
-base_pattern_url = "https://docs.astral.sh/ruff/rules/"  # Adjust if needed
+base_pattern_url = "https://docs.astral.sh/ruff/rules/"
 
 # Mapping rule acronyms to severity levels
 severity_mapping = {
@@ -473,15 +473,27 @@ def main():
                 severity = get_severity(rule_id)
                 category = get_category(rule_id)
 
-                patterns_data.append(
-                    {
-                        "patternId": pattern_id,
-                        "level": severity,
-                        "category": category,
-                        "parameters": [],
-                        "enabled": True if pattern_id in enabled_rules else False,
-                    }
-                )
+                if category == "Security":
+                    patterns_data.append(
+                        {
+                            "patternId": pattern_id,
+                            "level": severity,
+                            "category": category,
+                            "scanType": "SAST",
+                            "parameters": [],
+                            "enabled": True if pattern_id in enabled_rules else False,
+                        }
+                    )
+                else:
+                    patterns_data.append(
+                        {
+                            "patternId": pattern_id,
+                            "level": severity,
+                            "category": category,
+                            "parameters": [],
+                            "enabled": True if pattern_id in enabled_rules else False,
+                        }
+                    )
 
                 active_patterns.add(f"{pattern_id}.md")
                 # Fetch and save description
