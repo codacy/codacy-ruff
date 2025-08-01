@@ -28,9 +28,10 @@ try:
     foo()
 except BaseException:
     raise
-Exceptions that are logged via logging.exception() or logging.error()
-with exc_info enabled will not be flagged, as this is a common pattern
-for propagating exception traces:
+Exceptions that are logged via logging.exception() or are logged via
+logging.error() or logging.critical() with exc_info enabled will
+not be flagged, as this is a common pattern for propagating exception
+traces:
 try:
     foo()
 except BaseException:
