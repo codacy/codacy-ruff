@@ -317,7 +317,6 @@ enabled_rules = [
         "E743_ambiguous-function-name",
         "E902_io-error",
         "W191_tab-indentation",
-        "W291_trailing-whitespace",
         "W292_missing-newline-at-end-of-file",
         "W293_blank-line-with-whitespace",
         "W391_too-many-newlines-at-end-of-file",
