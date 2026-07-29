@@ -1,4 +1,7 @@
 # manual-dict-comprehension (PERF403)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Perflint linter.
 Fix is sometimes available.
 ## What it does

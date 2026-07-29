@@ -1,4 +1,7 @@
 # ambiguous-unicode-character-string (RUF001)
+Added in v0.0.102 ·
+Related issues ·
+View source
 ## What it does
 Checks for ambiguous Unicode characters in strings.
 ## Why is this bad?

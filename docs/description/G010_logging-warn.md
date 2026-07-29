@@ -1,4 +1,7 @@
 # logging-warn (G010)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the flake8-logging-format linter.
 Fix is always available.
 ## What it does

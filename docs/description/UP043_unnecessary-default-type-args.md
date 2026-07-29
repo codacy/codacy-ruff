@@ -1,4 +1,7 @@
 # unnecessary-default-type-args (UP043)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does

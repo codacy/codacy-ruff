@@ -1,4 +1,7 @@
 # raise-vanilla-args (TRY003)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for long exception messages that are not defined in the exception

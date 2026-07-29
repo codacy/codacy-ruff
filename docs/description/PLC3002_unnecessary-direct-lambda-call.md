@@ -1,4 +1,7 @@
 # unnecessary-direct-lambda-call (PLC3002)
+Added in v0.0.153 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for unnecessary direct calls to lambda expressions.

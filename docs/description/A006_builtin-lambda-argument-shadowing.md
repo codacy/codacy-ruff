@@ -1,4 +1,7 @@
 # builtin-lambda-argument-shadowing (A006)
+Added in 0.9.0 ·
+Related issues ·
+View source
 Derived from the flake8-builtins linter.
 ## What it does
 Checks for lambda arguments that use the same names as Python builtins.

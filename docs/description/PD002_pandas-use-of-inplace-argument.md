@@ -1,4 +1,7 @@
 # pandas-use-of-inplace-argument (PD002)
+Added in v0.0.188 ·
+Related issues ·
+View source
 Derived from the pandas-vet linter.
 Fix is sometimes available.
 ## What it does
@@ -12,9 +15,12 @@ Further, in many cases, inplace=True does not provide a performance
 benefit, as pandas will often copy DataFrames in the background.
 ## Example
 ```
-df.sort_values("col1", inplace=True)
+import pandas as pd
+students = pd.read_csv("students.csv")
+students.sort_values("name", inplace=True)
 ```
 ## Use instead:
 ```
-sorted_df = df.sort_values("col1")
+import pandas as pd
+students = pd.read_csv("students.csv").sort_values("name")
 ```

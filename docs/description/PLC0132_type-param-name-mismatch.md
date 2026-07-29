@@ -1,4 +1,7 @@
 # type-param-name-mismatch (PLC0132)
+Added in v0.0.277 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for TypeVar, TypeVarTuple, ParamSpec, and NewType

@@ -1,4 +1,7 @@
 # ssl-with-no-version (S504)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for calls to ssl.wrap_socket() without an ssl_version.

@@ -1,4 +1,7 @@
 # raise-literal (B016)
+Added in v0.0.102 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for raise statements that raise a literal value.

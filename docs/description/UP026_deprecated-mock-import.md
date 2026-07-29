@@ -1,4 +1,7 @@
 # deprecated-mock-import (UP026)
+Added in v0.0.206 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # private-type-parameter (UP049)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

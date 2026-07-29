@@ -1,4 +1,7 @@
 # undocumented-magic-method (D105)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for undocumented magic method definitions.

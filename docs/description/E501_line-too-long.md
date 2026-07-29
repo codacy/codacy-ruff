@@ -1,4 +1,7 @@
 # line-too-long (E501)
+Added in v0.0.18 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 Checks for lines that exceed the specified maximum character length.

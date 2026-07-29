@@ -1,4 +1,7 @@
 # type-comparison (E721)
+Added in v0.0.39 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 Checks for object type comparisons using == and other comparison

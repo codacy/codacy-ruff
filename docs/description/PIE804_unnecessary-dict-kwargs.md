@@ -1,4 +1,7 @@
 # unnecessary-dict-kwargs (PIE804)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-pie linter.
 Fix is sometimes available.
 ## What it does

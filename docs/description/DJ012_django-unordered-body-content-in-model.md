@@ -1,4 +1,7 @@
 # django-unordered-body-content-in-model (DJ012)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-django linter.
 ## What it does
 Checks for the order of Model's inner classes, methods, and fields as per

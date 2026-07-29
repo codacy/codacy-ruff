@@ -1,4 +1,7 @@
 # pytest-patch-with-lambda (PT008)
+Added in v0.0.208 ·
+Related issues ·
+View source
 Derived from the flake8-pytest-style linter.
 ## What it does
 Checks for mocked calls that use a dummy lambda function instead of

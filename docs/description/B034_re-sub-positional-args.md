@@ -1,4 +1,7 @@
 # re-sub-positional-args (B034)
+Added in v0.0.278 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for calls to re.sub, re.subn, and re.split that pass count,

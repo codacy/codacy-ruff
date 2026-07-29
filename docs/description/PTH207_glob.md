@@ -1,4 +1,7 @@
 # glob (PTH207)
+Added in v0.0.281 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 ## What it does
 Checks for the use of glob.glob() and glob.iglob().

@@ -1,4 +1,7 @@
 # unrecognized-platform-check (PYI007)
+Added in v0.0.246 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Check for unrecognized sys.platform checks. Platform checks should be

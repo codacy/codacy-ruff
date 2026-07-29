@@ -1,4 +1,7 @@
 # future-feature-not-defined (F407)
+Added in v0.0.34 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for __future__ imports that are not defined in the current Python

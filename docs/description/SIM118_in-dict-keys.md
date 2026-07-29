@@ -1,4 +1,7 @@
 # in-dict-keys (SIM118)
+Added in v0.0.176 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # missing-blank-line-after-summary (D205)
+Added in v0.0.68 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is sometimes available.
 ## What it does

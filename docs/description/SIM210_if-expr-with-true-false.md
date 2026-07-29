@@ -1,4 +1,7 @@
 # if-expr-with-true-false (SIM210)
+Added in v0.0.214 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does

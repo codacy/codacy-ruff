@@ -1,4 +1,7 @@
 # any-type (ANN401)
+Added in v0.0.108 ·
+Related issues ·
+View source
 Derived from the flake8-annotations linter.
 ## What it does
 Checks that function arguments are annotated with a more specific type than
@@ -16,7 +19,6 @@ def foo(x: Any): ...
 ```
 ## Use instead:
 ```
-from typing import Any
 def foo(x: int): ...
 Known problems
 Type aliases are unsupported and can lead to false positives.

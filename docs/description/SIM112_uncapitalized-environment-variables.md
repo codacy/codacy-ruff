@@ -1,12 +1,19 @@
 # uncapitalized-environment-variables (SIM112)
+Added in v0.0.218 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does
 Check for environment variables that are not capitalized.
 ## Why is this bad?
 By convention, environment variables should be capitalized.
-On Windows, environment variables are case-insensitive and are converted to
-uppercase, so using lowercase environment variables can lead to subtle bugs.
+Furthermore, os.environ behaves differently across platforms. On Windows,
+os.environ automatically converts environment variable names to uppercase.
+This means that if you define a lowercase environment variable (e.g., foo=1),
+iterating over os.environ will yield FOO on Windows, but
+foo on Linux and macOS. This can lead to subtle bugs in cross-platform code
+if it assumes environment variables preserve their original case.
 ## Example
 ```
 import os

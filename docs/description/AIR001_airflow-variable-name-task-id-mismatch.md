@@ -1,4 +1,7 @@
 # airflow-variable-name-task-id-mismatch (AIR001)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the Airflow linter.
 ## What it does
 Checks that the task variable name matches the task_id value for
@@ -6,7 +9,7 @@ Airflow Operators.
 ## Why is this bad?
 When initializing an Airflow Operator, for consistency, the variable
 name should match the task_id value. This makes it easier to
-follow the flow of the DAG.
+follow the flow of the Dag.
 ## Example
 ```
 from airflow.operators import PythonOperator

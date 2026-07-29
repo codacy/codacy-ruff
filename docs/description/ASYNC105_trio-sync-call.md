@@ -1,4 +1,7 @@
 # trio-sync-call (ASYNC105)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 Fix is sometimes available.
 ## What it does

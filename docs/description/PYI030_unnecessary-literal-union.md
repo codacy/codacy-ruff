@@ -1,6 +1,9 @@
 # unnecessary-literal-union (PYI030)
+Added in v0.0.278 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
-Fix is sometimes available.
+Fix is always available.
 ## What it does
 Checks for the presence of multiple literal types in a union.
 ## Why is this bad?

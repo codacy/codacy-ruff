@@ -1,4 +1,7 @@
 # snake-case-type-alias (PYI042)
+Added in v0.0.265 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for type aliases that do not use the CamelCase naming convention.

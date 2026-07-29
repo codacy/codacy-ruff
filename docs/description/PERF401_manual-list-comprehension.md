@@ -1,4 +1,7 @@
 # manual-list-comprehension (PERF401)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the Perflint linter.
 Fix is sometimes available.
 ## What it does

@@ -1,4 +1,7 @@
 # repeated-equality-comparison (PLR1714)
+Added in v0.0.279 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is always available.
 ## What it does

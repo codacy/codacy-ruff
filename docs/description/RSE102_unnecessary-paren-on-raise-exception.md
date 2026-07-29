@@ -1,4 +1,7 @@
 # unnecessary-paren-on-raise-exception (RSE102)
+Added in v0.0.239 ·
+Related issues ·
+View source
 Derived from the flake8-raise linter.
 Fix is always available.
 ## What it does

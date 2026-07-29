@@ -1,4 +1,7 @@
 # invalid-index-type (RUF016)
+Added in v0.0.278 ·
+Related issues ·
+View source
 ## What it does
 Checks for indexed access to lists, strings, tuples, bytes, and comprehensions
 using a type other than an integer or slice.

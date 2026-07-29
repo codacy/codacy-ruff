@@ -1,6 +1,9 @@
 # unnecessary-literal-within-dict-call (C418)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for dict() calls that take unnecessary dict literals or dict
 comprehensions as arguments.

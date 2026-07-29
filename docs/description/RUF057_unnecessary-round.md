@@ -1,4 +1,7 @@
 # unnecessary-round (RUF057)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for round() calls that have no effect on the input.

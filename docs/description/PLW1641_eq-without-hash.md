@@ -1,4 +1,7 @@
 # eq-without-hash (PLW1641)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for classes that implement __eq__ but not __hash__.

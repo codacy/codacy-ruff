@@ -1,4 +1,7 @@
 # dict-get-with-none-default (SIM910)
+Added in v0.0.261 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is always available.
 ## What it does
@@ -15,4 +18,6 @@ age = ages.get("Cat", None)
 ```
 ages = {"Tom": 23, "Maria": 23, "Dog": 11}
 age = ages.get("Cat")
+Fix safety
+This rule's fix is marked as safe, unless the expression contains comments.
 ```

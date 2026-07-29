@@ -1,8 +1,11 @@
 # invalid-pyproject-toml (RUF200)
+Added in v0.0.271 ·
+Related issues ·
+View source
 ## What it does
 Checks for any pyproject.toml that does not conform to the schema from the relevant PEPs.
 ## Why is this bad?
-Your project may contain invalid metadata or configuration without you noticing
+Your project may contain invalid metadata or configuration without you noticing.
 ## Example
 ```
 [project]

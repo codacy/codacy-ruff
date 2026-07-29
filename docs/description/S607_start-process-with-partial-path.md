@@ -1,4 +1,7 @@
 # start-process-with-partial-path (S607)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for the starting of a process with a partial executable path.

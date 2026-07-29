@@ -1,4 +1,7 @@
 # hardcoded-sql-expression (S608)
+Added in v0.0.245 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for strings that resemble SQL statements involved in some form

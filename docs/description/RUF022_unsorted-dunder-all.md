@@ -1,4 +1,7 @@
 # unsorted-dunder-all (RUF022)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for __all__ definitions that are not ordered

@@ -1,4 +1,7 @@
 # if-else-block-instead-of-dict-get (SIM401)
+Added in v0.0.219 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does

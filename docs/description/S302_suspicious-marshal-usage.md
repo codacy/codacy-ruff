@@ -1,4 +1,7 @@
 # suspicious-marshal-usage (S302)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for calls to marshal functions.

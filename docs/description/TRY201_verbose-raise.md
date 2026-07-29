@@ -1,4 +1,7 @@
 # verbose-raise (TRY201)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 Fix is always available.
 ## What it does

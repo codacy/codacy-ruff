@@ -1,4 +1,7 @@
 # sys-version-info0-eq3 (YTT201)
+Added in v0.0.113 ·
+Related issues ·
+View source
 Derived from the flake8-2020 linter.
 ## What it does
 Checks for equality comparisons against the major version returned by

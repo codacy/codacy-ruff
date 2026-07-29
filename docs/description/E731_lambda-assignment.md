@@ -1,4 +1,7 @@
 # lambda-assignment (E731)
+Added in v0.0.28 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 Fix is sometimes available.
 ## What it does
@@ -17,4 +20,11 @@ f = lambda x: 2 * x
 ```
 def f(x):
     return 2 * x
+Fix safety
+This fix is marked as unsafe because converting a lambda assignment into a
+function definition changes observable properties of the callable.
+In particular, a lambda function has the name "<lambda>", while the
+generated function uses the name of the assigned variable. Code that relies
+on function metadata, such as logging, registration, or introspection, may
+therefore behave differently after the fix.
 ```

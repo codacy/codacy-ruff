@@ -1,4 +1,7 @@
 # global-variable-not-assigned (PLW0602)
+Added in v0.0.174 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for global variables that are not assigned a value in the current

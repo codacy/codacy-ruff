@@ -1,4 +1,7 @@
 # django-extra (S610)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of Django's extra function where one or more arguments

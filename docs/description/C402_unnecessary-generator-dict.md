@@ -1,4 +1,7 @@
 # unnecessary-generator-dict (C402)
+Added in v0.0.61 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 Fix is always available.
 ## What it does

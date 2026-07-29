@@ -1,4 +1,7 @@
 # numpy-deprecated-function (NPY003)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for uses of deprecated NumPy functions.

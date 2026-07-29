@@ -1,4 +1,7 @@
 # undocumented-param (D417)
+Added in v0.0.73 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for function docstrings that do not include documentation for all
@@ -14,6 +17,8 @@ function arguments; this rule is concerned with that section only.
 Note that this rule only checks docstrings with an arguments (e.g. Args) section.
 This rule is enabled when using the google convention, and disabled when
 using the pep257 and numpy conventions.
+Parameters annotated with typing.Unpack are exempt from this rule.
+This follows the Python typing specification for unpacking keyword arguments.
 ## Example
 ```
 def calculate_speed(distance: float, time: float) -> float:

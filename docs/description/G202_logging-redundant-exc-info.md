@@ -1,4 +1,7 @@
 # logging-redundant-exc-info (G202)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the flake8-logging-format linter.
 ## What it does
 Checks for redundant exc_info keyword arguments in logging statements.

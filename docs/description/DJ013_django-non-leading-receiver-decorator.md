@@ -1,4 +1,7 @@
 # django-non-leading-receiver-decorator (DJ013)
+Added in v0.0.246 ·
+Related issues ·
+View source
 Derived from the flake8-django linter.
 ## What it does
 Checks that Django's @receiver decorator is listed first, prior to

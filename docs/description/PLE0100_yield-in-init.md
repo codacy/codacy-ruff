@@ -1,4 +1,7 @@
 # yield-in-init (PLE0100)
+Added in v0.0.245 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for __init__ methods that are turned into generators by the

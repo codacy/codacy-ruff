@@ -1,4 +1,7 @@
 # builtin-import-shadowing (A004)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-builtins linter.
 ## What it does
 Checks for imports that use the same names as builtins.

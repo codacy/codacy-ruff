@@ -1,4 +1,7 @@
 # nan-comparison (PLW0177)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for comparisons against NaN values.

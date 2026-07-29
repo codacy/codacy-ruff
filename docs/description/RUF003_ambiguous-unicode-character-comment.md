@@ -1,4 +1,7 @@
 # ambiguous-unicode-character-comment (RUF003)
+Added in v0.0.108 ·
+Related issues ·
+View source
 ## What it does
 Checks for ambiguous Unicode characters in comments.
 ## Why is this bad?

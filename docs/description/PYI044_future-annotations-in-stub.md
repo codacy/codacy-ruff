@@ -1,4 +1,7 @@
 # future-annotations-in-stub (PYI044)
+Added in v0.0.273 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is sometimes available.
 ## What it does

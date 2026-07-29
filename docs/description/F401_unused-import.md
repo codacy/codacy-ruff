@@ -1,4 +1,7 @@
 # unused-import (F401)
+Added in v0.0.18 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is sometimes available.
 ## What it does
@@ -18,6 +21,28 @@ interface, as in:
 # __init__.py
 import some_module
 __all__ = ["some_module"]
+Preview
+When preview is enabled (and certain simplifying assumptions
+are met), we analyze all import statements for a given module
+when determining whether an import is used, rather than simply
+the last of these statements. This can result in both different and
+more import statements being marked as unused.
+For example, if a module consists of
+import a
+import a.b
+then both statements are marked as unused under preview, whereas
+only the second is marked as unused under stable behavior.
+As another example, if a module consists of
+import a.b
+import a
+a.b.foo()
+then a diagnostic will be emitted for the second line under preview,
+whereas no diagnostic is emitted under stable behavior.
+Note that this behavior is somewhat subjective and is designed
+to conform to the developer's intuition rather than Python's actual
+execution. To wit, the statement import a.b automatically executes
+import a, so in some sense import a is always redundant
+in the presence of import a.b.
 Fix safety
 Fixes to remove unused imports are safe, except in __init__.py files.
 Applying fixes to __init__.py files is currently in preview. The fix offered depends on the
@@ -26,6 +51,9 @@ either a redundant alias or, if already present in the file, an __all__ entry. I
 __all__ declarations are present, Ruff will not offer a fix. Ruff will suggest an unsafe fix
 to remove third-party and standard library imports -- the fix is unsafe because the module's
 interface changes.
+See this FAQ section
+for more details on how Ruff
+determines whether an import is first or third-party.
 ## Example
 ```
 import numpy as np  # unused import
@@ -42,8 +70,4 @@ if find_spec("numpy") is not None:
     print("numpy is installed")
 else:
     print("numpy is not installed")
-Preview
-When preview is enabled,
-the criterion for determining whether an import is first-party
-is stricter, which could affect the suggested fix. See this FAQ section for more details.
 ```

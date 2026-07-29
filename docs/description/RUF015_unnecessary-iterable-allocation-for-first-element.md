@@ -1,4 +1,7 @@
 # unnecessary-iterable-allocation-for-first-element (RUF015)
+Added in v0.0.278 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks the following constructs, all of which can be replaced by
@@ -31,6 +34,6 @@ First, all above-mentioned constructs will eagerly evaluate the entire
     element. As such, any side effects that occur during iteration will be
     delayed.
 Second, accessing members of a collection via square bracket notation
-    [0] of the pop() function will raise IndexError if the collection
+    [0] or the pop() function will raise IndexError if the collection
     is empty, while next(iter(...)) will raise StopIteration.
 ```

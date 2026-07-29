@@ -1,4 +1,7 @@
 # unreliable-callable-check (B004)
+Added in v0.0.106 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is sometimes available.
 ## What it does
@@ -17,9 +20,20 @@ hasattr(obj, "__call__")
 ```
 callable(obj)
 Fix safety
-This rule's fix is marked as unsafe if there's comments in the hasattr call
-expression, as comments may be removed.
-For example, the fix would be marked as unsafe in the following case:
+This rule's fix is marked as unsafe because the replacement may not be semantically
+equivalent to the original expression, potentially changing the behavior of the code.
+For example, an imported module may have a __call__ attribute but is not considered
+a callable object:
+import operator
+assert hasattr(operator, "__call__")
+assert callable(operator) is False
+Additionally, __call__ may be defined only as an instance method:
+class A:
+    def __init__(self):
+        self.__call__ = None
+assert hasattr(A(), "__call__")
+assert callable(A()) is False
+Additionally, if there are comments in the hasattr call expression, they may be removed:
 hasattr(
     # comment 1
     obj,  # comment 2

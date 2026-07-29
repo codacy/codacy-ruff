@@ -1,4 +1,7 @@
 # stub-body-multiple-statements (PYI048)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for functions in stub (.pyi) files that contain multiple

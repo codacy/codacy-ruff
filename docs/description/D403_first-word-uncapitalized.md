@@ -1,4 +1,7 @@
 # first-word-uncapitalized (D403)
+Added in v0.0.69 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

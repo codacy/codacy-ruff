@@ -1,4 +1,7 @@
 # percent-format-missing-argument (F505)
+Added in v0.0.142 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for named placeholders in printf-style format strings that are not

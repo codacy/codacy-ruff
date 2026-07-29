@@ -1,4 +1,7 @@
 # format-literals (UP030)
+Added in v0.0.218 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

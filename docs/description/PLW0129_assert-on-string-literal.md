@@ -1,4 +1,7 @@
 # assert-on-string-literal (PLW0129)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for assert statements that use a string literal as the first

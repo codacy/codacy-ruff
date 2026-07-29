@@ -1,4 +1,7 @@
 # invalid-module-name (N999)
+Added in v0.0.248 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for module names that do not follow the snake_case naming

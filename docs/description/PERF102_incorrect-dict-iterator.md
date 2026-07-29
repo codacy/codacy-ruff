@@ -1,4 +1,7 @@
 # incorrect-dict-iterator (PERF102)
+Added in v0.0.273 ·
+Related issues ·
+View source
 Derived from the Perflint linter.
 Fix is always available.
 ## What it does

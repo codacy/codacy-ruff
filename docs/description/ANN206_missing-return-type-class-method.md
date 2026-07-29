@@ -1,4 +1,7 @@
 # missing-return-type-class-method (ANN206)
+Added in v0.0.105 ·
+Related issues ·
+View source
 Derived from the flake8-annotations linter.
 Fix is sometimes available.
 ## What it does

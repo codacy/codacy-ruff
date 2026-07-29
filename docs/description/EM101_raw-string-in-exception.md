@@ -1,10 +1,11 @@
 # raw-string-in-exception (EM101)
+Added in v0.0.183 ·
+Related issues ·
+View source
 Derived from the flake8-errmsg linter.
 Fix is sometimes available.
 ## What it does
 Checks for the use of string literals in exception constructors.
-In preview, this rule checks for byte string literals in
-exception constructors.
 ## Why is this bad?
 Python includes the raise in the default traceback (and formatters
 like Rich and IPython do too).

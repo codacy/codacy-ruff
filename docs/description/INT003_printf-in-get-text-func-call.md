@@ -1,4 +1,7 @@
 # printf-in-get-text-func-call (INT003)
+Added in v0.0.260 ·
+Related issues ·
+View source
 Derived from the flake8-gettext linter.
 ## What it does
 Checks for printf-style formatted strings in gettext function calls.

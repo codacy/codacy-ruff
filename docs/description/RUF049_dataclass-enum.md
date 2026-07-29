@@ -1,4 +1,7 @@
 # dataclass-enum (RUF049)
+Added in 0.12.0 ·
+Related issues ·
+View source
 ## What it does
 Checks for enum classes which are also decorated with @dataclass.
 ## Why is this bad?

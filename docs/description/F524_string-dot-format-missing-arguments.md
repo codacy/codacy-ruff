@@ -1,4 +1,7 @@
 # string-dot-format-missing-arguments (F524)
+Added in v0.0.139 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for str.format calls with placeholders that are missing arguments.

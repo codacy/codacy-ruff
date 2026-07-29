@@ -1,4 +1,7 @@
 # missing-terminal-punctuation (D415)
+Added in v0.0.69 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is sometimes available.
 ## What it does

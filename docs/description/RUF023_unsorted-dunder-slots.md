@@ -1,4 +1,7 @@
 # unsorted-dunder-slots (RUF023)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for __slots__ definitions that are not ordered according to a

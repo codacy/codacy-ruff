@@ -1,4 +1,7 @@
 # printf-string-formatting (UP031)
+Added in v0.0.229 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

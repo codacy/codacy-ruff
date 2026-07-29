@@ -1,4 +1,7 @@
 # unused-private-protocol (PYI046)
+Added in v0.0.281 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for the presence of unused private typing.Protocol definitions.

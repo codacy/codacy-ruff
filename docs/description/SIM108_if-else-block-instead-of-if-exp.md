@@ -1,4 +1,7 @@
 # if-else-block-instead-of-if-exp (SIM108)
+Added in v0.0.213 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does

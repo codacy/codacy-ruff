@@ -1,4 +1,7 @@
 # invalid-envvar-default (PLW1508)
+Added in v0.0.255 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for os.getenv calls with invalid default values.

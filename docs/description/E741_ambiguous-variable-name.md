@@ -1,4 +1,7 @@
 # ambiguous-variable-name (E741)
+Added in v0.0.34 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 Checks for the use of the characters 'l', 'O', or 'I' as variable names.

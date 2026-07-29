@@ -1,4 +1,7 @@
 # bad-quotes-multiline-string (Q001)
+Added in v0.0.88 ·
+Related issues ·
+View source
 Derived from the flake8-quotes linter.
 Fix is always available.
 ## What it does

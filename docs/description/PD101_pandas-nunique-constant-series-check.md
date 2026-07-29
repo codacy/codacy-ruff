@@ -1,4 +1,7 @@
 # pandas-nunique-constant-series-check (PD101)
+Added in v0.0.279 ·
+Related issues ·
+View source
 Derived from the pandas-vet linter.
 ## What it does
 Check for uses of .nunique() to check if a Pandas Series is constant

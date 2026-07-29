@@ -1,4 +1,7 @@
 # invalid-class-name (N801)
+Added in v0.0.77 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for class names that do not follow the CamelCase convention.

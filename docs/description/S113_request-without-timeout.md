@@ -1,4 +1,7 @@
 # request-without-timeout (S113)
+Added in v0.0.213 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of the Python requests or httpx module that omit the

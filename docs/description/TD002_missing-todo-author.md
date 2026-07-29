@@ -1,4 +1,7 @@
 # missing-todo-author (TD002)
+Added in v0.0.269 ·
+Related issues ·
+View source
 Derived from the flake8-todos linter.
 ## What it does
 Checks that a TODO comment includes an author.

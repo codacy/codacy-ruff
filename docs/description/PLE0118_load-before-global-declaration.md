@@ -1,4 +1,7 @@
 # load-before-global-declaration (PLE0118)
+Added in v0.0.174 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for uses of names that are declared as global prior to the

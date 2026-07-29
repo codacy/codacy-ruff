@@ -1,4 +1,7 @@
 # stdlib-module-shadowing (A005)
+Added in 0.9.0 ·
+Related issues ·
+View source
 Derived from the flake8-builtins linter.
 ## What it does
 Checks for modules that use the same names as Python standard-library

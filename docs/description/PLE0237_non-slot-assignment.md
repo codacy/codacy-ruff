@@ -1,4 +1,7 @@
 # non-slot-assignment (PLE0237)
+Added in v0.1.15 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for assignments to attributes that are not defined in __slots__.

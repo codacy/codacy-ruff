@@ -1,4 +1,7 @@
 # useless-with-lock (PLW2101)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for lock objects that are created and immediately discarded in

@@ -1,4 +1,7 @@
 # assert (S101)
+Added in v0.0.116 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of the assert keyword.

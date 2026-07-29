@@ -1,4 +1,7 @@
 # split-static-string (SIM905)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does

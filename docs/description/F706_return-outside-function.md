@@ -1,4 +1,7 @@
 # return-outside-function (F706)
+Added in v0.0.18 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for return statements outside of functions.

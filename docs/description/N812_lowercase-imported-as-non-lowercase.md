@@ -1,4 +1,7 @@
 # lowercase-imported-as-non-lowercase (N812)
+Added in v0.0.82 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for lowercase imports that are aliased to non-lowercase names.

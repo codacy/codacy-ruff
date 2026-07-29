@@ -1,4 +1,7 @@
 # mixed-case-variable-in-global-scope (N816)
+Added in v0.0.89 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for global variable names that follow the mixedCase convention.
@@ -9,7 +12,7 @@ Global Variable Names
 (Let’s hope that these variables are meant for use inside one module
 only.) The conventions are about the same as those for functions.
 Modules that are designed for use via from M import * should use the
-all mechanism to prevent exporting globals, or use the older
+__all__ mechanism to prevent exporting globals, or use the older
 convention of prefixing such globals with an underscore (which you might
 want to do to indicate these globals are “module non-public”).
 Function and Variable Names

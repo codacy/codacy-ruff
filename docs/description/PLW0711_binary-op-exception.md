@@ -1,4 +1,7 @@
 # binary-op-exception (PLW0711)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for except clauses that attempt to catch multiple

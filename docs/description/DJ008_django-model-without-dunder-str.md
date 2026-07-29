@@ -1,4 +1,7 @@
 # django-model-without-dunder-str (DJ008)
+Added in v0.0.246 ·
+Related issues ·
+View source
 Derived from the flake8-django linter.
 ## What it does
 Checks that a __str__ method is defined in Django models.

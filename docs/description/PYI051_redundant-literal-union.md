@@ -1,4 +1,7 @@
 # redundant-literal-union (PYI051)
+Added in v0.0.283 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for redundant unions between a Literal and a builtin supertype of
@@ -18,4 +21,9 @@ x: Literal["A", b"B"] | str
 ```
 from typing import Literal
 x: Literal[b"B"] | str
+Known issues
+This rule is opinionated and may not be appropriate for projects that keep
+literal members for editor suggestions, generated documentation, or another
+non-type-checking purpose. In those cases, disabling this rule for the
+affected annotations may be reasonable.
 ```

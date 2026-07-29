@@ -1,4 +1,7 @@
 # suspicious-non-cryptographic-random-usage (S311)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of cryptographically weak pseudo-random number generators.

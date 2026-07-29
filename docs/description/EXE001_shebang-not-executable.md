@@ -1,4 +1,7 @@
 # shebang-not-executable (EXE001)
+Added in v0.0.233 ·
+Related issues ·
+View source
 Derived from the flake8-executable linter.
 ## What it does
 Checks for a shebang directive in a file that is not executable.

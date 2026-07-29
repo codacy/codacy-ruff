@@ -1,4 +1,7 @@
 # single-string-slots (PLC0205)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for single strings assigned to __slots__.

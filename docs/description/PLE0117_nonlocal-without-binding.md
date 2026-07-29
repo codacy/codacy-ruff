@@ -1,4 +1,7 @@
 # nonlocal-without-binding (PLE0117)
+Added in v0.0.174 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for nonlocal names without bindings.

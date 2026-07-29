@@ -1,4 +1,7 @@
 # bad-version-info-comparison (PYI006)
+Added in v0.0.254 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for uses of comparators other than < and >= for

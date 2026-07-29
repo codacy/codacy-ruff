@@ -1,4 +1,7 @@
 # signature-in-docstring (D402)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for function docstrings that include the function's signature in

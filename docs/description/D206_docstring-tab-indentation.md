@@ -1,4 +1,7 @@
 # docstring-tab-indentation (D206)
+Added in v0.0.75 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for docstrings that are indented with tabs.

@@ -1,4 +1,7 @@
 # suspicious-xmlc-element-tree-usage (S313)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of insecure XML parsers.

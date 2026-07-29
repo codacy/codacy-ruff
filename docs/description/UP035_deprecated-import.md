@@ -1,4 +1,7 @@
 # deprecated-import (UP035)
+Added in v0.0.239 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

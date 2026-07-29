@@ -1,4 +1,7 @@
 # logging-too-many-args (PLE1205)
+Added in v0.0.252 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for too many positional arguments for a logging format string.

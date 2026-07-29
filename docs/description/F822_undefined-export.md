@@ -1,4 +1,7 @@
 # undefined-export (F822)
+Added in v0.0.25 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for undefined names in __all__.

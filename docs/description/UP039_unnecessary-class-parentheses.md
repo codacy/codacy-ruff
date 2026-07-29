@@ -1,4 +1,7 @@
 # unnecessary-class-parentheses (UP039)
+Added in v0.0.273 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does
@@ -16,4 +19,7 @@ class Foo():
 ```
 class Foo:
     ...
+Fix safety
+This rule's fix is marked as unsafe if it would delete any comments
+within the parentheses range.
 ```

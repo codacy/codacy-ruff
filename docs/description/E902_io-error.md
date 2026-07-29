@@ -1,4 +1,7 @@
 # io-error (E902)
+Added in v0.0.28 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 This is not a regular diagnostic; instead, it's raised when a file cannot be read

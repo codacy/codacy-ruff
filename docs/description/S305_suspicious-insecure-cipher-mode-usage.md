@@ -1,4 +1,7 @@
 # suspicious-insecure-cipher-mode-usage (S305)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of weak or broken cryptographic cipher modes.

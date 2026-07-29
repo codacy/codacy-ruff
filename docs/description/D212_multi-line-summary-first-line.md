@@ -1,4 +1,7 @@
 # multi-line-summary-first-line (D212)
+Added in v0.0.69 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

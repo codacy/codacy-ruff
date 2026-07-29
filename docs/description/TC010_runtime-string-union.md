@@ -1,4 +1,7 @@
 # runtime-string-union (TC010)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-type-checking linter.
 ## What it does
 Checks for the presence of string literals in X | Y-style union types.

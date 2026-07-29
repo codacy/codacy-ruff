@@ -1,4 +1,7 @@
 # os-path-dirname (PTH120)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is sometimes available.
 ## What it does
@@ -18,7 +21,17 @@ os.path.dirname(__file__)
 from pathlib import Path
 Path(__file__).parent
 Fix Safety
-This rule's fix is marked as unsafe if the replacement would remove comments attached to the original expression.
+This rule's fix is always marked as unsafe because the replacement is not always semantically
+equivalent to the original code. In particular, pathlib performs path normalization,
+which can alter the result compared to os.path.dirname. For example, this normalization:
+Collapses consecutive slashes (e.g., "a//b" → "a/b").
+Removes trailing slashes (e.g., "a/b/" → "a/b").
+Eliminates "." (e.g., "a/./b" → "a/b").
+As a result, code relying on the exact string returned by os.path.dirname
+may behave differently after the fix.
+Additionally, the fix is marked as unsafe because os.path.dirname() returns str or bytes (AnyStr),
+while Path.parent returns a Path object. This change in return type can break code that uses
+the return value.
 Known issues
 While using pathlib can improve the readability and type safety of your code,
 it can be less performant than the lower-level alternatives that work directly with strings,

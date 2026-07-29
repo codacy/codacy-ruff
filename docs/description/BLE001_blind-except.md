@@ -1,8 +1,11 @@
 # blind-except (BLE001)
+Added in v0.0.127 ·
+Related issues ·
+View source
 Derived from the flake8-blind-except linter.
 ## What it does
 Checks for except clauses that catch all exceptions. This includes
-bare except, except BaseException and except Exception.
+except BaseException and except Exception.
 ## Why is this bad?
 Overly broad except clauses can lead to unexpected behavior, such as
 catching KeyboardInterrupt or SystemExit exceptions that prevent the
@@ -28,8 +31,7 @@ try:
     foo()
 except BaseException:
     raise
-Exceptions that are logged via logging.exception() or are logged via
-logging.error() or logging.critical() with exc_info enabled will
+Exceptions that are logged with exc_info enabled will
 not be flagged, as this is a common pattern for propagating exception
 traces:
 try:

@@ -1,0 +1,19 @@
+# none-not-at-end-of-union (RUF036)
+Added in 0.16.0 ·
+Related issues ·
+View source
+Fix is sometimes available.
+## What it does
+Checks for type annotations where None is not at the end of a union.
+## Why is this bad?
+Type annotation unions are commutative, meaning that the order of the elements
+does not matter. The None literal represents the absence of a value. For
+readability, it's preferred to write the more informative type expressions first.
+## Example
+```
+def func(arg: None | int): ...
+```
+## Use instead:
+```
+def func(arg: int | None): ...
+```

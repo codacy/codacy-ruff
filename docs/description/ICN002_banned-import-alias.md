@@ -1,4 +1,7 @@
 # banned-import-alias (ICN002)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-import-conventions linter.
 ## What it does
 Checks for imports that use non-standard naming conventions, like

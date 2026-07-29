@@ -1,4 +1,7 @@
 # wrong-tuple-length-version-comparison (PYI005)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for Python version comparisons that compare against a tuple of the

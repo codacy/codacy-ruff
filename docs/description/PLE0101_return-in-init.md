@@ -1,4 +1,7 @@
 # return-in-init (PLE0101)
+Added in v0.0.248 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for __init__ methods that return values.

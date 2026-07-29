@@ -1,4 +1,7 @@
 # duplicate-bases (PLE0241)
+Added in v0.0.269 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does

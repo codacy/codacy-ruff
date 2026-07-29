@@ -1,4 +1,7 @@
 # open-file-with-context-handler (SIM115)
+Added in v0.0.219 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 ## What it does
 Checks for cases where files are opened (e.g., using the builtin open() function)

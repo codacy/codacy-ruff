@@ -1,8 +1,11 @@
 # zip-without-explicit-strict (B905)
+Added in v0.0.167 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is always available.
 ## What it does
-Checks for zip calls without an explicit strict parameter.
+Checks for zip calls without an explicit strict parameter when called with two or more iterables, or any starred argument.
 ## Why is this bad?
 By default, if the iterables passed to zip are of different lengths, the
 resulting iterator will be silently truncated to the length of the shortest
@@ -18,7 +21,8 @@ zip(a, b)
 ```
 zip(a, b, strict=True)
 Fix safety
-This rule's fix is marked as unsafe for zip calls that contain
-**kwargs, as adding a strict keyword argument to such a call may lead
-to a duplicate keyword argument error.
+This rule's fix is marked as unsafe. While adding strict=False preserves
+the runtime behavior, it can obscure situations where the iterables are of
+unequal length. Ruff prefers to alert users so they can choose the intended
+behavior themselves.
 ```

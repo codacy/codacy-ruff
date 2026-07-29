@@ -1,4 +1,7 @@
 # static-join-to-f-string (FLY002)
+Added in v0.0.266 ·
+Related issues ·
+View source
 Derived from the flynt linter.
 Fix is always available.
 ## What it does

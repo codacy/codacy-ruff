@@ -1,4 +1,7 @@
 # late-future-import (F404)
+Added in v0.0.34 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for __future__ imports that are not located at the beginning of a

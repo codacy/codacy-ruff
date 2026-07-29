@@ -1,4 +1,7 @@
 # default-factory-kwarg (RUF026)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for incorrect usages of default_factory as a keyword argument when

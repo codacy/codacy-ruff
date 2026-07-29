@@ -1,4 +1,7 @@
 # post-init-default (RUF033)
+Added in 0.9.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for __post_init__ dataclass methods with parameter defaults.

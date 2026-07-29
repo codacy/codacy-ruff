@@ -1,4 +1,7 @@
 # ssl-insecure-version (S502)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for function calls with parameters that indicate the use of insecure

@@ -1,4 +1,7 @@
 # useless-try-except (TRY203)
+Added in 0.7.0 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for immediate uses of raise within exception handlers.

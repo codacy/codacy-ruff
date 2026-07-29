@@ -1,4 +1,7 @@
 # bad-string-format-type (PLE1307)
+Added in v0.0.245 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for mismatched argument types in "old-style" format strings.

@@ -1,4 +1,7 @@
 # call-with-shell-equals-true (S604)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for method calls that set the shell parameter to true or another

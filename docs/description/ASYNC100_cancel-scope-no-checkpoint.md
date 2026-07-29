@@ -1,4 +1,7 @@
 # cancel-scope-no-checkpoint (ASYNC100)
+Added in v0.0.269 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 ## What it does
 Checks for timeout context managers which do not contain a checkpoint.

@@ -1,4 +1,7 @@
 # bad-quotes-inline-string (Q000)
+Added in v0.0.88 ·
+Related issues ·
+View source
 Derived from the flake8-quotes linter.
 Fix is sometimes available.
 ## What it does

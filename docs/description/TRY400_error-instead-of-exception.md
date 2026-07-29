@@ -1,4 +1,7 @@
 # error-instead-of-exception (TRY400)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 Fix is sometimes available.
 ## What it does

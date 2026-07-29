@@ -1,4 +1,7 @@
 # typed-argument-default-in-stub (PYI011)
+Added in v0.0.253 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # pytest-assert-in-except (PT017)
+Added in v0.0.208 ·
+Related issues ·
+View source
 Derived from the flake8-pytest-style linter.
 ## What it does
 Checks for assert statements in except clauses.
@@ -22,4 +25,9 @@ def test_foo():
     with pytest.raises(ZeroDivisionError) as exc_info:
         1 / 0
     assert exc_info.value.args
+Or, for pytest 8.4.0 and later:
+import pytest
+def test_foo():
+    with pytest.raises(ZeroDivisionError, check=lambda e: e.args):
+        1 / 0
 ```

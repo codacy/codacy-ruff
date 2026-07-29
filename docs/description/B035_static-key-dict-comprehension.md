@@ -1,4 +1,7 @@
 # static-key-dict-comprehension (B035)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for dictionary comprehensions that use a static key, like a string

@@ -1,4 +1,7 @@
 # useless-if-else (RUF034)
+Added in 0.9.0 ·
+Related issues ·
+View source
 ## What it does
 Checks for useless if-else conditions with identical arms.
 ## Why is this bad?

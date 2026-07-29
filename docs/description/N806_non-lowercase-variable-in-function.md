@@ -1,4 +1,7 @@
 # non-lowercase-variable-in-function (N806)
+Added in v0.0.89 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for the use of non-lowercase variable names in functions.

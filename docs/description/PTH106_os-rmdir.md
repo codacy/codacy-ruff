@@ -1,4 +1,7 @@
 # os-rmdir (PTH106)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is sometimes available.
 ## What it does

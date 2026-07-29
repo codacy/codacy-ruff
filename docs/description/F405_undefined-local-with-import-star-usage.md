@@ -1,4 +1,7 @@
 # undefined-local-with-import-star-usage (F405)
+Added in v0.0.44 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for names that might be undefined, but may also be defined in a

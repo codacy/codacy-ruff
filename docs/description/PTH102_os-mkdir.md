@@ -1,5 +1,9 @@
 # os-mkdir (PTH102)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
+Fix is sometimes available.
 ## What it does
 Checks for uses of os.mkdir.
 ## Why is this bad?
@@ -20,4 +24,6 @@ Known issues
 While using pathlib can improve the readability and type safety of your code,
 it can be less performant than the lower-level alternatives that work directly with strings,
 especially on older versions of Python.
+Fix Safety
+This rule's fix is marked as unsafe if the replacement would remove comments attached to the original expression.
 ```

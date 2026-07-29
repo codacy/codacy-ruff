@@ -1,4 +1,7 @@
 # blanket-noqa (PGH004)
+Added in v0.0.200 ·
+Related issues ·
+View source
 Derived from the pygrep-hooks linter.
 Fix is sometimes available.
 ## What it does

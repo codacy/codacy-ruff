@@ -1,4 +1,7 @@
 # ambiguous-unicode-character-docstring (RUF002)
+Added in v0.0.102 ·
+Related issues ·
+View source
 ## What it does
 Checks for ambiguous Unicode characters in docstrings.
 ## Why is this bad?

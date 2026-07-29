@@ -1,4 +1,7 @@
 # subprocess-popen-preexec-fn (PLW1509)
+Added in v0.0.281 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for uses of subprocess.Popen with a preexec_fn argument.

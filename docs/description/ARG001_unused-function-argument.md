@@ -1,4 +1,7 @@
 # unused-function-argument (ARG001)
+Added in v0.0.168 ·
+Related issues ·
+View source
 Derived from the flake8-unused-arguments linter.
 ## What it does
 Checks for the presence of unused arguments in function definitions.

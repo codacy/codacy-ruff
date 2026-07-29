@@ -1,4 +1,7 @@
 # call-datetime-strptime-without-zone (DTZ007)
+Added in v0.0.188 ·
+Related issues ·
+View source
 Derived from the flake8-datetimez linter.
 ## What it does
 Checks for uses of datetime.datetime.strptime() that lead to naive

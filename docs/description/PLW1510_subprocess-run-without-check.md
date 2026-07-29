@@ -1,6 +1,9 @@
 # subprocess-run-without-check (PLW1510)
+Added in v0.0.285 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for uses of subprocess.run without an explicit check argument.
 ## Why is this bad?
@@ -21,7 +24,9 @@ Or:
 import subprocess
 subprocess.run(["ls", "nonexistent"], check=False)  # Explicitly no check.
 Fix safety
-This rule's fix is marked as unsafe for function calls that contain
-**kwargs, as adding a check keyword argument to such a call may lead
-to a duplicate keyword argument error.
+This rule's fix is marked as display-only because it's not clear whether the
+potential exception was meant to be ignored by setting check=False or if
+the author simply forgot to include check=True. The fix adds
+check=False, making the existing behavior explicit but possibly masking
+the original intention.
 ```

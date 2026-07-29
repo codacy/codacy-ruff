@@ -1,4 +1,7 @@
 # lru-cache-without-parameters (UP011)
+Added in v0.0.155 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does

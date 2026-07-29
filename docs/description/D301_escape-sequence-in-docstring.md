@@ -1,4 +1,7 @@
 # escape-sequence-in-docstring (D301)
+Added in v0.0.172 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is sometimes available.
 ## What it does

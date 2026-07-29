@@ -1,4 +1,7 @@
 # bad-version-info-order (PYI066)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for code that branches on sys.version_info comparisons where

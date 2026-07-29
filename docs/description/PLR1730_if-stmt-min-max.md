@@ -1,4 +1,7 @@
 # if-stmt-min-max (PLR1730)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does

@@ -1,4 +1,7 @@
 # print (T201)
+Added in v0.0.57 ·
+Related issues ·
+View source
 Derived from the flake8-print linter.
 Fix is sometimes available.
 ## What it does
@@ -19,10 +22,12 @@ def sum_less_than_four(a, b):
     return a + b < 4
 To keep the line for logging purposes, instead use something like:
 import logging
-logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 def sum_less_than_four(a, b):
-    logging.debug("Calling sum_less_than_four")
+    logger.debug("Calling sum_less_than_four")
     return a + b < 4
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
 Fix safety
 This rule's fix is marked as unsafe, as it will remove print statements
 that are used beyond debugging purposes.

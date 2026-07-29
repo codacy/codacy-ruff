@@ -1,4 +1,7 @@
 # non-pep604-annotation-optional (UP045)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does
@@ -23,9 +26,13 @@ foo: Optional[int] = None
 ```
 foo: int | None = None
 Fix safety
-This rule's fix is marked as unsafe, as it may lead to runtime errors
-using libraries that rely on runtime type annotations, like Pydantic,
-on Python versions prior to Python 3.10. It may also lead to runtime errors
-in unusual and likely incorrect type annotations where the type does not
-support the | operator.
+This rule's fix is marked as unsafe on Python versions prior to 3.10 because
+using the PEP-604 syntax may lead to runtime errors in libraries that rely
+on runtime type annotations, like Pydantic, or in unusual and likely
+incorrect type annotations where the type does not support the |
+operator. The fix is also marked as unsafe when it would remove comments
+present within the type annotation being rewritten.
+In preview, this rule can also add its own __future__ import on Python
+3.9 and earlier, if the lint.future-annotations setting is enabled. This
+also makes the fix unsafe.
 ```

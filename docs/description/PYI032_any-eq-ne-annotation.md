@@ -1,4 +1,7 @@
 # any-eq-ne-annotation (PYI032)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is always available.
 ## What it does

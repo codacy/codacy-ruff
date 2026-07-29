@@ -1,4 +1,7 @@
 # type-bivariance (PLC0131)
+Added in v0.0.278 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for TypeVar and ParamSpec definitions in which the type is

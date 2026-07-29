@@ -1,4 +1,7 @@
 # invalid-str-return-type (PLE0307)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for __str__ implementations that return a type other than str.

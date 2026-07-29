@@ -1,4 +1,7 @@
 # no-explicit-stacklevel (B028)
+Added in v0.0.257 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is always available.
 ## What it does
@@ -11,6 +14,9 @@ is called. Setting it to a higher number will output a stack frame
 from higher up the stack.
 It's recommended to use a stacklevel of 2 or higher, to give the caller
 more context about the warning.
+In Python 3.12 and higher, one may also use skip_file_prefixes to specify
+which file prefixes are ignored when counting the stack level. This implicitly overrides the stacklevel to be
+at least 2, according to the Python documentation.
 ## Example
 ```
 import warnings

@@ -1,4 +1,7 @@
 # utf8-encoding-declaration (UP009)
+Added in v0.0.155 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does

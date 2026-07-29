@@ -1,4 +1,7 @@
 # verbose-log-message (TRY401)
+Added in v0.0.250 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for excessive logging of exception objects.

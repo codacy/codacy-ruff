@@ -1,4 +1,7 @@
 # redundant-final-literal (PYI064)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is sometimes available.
 ## What it does

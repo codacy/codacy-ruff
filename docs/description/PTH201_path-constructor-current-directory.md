@@ -1,4 +1,7 @@
 # path-constructor-current-directory (PTH201)
+Added in v0.0.279 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is always available.
 ## What it does

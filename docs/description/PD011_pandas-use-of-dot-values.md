@@ -1,4 +1,7 @@
 # pandas-use-of-dot-values (PD011)
+Added in v0.0.188 ·
+Related issues ·
+View source
 Derived from the pandas-vet linter.
 ## What it does
 Checks for uses of .values on Pandas Series and Index objects.

@@ -1,4 +1,7 @@
 # boolean-positional-value-in-call (FBT003)
+Added in v0.0.127 ·
+Related issues ·
+View source
 Derived from the flake8-boolean-trap linter.
 ## What it does
 Checks for boolean positional arguments in function calls.

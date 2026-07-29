@@ -1,4 +1,7 @@
 # invalid-formatter-suppression-comment (RUF028)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for formatter suppression comments that are ineffective or incompatible

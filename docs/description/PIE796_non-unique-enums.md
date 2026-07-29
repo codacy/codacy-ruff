@@ -1,4 +1,7 @@
 # non-unique-enums (PIE796)
+Added in v0.0.224 ·
+Related issues ·
+View source
 Derived from the flake8-pie linter.
 ## What it does
 Checks for enums that contain duplicate values.

@@ -1,4 +1,7 @@
 # missing-type-function-argument (ANN001)
+Added in v0.0.105 ·
+Related issues ·
+View source
 Derived from the flake8-annotations linter.
 ## What it does
 Checks that function arguments have type annotations.

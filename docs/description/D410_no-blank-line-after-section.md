@@ -1,4 +1,7 @@
 # no-blank-line-after-section (D410)
+Added in v0.0.71 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

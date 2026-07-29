@@ -1,4 +1,7 @@
 # async-zero-sleep (ASYNC115)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 Fix is always available.
 ## What it does
@@ -14,7 +17,7 @@ async def func():
 ```
 ## Use instead:
 ```
-import trio
+import trio.lowlevel
 async def func():
     await trio.lowlevel.checkpoint()
 Fix safety

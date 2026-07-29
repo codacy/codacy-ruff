@@ -1,4 +1,7 @@
 # suspicious-mark-safe-usage (S308)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of calls to django.utils.safestring.mark_safe.
@@ -24,5 +27,5 @@ def render_username(username):
 ```
 from django.utils.html import format_html
 def render_username(username):
-    return django.utils.html.format_html("<i>{}</i>", username)  # username is escaped.
+    return format_html("<i>{}</i>", username)  # username is escaped.
 ```

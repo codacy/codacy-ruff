@@ -1,4 +1,7 @@
 # paramiko-call (S601)
+Added in v0.0.270 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for paramiko calls.

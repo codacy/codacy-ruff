@@ -1,4 +1,7 @@
 # django-nullable-model-string-field (DJ001)
+Added in v0.0.246 ·
+Related issues ·
+View source
 Derived from the flake8-django linter.
 ## What it does
 Checks nullable string-based fields (like CharField and TextField)

@@ -1,4 +1,7 @@
 # assert-raises-exception (B017)
+Added in v0.0.83 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for assertRaises and pytest.raises context managers that catch

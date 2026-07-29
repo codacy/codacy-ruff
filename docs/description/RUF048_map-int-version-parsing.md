@@ -1,4 +1,7 @@
 # map-int-version-parsing (RUF048)
+Added in 0.10.0 ·
+Related issues ·
+View source
 ## What it does
 Checks for calls of the form map(int, __version__.split(".")).
 ## Why is this bad?

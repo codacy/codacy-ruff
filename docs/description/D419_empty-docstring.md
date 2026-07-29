@@ -1,4 +1,7 @@
 # empty-docstring (D419)
+Added in v0.0.68 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for empty docstrings.

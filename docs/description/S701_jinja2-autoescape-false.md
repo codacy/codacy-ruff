@@ -1,4 +1,7 @@
 # jinja2-autoescape-false (S701)
+Added in v0.0.220 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for jinja2 templates that use autoescape=False.

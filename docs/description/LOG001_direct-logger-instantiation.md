@@ -1,4 +1,7 @@
 # direct-logger-instantiation (LOG001)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-logging linter.
 Fix is sometimes available.
 ## What it does

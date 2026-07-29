@@ -1,4 +1,7 @@
 # zip-dict-keys-and-values (SIM911)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is always available.
 ## What it does
@@ -16,4 +19,6 @@ for country, stars in zip(flag_stars.keys(), flag_stars.values()):
 flag_stars = {"USA": 50, "Slovenia": 3, "Panama": 2, "Australia": 6}
 for country, stars in flag_stars.items():
     print(f"{country}'s flag has {stars} stars.")
+Fix safety
+This rule's fix is marked as safe, unless the expression contains comments.
 ```

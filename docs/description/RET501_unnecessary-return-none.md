@@ -1,4 +1,7 @@
 # unnecessary-return-none (RET501)
+Added in v0.0.154 ·
+Related issues ·
+View source
 Derived from the flake8-return linter.
 Fix is always available.
 ## What it does

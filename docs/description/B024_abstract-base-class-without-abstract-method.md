@@ -1,4 +1,7 @@
 # abstract-base-class-without-abstract-method (B024)
+Added in v0.0.118 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for abstract classes without abstract methods or properties.

@@ -1,4 +1,7 @@
 # undefined-local-with-import-star (F403)
+Added in v0.0.18 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for the use of wildcard imports.

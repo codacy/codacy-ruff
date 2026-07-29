@@ -1,4 +1,7 @@
 # patch-version-comparison (PYI004)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for Python version comparisons in stubs that compare against patch

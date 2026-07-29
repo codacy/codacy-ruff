@@ -1,4 +1,7 @@
 # quoted-annotation (UP037)
+Added in v0.0.242 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does
@@ -36,6 +39,6 @@ from __future__ import annotations will be added if doing so would allow an anno
 unquoted.
 Fix safety
 The rule's fix is marked as safe, unless preview and
-[lint.future_annotations][lint.future_annotations] are enabled and a from __future__ import annotations import is added. Such an import may change the behavior of all annotations in the
+lint.future-annotations are enabled and a from __future__ import annotations import is added. Such an import may change the behavior of all annotations in the
 file.
 ```

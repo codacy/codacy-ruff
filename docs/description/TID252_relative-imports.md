@@ -1,4 +1,7 @@
 # relative-imports (TID252)
+Added in v0.0.169 ·
+Related issues ·
+View source
 Derived from the flake8-tidy-imports linter.
 Fix is sometimes available.
 ## What it does

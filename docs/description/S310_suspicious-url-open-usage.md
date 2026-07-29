@@ -1,4 +1,7 @@
 # suspicious-url-open-usage (S310)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for instances where URL open functions are used with unexpected schemes.

@@ -1,4 +1,7 @@
 # assert-tuple (F631)
+Added in v0.0.28 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for assert statements that use non-empty tuples as test

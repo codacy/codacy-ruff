@@ -1,4 +1,7 @@
 # boolean-type-hint-positional-argument (FBT001)
+Added in v0.0.127 ·
+Related issues ·
+View source
 Derived from the flake8-boolean-trap linter.
 ## What it does
 Checks for the use of boolean positional arguments in function definitions,

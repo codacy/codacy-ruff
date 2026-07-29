@@ -1,4 +1,7 @@
 # is-literal (F632)
+Added in v0.0.39 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # request-with-no-cert-validation (S501)
+Added in v0.0.213 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for HTTPS requests that disable SSL certificate checks.

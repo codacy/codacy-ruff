@@ -1,0 +1,34 @@
+# airflow3-suggested-to-move-to-provider (AIR312)
+Added in 0.13.0 ·
+Related issues ·
+View source
+Derived from the Airflow linter.
+Fix is sometimes available.
+## What it does
+Checks for uses of Airflow functions and values that have been moved to its providers
+but still have a compatibility layer (e.g., apache-airflow-providers-standard).
+## Why is this bad?
+Airflow 3.0 moved various deprecated functions, members, and other
+values to its providers. Even though these symbols still work fine on Airflow 3.0,
+they are expected to be removed in a future version. The user is suggested to install
+the corresponding provider and replace the original usage with the one in the provider.
+## Example
+```
+from airflow.operators.python import PythonOperator
+def print_context(ds=None, **kwargs):
+    print(kwargs)
+    print(ds)
+print_the_context = PythonOperator(
+    task_id="print_the_context", python_callable=print_context
+)
+```
+## Use instead:
+```
+from airflow.providers.standard.operators.python import PythonOperator
+def print_context(ds=None, **kwargs):
+    print(kwargs)
+    print(ds)
+print_the_context = PythonOperator(
+    task_id="print_the_context", python_callable=print_context
+)
+```

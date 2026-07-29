@@ -1,4 +1,7 @@
 # suspicious-unverified-context-usage (S323)
+Added in v0.0.258 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of ssl._create_unverified_context.

@@ -1,4 +1,7 @@
 # redefined-loop-name (PLW2901)
+Added in v0.0.252 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for variables defined in for loops and with statements that

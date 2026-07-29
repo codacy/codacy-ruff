@@ -1,4 +1,7 @@
 # undocumented-public-init (D107)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for public __init__ method definitions that are missing

@@ -1,4 +1,7 @@
 # shebang-leading-whitespace (EXE004)
+Added in v0.0.229 ·
+Related issues ·
+View source
 Derived from the flake8-executable linter.
 Fix is always available.
 ## What it does
@@ -17,4 +20,8 @@ ignored, which is likely a mistake.
 ## Use instead:
 ```
 #!/usr/bin/env python3
+Fix safety
+This rule's fix is marked as unsafe when the whitespace before the shebang
+contains a newline. Deleting the newline can activate an encoding declaration
+and change how the file is decoded.
 ```

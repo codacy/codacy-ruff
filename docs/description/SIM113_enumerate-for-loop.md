@@ -1,8 +1,13 @@
 # enumerate-for-loop (SIM113)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 ## What it does
 Checks for for loops with explicit loop-index variables that can be replaced
 with enumerate().
+In preview, this rule checks for index variables initialized with any integer rather than only
+a literal zero.
 ## Why is this bad?
 When iterating over a sequence, it's often desirable to keep track of the
 index of each element alongside the element itself. Prefer the enumerate

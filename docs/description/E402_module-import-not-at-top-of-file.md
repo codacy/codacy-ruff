@@ -1,5 +1,9 @@
 # module-import-not-at-top-of-file (E402)
+Added in v0.0.28 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
+Fix is sometimes available.
 ## What it does
 Checks for imports that are not at the top of the file.
 ## Why is this bad?
@@ -25,4 +29,9 @@ from sys import x
 a = 1
 Notebook behavior
 For Jupyter notebooks, this rule checks for imports that are not at the top of a cell.
+Fix safety
+This rule's fix is marked as unsafe as imports moved to the top of the file
+are placed above existing imports, in reverse order than they were in the
+file. Re-ordering imports is unsafe as it can change the execution order of
+the imported code.
 ```

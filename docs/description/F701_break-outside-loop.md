@@ -1,4 +1,7 @@
 # break-outside-loop (F701)
+Added in v0.0.36 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for break statements outside of loops.

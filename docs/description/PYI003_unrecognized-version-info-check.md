@@ -1,4 +1,7 @@
 # unrecognized-version-info-check (PYI003)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for problematic sys.version_info-related conditions in stubs.

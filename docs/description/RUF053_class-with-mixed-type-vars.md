@@ -1,4 +1,7 @@
 # class-with-mixed-type-vars (RUF053)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for classes that have PEP 695

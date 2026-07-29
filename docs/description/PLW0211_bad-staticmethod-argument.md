@@ -1,4 +1,7 @@
 # bad-staticmethod-argument (PLW0211)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for static methods that use self or cls as their first argument.

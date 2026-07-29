@@ -1,4 +1,7 @@
 # invalid-index-return-type (PLE0305)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for __index__ implementations that return non-integer values.

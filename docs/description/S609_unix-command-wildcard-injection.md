@@ -1,4 +1,7 @@
 # unix-command-wildcard-injection (S609)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for possible wildcard injections in calls to subprocess.Popen().

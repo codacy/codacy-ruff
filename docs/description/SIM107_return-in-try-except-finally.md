@@ -1,4 +1,7 @@
 # return-in-try-except-finally (SIM107)
+Added in v0.0.211 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 ## What it does
 Checks for return statements in try-except and finally blocks.

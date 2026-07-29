@@ -1,4 +1,7 @@
 # async-function-with-timeout (ASYNC109)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 ## What it does
 Checks for async function definitions with timeout parameters.
@@ -22,6 +25,14 @@ to less than Python 3.11.
 For functions that wrap asyncio.timeout, trio.fail_after or
 anyio.move_on_after, false positives from this rule can be avoided
 by using a different parameter name.
+This rule exempts methods decorated with @typing.override.
+Removing a parameter from a subclass method may cause type checkers to
+complain about a violation of the Liskov Substitution Principle if it
+means that the method now incompatibly overrides a method defined on a
+superclass. Explicitly decorating an overriding method with @override
+signals to Ruff that the method is intended to override a superclass
+method and that a type checker will enforce that it does so; Ruff
+therefore knows that it should not enforce this rule on such methods.
 ## Example
 ```
 async def long_running_task(timeout): ...

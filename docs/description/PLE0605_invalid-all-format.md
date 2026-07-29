@@ -1,4 +1,7 @@
 # invalid-all-format (PLE0605)
+Added in v0.0.237 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for invalid assignments to __all__.

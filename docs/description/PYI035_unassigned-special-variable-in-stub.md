@@ -1,4 +1,7 @@
 # unassigned-special-variable-in-stub (PYI035)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks that __all__, __match_args__, and __slots__ variables are

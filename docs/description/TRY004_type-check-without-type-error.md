@@ -1,4 +1,7 @@
 # type-check-without-type-error (TRY004)
+Added in v0.0.230 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for type checks that do not raise TypeError.

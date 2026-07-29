@@ -1,6 +1,9 @@
 # print-empty-string (FURB105)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
-Fix is sometimes available.
+Fix is always available.
 ## What it does
 Checks for print calls with unnecessary empty strings as positional
 arguments and unnecessary sep keyword arguments.
@@ -17,4 +20,8 @@ print("")
 ## Use instead:
 ```
 print()
+Fix safety
+This fix is marked as unsafe if it removes comments or an unused sep keyword argument
+that may have side effects. Removing such arguments may change the program's
+behavior by skipping the execution of those side effects.
 ```

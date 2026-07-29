@@ -1,4 +1,7 @@
 # numpy2-deprecation (NPY201)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for uses of NumPy functions and constants that were removed from

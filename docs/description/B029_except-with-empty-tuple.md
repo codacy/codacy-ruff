@@ -1,4 +1,7 @@
 # except-with-empty-tuple (B029)
+Added in v0.0.250 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for exception handlers that catch an empty tuple.

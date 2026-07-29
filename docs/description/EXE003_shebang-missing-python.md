@@ -1,4 +1,7 @@
 # shebang-missing-python (EXE003)
+Added in v0.0.229 ·
+Related issues ·
+View source
 Derived from the flake8-executable linter.
 ## What it does
 Checks for a shebang directive in .py files that does not contain python,

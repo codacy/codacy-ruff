@@ -1,4 +1,7 @@
 # os-path-expanduser (PTH111)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is sometimes available.
 ## What it does
@@ -22,5 +25,11 @@ While using pathlib can improve the readability and type safety of your code,
 it can be less performant than the lower-level alternatives that work directly with strings,
 especially on older versions of Python.
 Fix Safety
-This rule's fix is marked as unsafe if the replacement would remove comments attached to the original expression.
+This rule's fix is always marked as unsafe because the behaviors of
+os.path.expanduser and Path.expanduser differ when a user's home
+directory can't be resolved: os.path.expanduser returns the
+input unchanged, while Path.expanduser raises RuntimeError.
+Additionally, the fix is marked as unsafe because os.path.expanduser() returns str or bytes (AnyStr),
+while Path.expanduser() returns a Path object. This change in return type can break code that uses
+the return value.
 ```

@@ -1,4 +1,7 @@
 # undocumented-public-method (D102)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for undocumented public method definitions.
@@ -10,6 +13,9 @@ arguments, side effects, exceptions, return values, and any other
 information that may be relevant to the user.
 If the codebase adheres to a standard format for method docstrings, follow
 that format for consistency.
+This rule exempts methods decorated with @typing.override,
+since it is a common practice to document a method on a superclass but not
+on an overriding method in a subclass.
 ## Example
 ```
 class Cat(Animal):

@@ -1,4 +1,7 @@
 # if-with-same-arms (SIM114)
+Added in v0.0.246 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does

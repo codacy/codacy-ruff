@@ -1,4 +1,7 @@
 # useless-exception-statement (PLW0133)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does
@@ -10,6 +13,8 @@ raise ValueError("...")) and is likely a mistake.
 Known problems
 This rule only detects built-in exceptions, like ValueError, and does
 not catch user-defined exceptions.
+In preview, this rule will also detect user-defined exceptions, but only
+the ones defined in the file being checked.
 ## Example
 ```
 ValueError("...")

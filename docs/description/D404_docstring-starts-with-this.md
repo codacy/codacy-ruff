@@ -1,4 +1,7 @@
 # docstring-starts-with-this (D404)
+Added in v0.0.71 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for docstrings that start with This.
@@ -9,7 +12,7 @@ Hint: to rewrite the docstring in the imperative, phrase the first line as
 if it were a command.
 This rule may not apply to all projects; its applicability is a matter of
 convention. By default, this rule is enabled when using the numpy
-convention,, and disabled when using the google and pep257 conventions.
+convention, and disabled when using the google and pep257 conventions.
 ## Example
 ```
 def average(values: list[float]) -> float:

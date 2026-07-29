@@ -1,4 +1,7 @@
 # exception-without-exc-info (LOG007)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-logging linter.
 ## What it does
 Checks for uses of logging.exception() with exc_info set to False.

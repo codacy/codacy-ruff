@@ -1,4 +1,7 @@
 # assignment-default-in-stub (PYI015)
+Added in v0.0.260 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is always available.
 ## What it does

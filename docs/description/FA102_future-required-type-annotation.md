@@ -1,4 +1,7 @@
 # future-required-type-annotation (FA102)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-future-annotations linter.
 Fix is always available.
 ## What it does

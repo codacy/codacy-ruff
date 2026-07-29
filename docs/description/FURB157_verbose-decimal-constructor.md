@@ -1,4 +1,7 @@
 # verbose-decimal-constructor (FURB157)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
 Fix is always available.
 ## What it does
@@ -17,11 +20,15 @@ Note that this rule does not flag quoted float literals such as Decimal("0.1"), 
 produce a more precise Decimal value than the unquoted Decimal(0.1).
 ## Example
 ```
+from decimal import Decimal
 Decimal("0")
 Decimal(float("Infinity"))
 ```
 ## Use instead:
 ```
+from decimal import Decimal
 Decimal(0)
 Decimal("Infinity")
+Fix safety
+This rule's fix is marked as safe, unless the expression contains comments.
 ```

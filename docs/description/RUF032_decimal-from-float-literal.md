@@ -1,4 +1,7 @@
 # decimal-from-float-literal (RUF032)
+Added in 0.9.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for Decimal calls passing a float literal.

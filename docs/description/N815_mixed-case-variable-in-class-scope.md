@@ -1,4 +1,7 @@
 # mixed-case-variable-in-class-scope (N815)
+Added in v0.0.89 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for class variable names that follow the mixedCase convention.

@@ -1,4 +1,7 @@
 # unnecessary-type-union (PYI055)
+Added in v0.0.283 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is sometimes available.
 ## What it does

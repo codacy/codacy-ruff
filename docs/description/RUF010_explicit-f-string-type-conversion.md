@@ -1,4 +1,7 @@
 # explicit-f-string-type-conversion (RUF010)
+Added in v0.0.267 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for uses of str(), repr(), and ascii() as explicit type
@@ -19,4 +22,7 @@ f"{repr(a)}"
 ```
 a = "some string"
 f"{a!r}"
+Fix safety
+This rule's fix is marked as unsafe if the call expression contains
+comments that would be deleted by applying the fix.
 ```

@@ -1,4 +1,7 @@
 # subprocess-without-shell-equals-true (S603)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Check for method calls that initiate a subprocess without a shell.

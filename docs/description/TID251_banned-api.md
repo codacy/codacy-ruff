@@ -1,4 +1,7 @@
 # banned-api (TID251)
+Added in v0.0.201 ·
+Related issues ·
+View source
 Derived from the flake8-tidy-imports linter.
 ## What it does
 Checks for banned imports.

@@ -1,4 +1,7 @@
 # logging-too-few-args (PLE1206)
+Added in v0.0.252 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for too few positional arguments for a logging format string.
