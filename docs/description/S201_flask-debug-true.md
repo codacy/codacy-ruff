@@ -1,4 +1,7 @@
 # flask-debug-true (S201)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of debug=True in Flask.

@@ -1,4 +1,7 @@
 # constant-imported-as-non-constant (N811)
+Added in v0.0.82 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for constant imports that are aliased to non-constant-style

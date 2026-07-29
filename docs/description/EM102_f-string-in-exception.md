@@ -1,4 +1,7 @@
 # f-string-in-exception (EM102)
+Added in v0.0.183 ·
+Related issues ·
+View source
 Derived from the flake8-errmsg linter.
 Fix is sometimes available.
 ## What it does

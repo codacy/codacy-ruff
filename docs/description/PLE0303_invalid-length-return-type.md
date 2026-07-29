@@ -1,4 +1,7 @@
 # invalid-length-return-type (PLE0303)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for __len__ implementations that return values that are not non-negative

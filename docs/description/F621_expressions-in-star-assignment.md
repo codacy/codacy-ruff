@@ -1,4 +1,7 @@
 # expressions-in-star-assignment (F621)
+Added in v0.0.32 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for the use of too many expressions in starred assignment statements.

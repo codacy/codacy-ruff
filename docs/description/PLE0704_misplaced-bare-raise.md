@@ -1,4 +1,7 @@
 # misplaced-bare-raise (PLE0704)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for bare raise statements outside of exception handlers.

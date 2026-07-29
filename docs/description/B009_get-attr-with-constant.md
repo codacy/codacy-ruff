@@ -1,4 +1,7 @@
 # get-attr-with-constant (B009)
+Added in v0.0.110 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is always available.
 ## What it does
@@ -16,4 +19,16 @@ getattr(obj, "foo")
 ## Use instead:
 ```
 obj.foo
+Fix safety
+The fix is marked as unsafe for attribute names that are not in NFKC (Normalization Form KC)
+normalization. Python normalizes identifiers using NFKC when using attribute access syntax
+(e.g., obj.attr), but does not normalize string arguments passed to getattr. Rewriting
+getattr(obj, "ſ") to obj.ſ would be interpreted as obj.s at runtime, changing behavior.
+Additionally, the fix is marked as unsafe if the expression contains comments,
+as the replacement may remove comments attached to the original getattr call.
+For example, the long s character "ſ" normalizes to "s" under NFKC, so:
+# This accesses an attribute with the exact name "ſ" (if it exists)
+value = getattr(obj, "ſ")
+# But this would normalize to "s" and access a different attribute
+obj.ſ  # This is interpreted as obj.s, not obj.ſ
 ```

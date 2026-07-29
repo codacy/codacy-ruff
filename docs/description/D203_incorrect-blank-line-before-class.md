@@ -1,4 +1,7 @@
 # incorrect-blank-line-before-class (D203)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does
@@ -20,4 +23,8 @@ class PhotoMetadata:
 ```
 class PhotoMetadata:
     """Metadata about a photo."""
+Formatter compatibility
+We recommend against using this rule alongside the formatter. The
+formatter removes blank lines before class docstrings, which conflicts
+with this rule's requirement to include them.
 ```

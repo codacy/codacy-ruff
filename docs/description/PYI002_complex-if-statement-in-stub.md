@@ -1,4 +1,7 @@
 # complex-if-statement-in-stub (PYI002)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for if statements with complex conditionals in stubs.

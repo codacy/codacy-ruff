@@ -1,4 +1,7 @@
 # string-dot-format-extra-positional-arguments (F523)
+Added in v0.0.139 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is sometimes available.
 ## What it does

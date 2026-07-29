@@ -1,4 +1,7 @@
 # no-slots-in-str-subclass (SLOT000)
+Added in v0.0.273 ·
+Related issues ·
+View source
 Derived from the flake8-slots linter.
 ## What it does
 Checks for subclasses of str that lack a __slots__ definition.

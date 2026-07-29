@@ -1,4 +1,7 @@
 # parenthesize-chained-operators (RUF021)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for chained operators where adding parentheses could improve the

@@ -1,4 +1,7 @@
 # potential-index-error (PLE0643)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for hard-coded sequence accesses that are known to be out of bounds.

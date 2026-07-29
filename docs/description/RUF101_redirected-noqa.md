@@ -1,4 +1,7 @@
 # redirected-noqa (RUF101)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for noqa directives that use redirected rule codes.

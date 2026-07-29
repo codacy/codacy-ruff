@@ -1,4 +1,7 @@
 # private-member-access (SLF001)
+Added in v0.0.240 ·
+Related issues ·
+View source
 Derived from the flake8-self linter.
 ## What it does
 Checks for accesses on "private" class members.

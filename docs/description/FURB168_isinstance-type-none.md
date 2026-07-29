@@ -1,6 +1,9 @@
 # isinstance-type-none (FURB168)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
-Fix is sometimes available.
+Fix is always available.
 ## What it does
 Checks for uses of isinstance that check if an object is of type None.
 ## Why is this bad?

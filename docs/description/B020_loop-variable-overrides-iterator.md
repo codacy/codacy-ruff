@@ -1,4 +1,7 @@
 # loop-variable-overrides-iterator (B020)
+Added in v0.0.121 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for loop control variables that override the loop iterable.

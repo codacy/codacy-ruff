@@ -1,4 +1,7 @@
 # builtin-attribute-shadowing (A003)
+Added in v0.0.48 ·
+Related issues ·
+View source
 Derived from the flake8-builtins linter.
 ## What it does
 Checks for class attributes and methods that use the same names as

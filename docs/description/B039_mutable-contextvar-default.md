@@ -1,4 +1,7 @@
 # mutable-contextvar-default (B039)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for uses of mutable objects as ContextVar defaults.

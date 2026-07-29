@@ -1,4 +1,7 @@
 # if-tuple (F634)
+Added in v0.0.18 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for if statements that use non-empty tuples as test conditions.

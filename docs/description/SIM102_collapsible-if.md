@@ -1,4 +1,7 @@
 # collapsible-if (SIM102)
+Added in v0.0.211 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 Fix is sometimes available.
 ## What it does
@@ -18,4 +21,8 @@ if foo:
 ```
 if foo and bar:
     ...
+Preview and Fix Safety
+When preview is enabled, the fix for this rule is considered
+as safe. When preview is not enabled, the fix is always
+considered unsafe.
 ```

@@ -1,4 +1,7 @@
 # os-path-join (PTH118)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 ## What it does
 Checks for uses of os.path.join.

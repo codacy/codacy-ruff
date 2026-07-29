@@ -1,4 +1,7 @@
 # try-consider-else (TRY300)
+Added in v0.0.229 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for return statements in try blocks.
@@ -18,6 +21,7 @@ def reciprocal(n):
         return rec
     except ZeroDivisionError:
         logging.exception("Exception occurred")
+        raise
 ```
 ## Use instead:
 ```
@@ -27,6 +31,7 @@ def reciprocal(n):
         rec = 1 / n
     except ZeroDivisionError:
         logging.exception("Exception occurred")
+        raise
     else:
         print(f"reciprocal of {n} is {rec}")
         return rec

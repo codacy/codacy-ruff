@@ -1,4 +1,7 @@
 # logging-string-concat (G003)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the flake8-logging-format linter.
 ## What it does
 Checks for uses string concatenation via the + operator to format logging

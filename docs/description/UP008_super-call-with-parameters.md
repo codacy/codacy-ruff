@@ -1,4 +1,7 @@
 # super-call-with-parameters (UP008)
+Added in v0.0.155 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does
@@ -29,5 +32,4 @@ class B(A):
 Fix safety
 This rule's fix is marked as unsafe because removing the arguments from a call
 may delete comments that are attached to the arguments.
-In preview, the fix is marked safe if no comments are present.
 ```

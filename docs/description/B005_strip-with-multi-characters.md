@@ -1,4 +1,7 @@
 # strip-with-multi-characters (B005)
+Added in v0.0.106 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for uses of multi-character strings in .strip(), .lstrip(), and

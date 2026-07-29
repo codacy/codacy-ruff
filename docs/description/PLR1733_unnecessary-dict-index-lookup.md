@@ -1,4 +1,7 @@
 # unnecessary-dict-index-lookup (PLR1733)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is always available.
 ## What it does

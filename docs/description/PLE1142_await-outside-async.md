@@ -1,4 +1,7 @@
 # await-outside-async (PLE1142)
+Added in v0.0.150 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for uses of await outside async functions.

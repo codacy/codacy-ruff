@@ -1,4 +1,7 @@
 # non-pep695-generic-function (UP047)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does

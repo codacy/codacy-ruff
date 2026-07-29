@@ -1,4 +1,7 @@
 # zip-instead-of-pairwise (RUF007)
+Added in v0.0.257 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for use of zip() to iterate over successive pairs of elements.

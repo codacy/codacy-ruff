@@ -1,4 +1,7 @@
 # non-imperative-mood (D401)
+Added in v0.0.228 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for docstring first lines that are not in an imperative mood.

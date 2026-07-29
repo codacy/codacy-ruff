@@ -1,4 +1,7 @@
 # dict-index-missing-items (PLC0206)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for dictionary iterations that extract the dictionary value

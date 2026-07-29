@@ -1,4 +1,7 @@
 # unused-loop-control-variable (B007)
+Added in v0.0.84 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is sometimes available.
 ## What it does

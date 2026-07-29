@@ -1,4 +1,7 @@
 # comparison-of-constant (PLR0133)
+Added in v0.0.221 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for comparisons between constants.

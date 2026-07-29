@@ -1,4 +1,7 @@
 # mutable-class-default (RUF012)
+Added in v0.0.273 ·
+Related issues ·
+View source
 ## What it does
 Checks for mutable default values in class attributes.
 ## Why is this bad?

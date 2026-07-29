@@ -1,4 +1,7 @@
 # blocking-http-call-in-async-function (ASYNC210)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 ## What it does
 Checks that async functions do not contain blocking HTTP calls.

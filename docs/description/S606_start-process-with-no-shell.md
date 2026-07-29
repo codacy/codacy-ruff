@@ -1,4 +1,7 @@
 # start-process-with-no-shell (S606)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for functions that start a process without a shell.

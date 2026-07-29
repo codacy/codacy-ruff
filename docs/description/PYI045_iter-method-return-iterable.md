@@ -1,4 +1,7 @@
 # iter-method-return-iterable (PYI045)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for __iter__ methods in stubs that return Iterable[T] instead

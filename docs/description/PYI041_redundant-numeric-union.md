@@ -1,4 +1,7 @@
 # redundant-numeric-union (PYI041)
+Added in v0.0.279 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is sometimes available.
 ## What it does

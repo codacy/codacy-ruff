@@ -1,4 +1,7 @@
 # function-uses-loop-variable (B023)
+Added in v0.0.139 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for function definitions that use a loop variable.

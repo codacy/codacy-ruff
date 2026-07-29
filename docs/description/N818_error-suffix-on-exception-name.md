@@ -1,4 +1,7 @@
 # error-suffix-on-exception-name (N818)
+Added in v0.0.89 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for custom exception definitions that omit the Error suffix.

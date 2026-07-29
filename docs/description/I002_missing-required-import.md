@@ -1,4 +1,7 @@
 # missing-required-import (I002)
+Added in v0.0.218 ·
+Related issues ·
+View source
 Derived from the isort linter.
 Fix is always available.
 ## What it does

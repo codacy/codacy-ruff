@@ -1,4 +1,7 @@
 # pytest-unittest-raises-assertion (PT027)
+Added in v0.0.285 ·
+Related issues ·
+View source
 Derived from the flake8-pytest-style linter.
 Fix is sometimes available.
 ## What it does

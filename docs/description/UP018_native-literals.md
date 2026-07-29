@@ -1,8 +1,11 @@
 # native-literals (UP018)
+Added in v0.0.193 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does
-Checks for unnecessary calls to str, bytes, int, float, and bool.
+Checks for unnecessary calls to str, bytes, int, float, bool, and complex.
 ## Why is this bad?
 The mentioned constructors can be replaced with their respective literal
 forms, which are more readable and idiomatic.

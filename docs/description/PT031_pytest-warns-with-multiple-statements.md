@@ -1,4 +1,7 @@
 # pytest-warns-with-multiple-statements (PT031)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the flake8-pytest-style linter.
 ## What it does
 Checks for pytest.warns context managers with multiple statements.

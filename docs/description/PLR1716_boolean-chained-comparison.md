@@ -1,4 +1,7 @@
 # boolean-chained-comparison (PLR1716)
+Added in 0.9.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is always available.
 ## What it does

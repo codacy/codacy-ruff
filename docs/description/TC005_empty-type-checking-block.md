@@ -1,4 +1,7 @@
 # empty-type-checking-block (TC005)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-type-checking linter.
 Fix is always available.
 ## What it does

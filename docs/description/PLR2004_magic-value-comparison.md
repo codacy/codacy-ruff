@@ -1,4 +1,7 @@
 # magic-value-comparison (PLR2004)
+Added in v0.0.221 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for the use of unnamed numerical constants ("magic") values in
@@ -8,7 +11,9 @@ The use of "magic" values can make code harder to read and maintain, as
 readers will have to infer the meaning of the value from the context.
 Such values are discouraged by PEP 8.
 For convenience, this rule excludes a variety of common values from the
-"magic" value definition, such as 0, 1, "", and "__main__".
+"magic" value definition, such as 0, 1, "", and "__main__". It
+also exempts comparisons against sys.version, sys.version_info, and
+sys.implementation.version.
 ## Example
 ```
 def apply_discount(price: float) -> float:

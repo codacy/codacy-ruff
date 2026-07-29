@@ -1,4 +1,7 @@
 # sys-version2 (YTT102)
+Added in v0.0.113 ·
+Related issues ·
+View source
 Derived from the flake8-2020 linter.
 ## What it does
 Checks for uses of sys.version[2].

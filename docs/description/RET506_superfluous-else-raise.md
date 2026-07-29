@@ -1,4 +1,7 @@
 # superfluous-else-raise (RET506)
+Added in v0.0.154 ·
+Related issues ·
+View source
 Derived from the flake8-return linter.
 Fix is sometimes available.
 ## What it does

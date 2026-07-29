@@ -1,4 +1,7 @@
 # replace-stdout-stderr (UP022)
+Added in v0.0.199 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

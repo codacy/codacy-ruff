@@ -1,4 +1,7 @@
 # undocumented-public-nested-class (D106)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for undocumented public class definitions, for nested classes.

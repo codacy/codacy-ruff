@@ -1,4 +1,7 @@
 # unrecognized-platform-name (PYI008)
+Added in v0.0.246 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Check for unrecognized platform names in sys.platform checks.

@@ -1,4 +1,7 @@
 # useless-else-on-loop (PLW0120)
+Added in v0.0.156 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does

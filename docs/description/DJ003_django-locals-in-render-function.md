@@ -1,4 +1,7 @@
 # django-locals-in-render-function (DJ003)
+Added in v0.0.253 ·
+Related issues ·
+View source
 Derived from the flake8-django linter.
 ## What it does
 Checks for the use of locals() in render functions.

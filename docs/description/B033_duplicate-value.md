@@ -1,4 +1,7 @@
 # duplicate-value (B033)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is sometimes available.
 ## What it does
@@ -14,4 +17,14 @@ replaced with a single item at runtime.
 ## Use instead:
 ```
 {1, 2, 3}
+Fix Safety
+This rule's fix is marked as unsafe if the replacement would remove comments attached to the
+original expression, potentially losing important context or documentation.
+For example:
+{
+    1,
+    2,
+    # Comment
+    1,
+}
 ```

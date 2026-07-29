@@ -1,4 +1,7 @@
 # missing-new-line-after-section-name (D406)
+Added in v0.0.71 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

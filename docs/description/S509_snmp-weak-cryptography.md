@@ -1,4 +1,7 @@
 # snmp-weak-cryptography (S509)
+Added in v0.0.218 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of the SNMPv3 protocol without encryption.

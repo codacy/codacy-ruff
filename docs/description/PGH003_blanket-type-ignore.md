@@ -1,4 +1,7 @@
 # blanket-type-ignore (PGH003)
+Added in v0.0.187 ·
+Related issues ·
+View source
 Derived from the pygrep-hooks linter.
 ## What it does
 Check for type: ignore annotations that suppress all type warnings, as

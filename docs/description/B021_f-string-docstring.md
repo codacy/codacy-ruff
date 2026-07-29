@@ -1,4 +1,7 @@
 # f-string-docstring (B021)
+Added in v0.0.116 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for docstrings that are written via f-strings.

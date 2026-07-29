@@ -1,4 +1,7 @@
 # boolean-default-value-positional-argument (FBT002)
+Added in v0.0.127 ·
+Related issues ·
+View source
 Derived from the flake8-boolean-trap linter.
 ## What it does
 Checks for the use of boolean positional arguments in function definitions,
@@ -13,6 +16,10 @@ Instead, consider refactoring into separate implementations for the
 True and False cases, using an Enum, or making the argument a
 keyword-only argument, to force callers to be explicit when providing
 the argument.
+This rule exempts methods decorated with @typing.override,
+since changing the signature of a subclass method that overrides a
+superclass method may cause type checkers to complain about a violation of
+the Liskov Substitution Principle.
 ## Example
 ```
 from math import ceil, floor

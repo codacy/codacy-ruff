@@ -1,5 +1,8 @@
 # mutable-fromkeys-value (RUF024)
-Fix is sometimes available.
+Added in 0.5.0 ·
+Related issues ·
+View source
+Fix is always available.
 ## What it does
 Checks for mutable objects passed as a value argument to dict.fromkeys.
 ## Why is this bad?

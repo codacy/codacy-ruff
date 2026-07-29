@@ -1,4 +1,7 @@
 # debugger (T100)
+Added in v0.0.141 ·
+Related issues ·
+View source
 Derived from the flake8-debugger linter.
 ## What it does
 Checks for the presence of debugger calls and imports.

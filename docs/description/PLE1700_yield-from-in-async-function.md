@@ -1,4 +1,7 @@
 # yield-from-in-async-function (PLE1700)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for uses of yield from in async functions.

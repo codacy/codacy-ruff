@@ -1,4 +1,7 @@
 # f-string-in-get-text-func-call (INT001)
+Added in v0.0.260 ·
+Related issues ·
+View source
 Derived from the flake8-gettext linter.
 ## What it does
 Checks for f-strings in gettext function calls.

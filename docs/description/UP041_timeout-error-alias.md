@@ -1,4 +1,7 @@
 # timeout-error-alias (UP041)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is always available.
 ## What it does
@@ -19,4 +22,7 @@ raise asyncio.TimeoutError
 ## Use instead:
 ```
 raise TimeoutError
+Fix safety
+This rule's fix is marked as unsafe if it would delete any comments
+within the exception expression range.
 ```

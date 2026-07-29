@@ -1,4 +1,7 @@
 # yield-outside-function (F704)
+Added in v0.0.22 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for yield, yield from, and await usages outside of functions.

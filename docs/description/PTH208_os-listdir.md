@@ -1,4 +1,7 @@
 # os-listdir (PTH208)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 ## What it does
 Checks for uses of os.listdir.

@@ -1,4 +1,7 @@
 # non-self-return-type (PYI034)
+Added in v0.0.271 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is sometimes available.
 ## What it does
@@ -23,13 +26,31 @@ Circle().set_scale(0.5)
 Circle().set_scale(0.5).set_radius(2.7)
 Specifically, this check enforces that the return type of the following
 methods is Self:
-In-place binary-operation dunder methods, like __iadd__, __imul__, etc.
+In-place binary-operation dunder methods, like __iadd__, __imul__, etc.,
+    if those methods return the class name.
 __new__, __enter__, and __aenter__, if those methods return the
     class name.
 __iter__ methods that return Iterator, despite the class inheriting
     directly from Iterator.
 __aiter__ methods that return AsyncIterator, despite the class
     inheriting directly from AsyncIterator.
+The rule attempts to avoid flagging methods on metaclasses, since
+PEP 673 specifies that Self is disallowed in metaclasses. Ruff can
+detect a class as being a metaclass if it inherits from a stdlib
+metaclass such as builtins.type or abc.ABCMeta, and additionally
+infers that a class may be a metaclass if it has a __new__ method
+with a similar signature to type.__new__. The heuristic used to
+identify a metaclass-like __new__ method signature is that it:
+Has exactly 5 parameters (including cls)
+Has a second parameter annotated with str
+Has a third parameter annotated with a tuple type
+Has a fourth parameter annotated with a dict type
+Has a fifth parameter is keyword-variadic (**kwargs)
+For example, the following class would be detected as a metaclass, disabling
+the rule:
+class MyMetaclass(django.db.models.base.ModelBase):
+    def __new__(cls, name: str, bases: tuple[Any, ...], attrs: dict[str, Any], **kwargs: Any) -> MyMetaclass:
+        ...
 ## Example
 ```
 class Foo:

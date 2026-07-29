@@ -1,4 +1,7 @@
 # forward-annotation-syntax-error (F722)
+Added in v0.0.39 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for forward annotations that include invalid syntax.

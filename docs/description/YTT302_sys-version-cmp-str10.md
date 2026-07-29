@@ -1,4 +1,7 @@
 # sys-version-cmp-str10 (YTT302)
+Added in v0.0.113 ·
+Related issues ·
+View source
 Derived from the flake8-2020 linter.
 ## What it does
 Checks for comparisons that test sys.version against string literals,

@@ -1,6 +1,9 @@
 # explicit-string-concatenation (ISC003)
+Added in v0.0.201 ·
+Related issues ·
+View source
 Derived from the flake8-implicit-str-concat linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for string literals that are explicitly concatenated (using the
 + operator).

@@ -1,4 +1,7 @@
 # unused-variable (F841)
+Added in v0.0.22 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is sometimes available.
 ## What it does
@@ -24,4 +27,7 @@ def foo():
 Fix safety
 This rule's fix is marked as unsafe because removing an unused variable assignment may
 delete comments that are attached to the assignment.
+See also
+This rule does not apply to bindings in unpacked assignments (e.g. x, y = 1, 2). See
+unused-unpacked-variable for this case.
 ```

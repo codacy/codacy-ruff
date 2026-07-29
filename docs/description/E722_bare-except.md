@@ -1,4 +1,7 @@
 # bare-except (E722)
+Added in v0.0.36 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 Checks for bare except catches in try-except statements.

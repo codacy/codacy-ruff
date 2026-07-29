@@ -1,4 +1,7 @@
 # unnecessary-list-comprehension-dict (C404)
+Added in v0.0.58 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 Fix is always available.
 ## What it does

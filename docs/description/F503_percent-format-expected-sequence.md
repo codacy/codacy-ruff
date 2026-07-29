@@ -1,4 +1,7 @@
 # percent-format-expected-sequence (F503)
+Added in v0.0.142 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for uses of mapping-type values in printf-style format strings

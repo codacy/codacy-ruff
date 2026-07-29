@@ -1,4 +1,7 @@
 # blocking-open-call-in-async-function (ASYNC230)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 ## What it does
 Checks that async functions do not open files with blocking methods like open.

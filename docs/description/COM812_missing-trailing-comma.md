@@ -1,4 +1,7 @@
 # missing-trailing-comma (COM812)
+Added in v0.0.223 ·
+Related issues ·
+View source
 Derived from the flake8-commas linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # unnecessary-list-cast (PERF101)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the Perflint linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # asyncio-dangling-task (RUF006)
+Added in v0.0.247 ·
+Related issues ·
+View source
 ## What it does
 Checks for asyncio.create_task and asyncio.ensure_future calls
 that do not store a reference to the returned result.

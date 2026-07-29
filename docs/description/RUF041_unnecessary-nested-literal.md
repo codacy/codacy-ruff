@@ -1,11 +1,14 @@
 # unnecessary-nested-literal (RUF041)
-Fix is sometimes available.
+Added in 0.10.0 ·
+Related issues ·
+View source
+Fix is always available.
 ## What it does
 Checks for unnecessary nested Literal.
 ## Why is this bad?
 Prefer using a single Literal, which is equivalent and more concise.
 Parameterization of literals by other literals is supported as an ergonomic
-feature as proposed in [PEP 586], to enable patterns such as:
+feature as proposed in PEP 586, to enable patterns such as:
 ReadOnlyMode         = Literal["r", "r+"]
 WriteAndTruncateMode = Literal["w", "w+", "wt", "w+t"]
 WriteNoTruncateMode  = Literal["r+", "r+t"]

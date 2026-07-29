@@ -1,4 +1,7 @@
 # runtime-import-in-type-checking-block (TC004)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Derived from the flake8-type-checking linter.
 Fix is sometimes available.
 ## What it does

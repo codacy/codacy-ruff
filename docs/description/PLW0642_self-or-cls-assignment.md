@@ -1,4 +1,7 @@
 # self-or-cls-assignment (PLW0642)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for assignment of self and cls in instance and class methods respectively.

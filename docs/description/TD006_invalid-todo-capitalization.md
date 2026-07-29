@@ -1,4 +1,7 @@
 # invalid-todo-capitalization (TD006)
+Added in v0.0.269 ·
+Related issues ·
+View source
 Derived from the flake8-todos linter.
 Fix is always available.
 ## What it does

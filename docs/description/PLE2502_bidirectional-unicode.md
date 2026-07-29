@@ -1,4 +1,7 @@
 # bidirectional-unicode (PLE2502)
+Added in v0.0.244 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for bidirectional formatting characters.

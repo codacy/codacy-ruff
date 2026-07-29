@@ -1,4 +1,7 @@
 # weak-cryptographic-key (S505)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of cryptographic keys with vulnerable key sizes.

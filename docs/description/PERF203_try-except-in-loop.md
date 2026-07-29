@@ -1,4 +1,7 @@
 # try-except-in-loop (PERF203)
+Added in v0.0.276 ·
+Related issues ·
+View source
 Derived from the Perflint linter.
 ## What it does
 Checks for uses of except handling via try-except within for and

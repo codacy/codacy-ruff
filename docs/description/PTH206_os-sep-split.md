@@ -1,4 +1,7 @@
 # os-sep-split (PTH206)
+Added in v0.0.281 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 ## What it does
 Checks for uses of .split(os.sep)

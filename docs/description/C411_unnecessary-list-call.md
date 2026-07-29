@@ -1,6 +1,9 @@
 # unnecessary-list-call (C411)
+Added in v0.0.73 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for unnecessary list() calls around list comprehensions.
 ## Why is this bad?

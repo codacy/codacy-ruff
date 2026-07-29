@@ -1,4 +1,7 @@
 # overload-with-docstring (D418)
+Added in v0.0.71 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for @overload function definitions that contain a docstring.
@@ -10,6 +13,7 @@ contains the implementation of the function.
 @overload function definitions should not contain a docstring; instead,
 the docstring should be placed on the non-decorated definition that contains
 the implementation.
+This rule does not apply to stub files, which don't contain implementations.
 ## Example
 ```
 from typing import overload

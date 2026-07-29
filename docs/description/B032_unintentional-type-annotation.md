@@ -1,4 +1,7 @@
 # unintentional-type-annotation (B032)
+Added in v0.0.250 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for the unintentional use of type annotations.

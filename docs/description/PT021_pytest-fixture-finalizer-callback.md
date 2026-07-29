@@ -1,4 +1,7 @@
 # pytest-fixture-finalizer-callback (PT021)
+Added in v0.0.208 ·
+Related issues ·
+View source
 Derived from the flake8-pytest-style linter.
 ## What it does
 Checks for unnecessary request.addfinalizer usages in pytest fixtures.

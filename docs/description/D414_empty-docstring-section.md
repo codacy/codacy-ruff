@@ -1,4 +1,7 @@
 # empty-docstring-section (D414)
+Added in v0.0.71 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 ## What it does
 Checks for docstrings with empty sections.

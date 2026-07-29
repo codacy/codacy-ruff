@@ -1,4 +1,7 @@
 # starmap-zip (RUF058)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for itertools.starmap calls where the second argument is a zip call.

@@ -1,6 +1,9 @@
 # unquoted-type-alias (TC007)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-type-checking linter.
-Fix is sometimes available.
+Fix is always available.
 ## What it does
 Checks if PEP 613 explicit type aliases contain references to
 symbols that are not available at runtime.

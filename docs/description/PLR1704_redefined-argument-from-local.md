@@ -1,4 +1,7 @@
 # redefined-argument-from-local (PLR1704)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for variables defined in for, try, with statements

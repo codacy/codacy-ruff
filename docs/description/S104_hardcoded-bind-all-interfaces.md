@@ -1,4 +1,7 @@
 # hardcoded-bind-all-interfaces (S104)
+Added in v0.0.116 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for hardcoded bindings to all network interfaces (0.0.0.0).

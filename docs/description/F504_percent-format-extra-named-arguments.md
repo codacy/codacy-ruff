@@ -1,4 +1,7 @@
 # percent-format-extra-named-arguments (F504)
+Added in v0.0.142 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is always available.
 ## What it does

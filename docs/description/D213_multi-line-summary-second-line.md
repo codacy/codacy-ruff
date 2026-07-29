@@ -1,4 +1,7 @@
 # multi-line-summary-second-line (D213)
+Added in v0.0.69 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

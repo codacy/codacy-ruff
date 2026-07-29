@@ -1,4 +1,7 @@
 # batched-without-explicit-strict (B911)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for itertools.batched calls without an explicit strict parameter.

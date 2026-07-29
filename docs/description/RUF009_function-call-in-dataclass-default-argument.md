@@ -1,4 +1,7 @@
 # function-call-in-dataclass-default-argument (RUF009)
+Added in v0.0.262 ·
+Related issues ·
+View source
 ## What it does
 Checks for function calls in dataclass attribute defaults.
 ## Why is this bad?

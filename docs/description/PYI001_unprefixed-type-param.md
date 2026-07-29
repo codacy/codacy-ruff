@@ -1,4 +1,7 @@
 # unprefixed-type-param (PYI001)
+Added in v0.0.245 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks that type TypeVars, ParamSpecs, and TypeVarTuples in stubs

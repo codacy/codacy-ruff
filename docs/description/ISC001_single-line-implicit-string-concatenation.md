@@ -1,4 +1,7 @@
 # single-line-implicit-string-concatenation (ISC001)
+Added in v0.0.201 ·
+Related issues ·
+View source
 Derived from the flake8-implicit-str-concat linter.
 Fix is sometimes available.
 ## What it does

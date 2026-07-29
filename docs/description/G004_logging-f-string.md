@@ -1,5 +1,9 @@
 # logging-f-string (G004)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the flake8-logging-format linter.
+Fix is sometimes available.
 ## What it does
 Checks for uses of f-strings to format logging messages.
 ## Why is this bad?

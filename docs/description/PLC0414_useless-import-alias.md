@@ -1,9 +1,12 @@
 # useless-import-alias (PLC0414)
+Added in v0.0.156 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does
 Checks for import aliases that do not rename the original package.
-In preview this rule does not apply in __init__.py files.
+This rule does not apply in __init__.py files.
 ## Why is this bad?
 The import alias is redundant and should be removed to avoid confusion.
 Fix safety

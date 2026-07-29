@@ -1,4 +1,7 @@
 # duplicate-try-block-exception (B025)
+Added in v0.0.67 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for try-except blocks with duplicate exception handlers.
@@ -20,4 +23,6 @@ try:
     ...
 except ValueError:
     ...
+Fix safety
+This rule's fix is marked as safe, unless the exception handler contains comments.
 ```

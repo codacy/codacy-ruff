@@ -1,4 +1,7 @@
 # fast-api-unused-path-parameter (FAST003)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the FastAPI linter.
 Fix is sometimes available.
 ## What it does

@@ -1,4 +1,7 @@
 # property-with-parameters (PLR0206)
+Added in v0.0.153 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for property definitions that accept function parameters.

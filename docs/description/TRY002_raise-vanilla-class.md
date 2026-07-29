@@ -1,4 +1,7 @@
 # raise-vanilla-class (TRY002)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for code that raises Exception or BaseException directly.

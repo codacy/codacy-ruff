@@ -1,4 +1,7 @@
 # unnecessary-escaped-quote (Q004)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-quotes linter.
 Fix is always available.
 ## What it does

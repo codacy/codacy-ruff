@@ -1,4 +1,7 @@
 # call-datetime-now-without-tzinfo (DTZ005)
+Added in v0.0.188 ·
+Related issues ·
+View source
 Derived from the flake8-datetimez linter.
 ## What it does
 Checks for usages of datetime.datetime.now() that do not specify a timezone.

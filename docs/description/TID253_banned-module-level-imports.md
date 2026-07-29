@@ -1,4 +1,7 @@
 # banned-module-level-imports (TID253)
+Added in v0.0.285 ·
+Related issues ·
+View source
 Derived from the flake8-tidy-imports linter.
 ## What it does
 Checks for module-level imports that should instead be imported lazily

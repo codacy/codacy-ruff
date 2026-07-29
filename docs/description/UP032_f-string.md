@@ -1,4 +1,7 @@
 # f-string (UP032)
+Added in v0.0.224 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

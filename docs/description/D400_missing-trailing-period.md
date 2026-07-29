@@ -1,4 +1,7 @@
 # missing-trailing-period (D400)
+Added in v0.0.68 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is sometimes available.
 ## What it does
@@ -18,4 +21,8 @@ def average(values: list[float]) -> float:
 ```
 def average(values: list[float]) -> float:
     """Return the mean of the given values."""
+Fix safety
+This fix is marked as unsafe, as it may alter the intended formatting of the
+docstring, or affect tools that parse docstrings and rely on specific
+formatting.
 ```

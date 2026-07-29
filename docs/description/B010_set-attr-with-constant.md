@@ -1,4 +1,7 @@
 # set-attr-with-constant (B010)
+Added in v0.0.111 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is always available.
 ## What it does
@@ -16,4 +19,18 @@ setattr(obj, "foo", 42)
 ## Use instead:
 ```
 obj.foo = 42
+Fix safety
+The fix is marked as unsafe for attribute names that are not in NFKC (Normalization Form KC)
+normalization. Python normalizes identifiers using NFKC when using attribute access syntax
+(e.g., obj.attr = value), but does not normalize string arguments passed to setattr.
+Rewriting setattr(obj, "ſ", 1) to obj.ſ = 1 would be interpreted as obj.s = 1 at
+runtime, changing behavior.
+Additionally, the fix is marked as unsafe if the expression contains comments,
+as the replacement may remove comments attached to the original setattr call.
+For example, the long s character "ſ" normalizes to "s" under NFKC, so:
+# This creates an attribute with the exact name "ſ"
+setattr(obj, "ſ", 1)
+getattr(obj, "ſ")  # Returns 1
+# But this would normalize to "s" and set a different attribute
+obj.ſ = 1  # This is interpreted as obj.s = 1, not obj.ſ = 1
 ```

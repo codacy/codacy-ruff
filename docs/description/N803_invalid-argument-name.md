@@ -1,4 +1,7 @@
 # invalid-argument-name (N803)
+Added in v0.0.77 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 ## What it does
 Checks for argument names that do not follow the snake_case convention.

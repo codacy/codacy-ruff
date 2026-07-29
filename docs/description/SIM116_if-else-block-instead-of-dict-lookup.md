@@ -1,4 +1,7 @@
 # if-else-block-instead-of-dict-lookup (SIM116)
+Added in v0.0.250 ·
+Related issues ·
+View source
 Derived from the flake8-simplify linter.
 ## What it does
 Checks for three or more consecutive if-statements with direct returns
@@ -19,6 +22,6 @@ def find_phrase(x):
 ## Use instead:
 ```
 def find_phrase(x):
-    phrases = {1: "Hello", 2: "Goodye", 3: "Good morning"}
+    phrases = {1: "Hello", 2: "Goodbye", 3: "Good morning"}
     return phrases.get(x, "Goodnight")
 ```

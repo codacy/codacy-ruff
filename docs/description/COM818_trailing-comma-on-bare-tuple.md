@@ -1,4 +1,7 @@
 # trailing-comma-on-bare-tuple (COM818)
+Added in v0.0.223 ·
+Related issues ·
+View source
 Derived from the flake8-commas linter.
 ## What it does
 Checks for the presence of trailing commas on bare (i.e., unparenthesized)

@@ -1,4 +1,7 @@
 # slice-to-remove-prefix-or-suffix (FURB188)
+Added in 0.9.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
 Fix is always available.
 ## What it does
@@ -24,4 +27,6 @@ def example(filename: str, text: str):
 def example(filename: str, text: str):
     filename = filename.removesuffix(".txt")
     text = text.removeprefix("pre")
+Fix safety
+This rule's fix is marked as safe, unless the expression contains comments.
 ```

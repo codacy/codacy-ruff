@@ -1,4 +1,7 @@
 # os-path-getatime (PTH203)
+Added in v0.0.279 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is sometimes available.
 ## What it does

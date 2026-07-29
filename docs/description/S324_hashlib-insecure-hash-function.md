@@ -1,4 +1,7 @@
 # hashlib-insecure-hash-function (S324)
+Added in v0.0.212 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of weak or broken cryptographic hash functions in
@@ -11,6 +14,15 @@ given hash). This can lead to security vulnerabilities in applications
 that rely on these hash functions.
 Avoid using weak or broken cryptographic hash functions in security
 contexts. Instead, use a known secure hash function such as SHA256.
+Note: This rule targets the following weak algorithm names in hashlib:
+md4, md5, sha, and sha1. It also flags uses of crypt.crypt and
+crypt.mksalt when configured with METHOD_CRYPT, METHOD_MD5, or
+METHOD_BLOWFISH.
+It does not attempt to lint OpenSSL- or platform-specific aliases and OIDs
+(for example: "sha-1", "ssl3-sha1", "ssl3-md5", or
+"1.3.14.3.2.26"), nor variations with trailing spaces, as the set of
+accepted aliases depends on the underlying OpenSSL version and varies across
+platforms and Python builds.
 ## Example
 ```
 import hashlib

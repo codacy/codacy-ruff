@@ -1,4 +1,7 @@
 # import-outside-top-level (PLC0415)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for import statements outside of a module's top-level scope, such

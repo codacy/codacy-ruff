@@ -1,4 +1,7 @@
 # global-at-module-level (PLW0604)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for uses of the global keyword at the module level.

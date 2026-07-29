@@ -1,4 +1,7 @@
 # doc-line-too-long (W505)
+Added in v0.0.219 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 Checks for doc lines that exceed the specified maximum character length.

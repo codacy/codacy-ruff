@@ -1,4 +1,7 @@
 # too-many-branches (PLR0912)
+Added in v0.0.242 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for functions or methods with too many branches, including (nested)

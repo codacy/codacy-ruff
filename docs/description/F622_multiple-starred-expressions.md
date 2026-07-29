@@ -1,4 +1,7 @@
 # multiple-starred-expressions (F622)
+Added in v0.0.32 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for the use of multiple starred expressions in assignment statements.

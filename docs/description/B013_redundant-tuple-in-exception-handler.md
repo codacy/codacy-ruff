@@ -1,4 +1,7 @@
 # redundant-tuple-in-exception-handler (B013)
+Added in v0.0.89 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is always available.
 ## What it does
@@ -22,4 +25,6 @@ try:
     ...
 except ValueError:
     ...
+Fix safety
+This rule's fix is marked as safe, unless the exception handler contains comments.
 ```

@@ -1,4 +1,7 @@
 # new-line-after-last-paragraph (D209)
+Added in v0.0.68 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

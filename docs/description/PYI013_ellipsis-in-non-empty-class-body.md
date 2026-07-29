@@ -1,6 +1,9 @@
 # ellipsis-in-non-empty-class-body (PYI013)
+Added in v0.0.270 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
-Fix is sometimes available.
+Fix is always available.
 ## What it does
 Removes ellipses (...) in otherwise non-empty class bodies.
 ## Why is this bad?

@@ -1,4 +1,7 @@
 # call-datetime-fromtimestamp (DTZ006)
+Added in v0.0.188 ·
+Related issues ·
+View source
 Derived from the flake8-datetimez linter.
 ## What it does
 Checks for usage of datetime.datetime.fromtimestamp() that do not specify
@@ -10,7 +13,7 @@ contain enough information to unambiguously locate itself relative to other
 datetime objects. Since this can lead to errors, it is recommended to
 always use timezone-aware objects.
 datetime.datetime.fromtimestamp(ts) or
-datetime.datetime.fromtimestampe(ts, tz=None) returns a naive datetime
+datetime.datetime.fromtimestamp(ts, tz=None) returns a naive datetime
 object. Instead, use datetime.datetime.fromtimestamp(ts, tz=<timezone>)
 to create a timezone-aware object.
 ## Example

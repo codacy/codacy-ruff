@@ -1,4 +1,7 @@
 # shebang-missing-executable-file (EXE002)
+Added in v0.0.233 ·
+Related issues ·
+View source
 Derived from the flake8-executable linter.
 ## What it does
 Checks for executable .py files that do not have a shebang.

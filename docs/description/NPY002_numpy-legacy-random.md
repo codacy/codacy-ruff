@@ -1,4 +1,7 @@
 # numpy-legacy-random (NPY002)
+Added in v0.0.248 ·
+Related issues ·
+View source
 ## What it does
 Checks for the use of legacy np.random function calls.
 ## Why is this bad?

@@ -1,4 +1,7 @@
 # logging-exc-info (G201)
+Added in v0.0.236 ·
+Related issues ·
+View source
 Derived from the flake8-logging-format linter.
 ## What it does
 Checks for uses of logging.error that pass exc_info=True.

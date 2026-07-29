@@ -1,4 +1,7 @@
 # unnecessary-subscript-reversal (C415)
+Added in v0.0.64 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 ## What it does
 Checks for unnecessary subscript reversal of iterable.

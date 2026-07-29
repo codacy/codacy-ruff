@@ -1,4 +1,7 @@
 # implicit-namespace-package (INP001)
+Added in v0.0.225 ·
+Related issues ·
+View source
 Derived from the flake8-no-pep420 linter.
 ## What it does
 Checks for packages that are missing an __init__.py file.

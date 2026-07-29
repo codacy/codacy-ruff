@@ -1,4 +1,7 @@
 # shebang-not-first-line (EXE005)
+Added in v0.0.229 ·
+Related issues ·
+View source
 Derived from the flake8-executable linter.
 ## What it does
 Checks for a shebang directive that is not at the beginning of the file.

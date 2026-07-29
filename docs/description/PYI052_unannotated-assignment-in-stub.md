@@ -1,4 +1,7 @@
 # unannotated-assignment-in-stub (PYI052)
+Added in v0.0.269 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for unannotated assignments in stub (.pyi) files.

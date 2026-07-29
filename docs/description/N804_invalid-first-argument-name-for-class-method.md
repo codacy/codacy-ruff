@@ -1,4 +1,7 @@
 # invalid-first-argument-name-for-class-method (N804)
+Added in v0.0.77 ·
+Related issues ·
+View source
 Derived from the pep8-naming linter.
 Fix is sometimes available.
 ## What it does

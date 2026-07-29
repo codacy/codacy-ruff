@@ -1,4 +1,7 @@
 # os-readlink (PTH115)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is sometimes available.
 ## What it does
@@ -23,4 +26,6 @@ it can be less performant than the lower-level alternatives that work directly w
 especially on older versions of Python.
 Fix Safety
 This rule's fix is marked as unsafe if the replacement would remove comments attached to the original expression.
+Additionally, the fix is marked as unsafe when the return value is used because the type changes
+from str or bytes (AnyStr) to a Path object.
 ```

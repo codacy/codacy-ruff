@@ -1,4 +1,7 @@
 # hashlib-digest-hex (FURB181)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
 Fix is sometimes available.
 ## What it does
@@ -16,4 +19,6 @@ hashed = sha512(b"some data").digest().hex()
 ```
 from hashlib import sha512
 hashed = sha512(b"some data").hexdigest()
+Fix safety
+This rule's fix is marked as safe, unless the expression contains comments.
 ```

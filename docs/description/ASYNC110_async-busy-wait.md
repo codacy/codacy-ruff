@@ -1,11 +1,18 @@
 # async-busy-wait (ASYNC110)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the flake8-async linter.
 ## What it does
 Checks for the use of an async sleep function in a while loop.
 ## Why is this bad?
-Instead of sleeping in a while loop, and waiting for a condition
-to become true, it's preferable to await on an Event object such
-as: asyncio.Event, trio.Event, or anyio.Event.
+Busy-waiting for a condition in a loop forces a tradeoff between
+efficiency and latency: shorter sleep times improve responsiveness
+but waste more CPU cycles, while longer sleep times reduce CPU usage
+but delay reaction to state changes.
+Waiting on an Event object like asyncio.Event, trio.Event, or
+anyio.Event eliminates this tradeoff, allowing immediate response
+with minimal wasted CPU time.
 ## Example
 ```
 import asyncio

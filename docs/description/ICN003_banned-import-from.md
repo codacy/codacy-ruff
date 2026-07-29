@@ -1,4 +1,7 @@
 # banned-import-from (ICN003)
+Added in v0.0.263 ·
+Related issues ·
+View source
 Derived from the flake8-import-conventions linter.
 ## What it does
 Checks for member imports that should instead be accessed by importing the

@@ -1,4 +1,7 @@
 # collapsible-else-if (PLR5501)
+Added in v0.0.253 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does

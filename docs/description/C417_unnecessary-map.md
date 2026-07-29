@@ -1,4 +1,7 @@
 # unnecessary-map (C417)
+Added in v0.0.74 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 Fix is sometimes available.
 ## What it does

@@ -1,4 +1,7 @@
 # hardcoded-password-default (S107)
+Added in v0.0.116 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for potential uses of hardcoded passwords in function argument

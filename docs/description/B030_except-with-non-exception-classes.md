@@ -1,4 +1,7 @@
 # except-with-non-exception-classes (B030)
+Added in v0.0.255 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for exception handlers that catch non-exception classes.

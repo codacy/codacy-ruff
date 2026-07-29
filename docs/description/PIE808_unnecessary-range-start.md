@@ -1,4 +1,7 @@
 # unnecessary-range-start (PIE808)
+Added in v0.0.286 ·
+Related issues ·
+View source
 Derived from the flake8-pie linter.
 Fix is always available.
 ## What it does

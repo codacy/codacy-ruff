@@ -1,4 +1,7 @@
 # never-union (RUF020)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for uses of typing.NoReturn and typing.Never in union types.
@@ -15,4 +18,6 @@ def func() -> Never | int: ...
 ## Use instead:
 ```
 def func() -> int: ...
+Fix safety
+This rule's fix is marked as safe, unless the union type contains comments.
 ```

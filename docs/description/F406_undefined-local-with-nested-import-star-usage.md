@@ -1,4 +1,7 @@
 # undefined-local-with-nested-import-star-usage (F406)
+Added in v0.0.37 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Check for the use of wildcard imports outside of the module namespace.

@@ -1,4 +1,7 @@
 # repeated-keyword-argument (PLE1132)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for repeated keyword arguments in function calls.

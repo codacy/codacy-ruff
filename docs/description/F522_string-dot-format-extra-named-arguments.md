@@ -1,4 +1,7 @@
 # string-dot-format-extra-named-arguments (F522)
+Added in v0.0.139 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is sometimes available.
 ## What it does

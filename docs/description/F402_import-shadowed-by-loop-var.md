@@ -1,4 +1,7 @@
 # import-shadowed-by-loop-var (F402)
+Added in v0.0.44 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for import bindings that are shadowed by loop variables.

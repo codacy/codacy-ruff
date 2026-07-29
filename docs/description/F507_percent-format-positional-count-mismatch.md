@@ -1,4 +1,7 @@
 # percent-format-positional-count-mismatch (F507)
+Added in v0.0.142 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for printf-style format strings that have a mismatch between the

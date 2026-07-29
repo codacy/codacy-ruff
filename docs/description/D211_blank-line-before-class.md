@@ -1,4 +1,7 @@
 # blank-line-before-class (D211)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is always available.
 ## What it does

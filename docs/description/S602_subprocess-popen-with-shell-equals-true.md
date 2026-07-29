@@ -1,4 +1,7 @@
 # subprocess-popen-with-shell-equals-true (S602)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Check for method calls that initiate a subprocess with a shell.

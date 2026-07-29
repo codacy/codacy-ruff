@@ -1,4 +1,7 @@
 # unnecessary-cast-to-int (RUF046)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for int conversions of values that are already integers.

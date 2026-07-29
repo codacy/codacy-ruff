@@ -1,4 +1,7 @@
 # numpy-deprecated-type-alias (NPY001)
+Added in v0.0.247 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for deprecated NumPy type aliases.

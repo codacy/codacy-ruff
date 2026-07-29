@@ -1,4 +1,7 @@
 # raise-within-try (TRY301)
+Added in v0.0.233 ·
+Related issues ·
+View source
 Derived from the tryceratops linter.
 ## What it does
 Checks for raise statements within try blocks. The only raises

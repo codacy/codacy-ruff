@@ -1,4 +1,7 @@
 # line-contains-hack (FIX004)
+Added in v0.0.272 ·
+Related issues ·
+View source
 Derived from the flake8-fixme linter.
 ## What it does
 Checks for "HACK" comments.

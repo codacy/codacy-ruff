@@ -1,4 +1,7 @@
 # empty-method-without-abstract-decorator (B027)
+Added in v0.0.118 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for empty methods in abstract base classes without an abstract

@@ -1,4 +1,7 @@
 # mutable-dataclass-default (RUF008)
+Added in v0.0.262 ·
+Related issues ·
+View source
 ## What it does
 Checks for mutable default values in dataclass attributes.
 ## Why is this bad?
@@ -9,6 +12,9 @@ Instead of sharing mutable defaults, use the field(default_factory=...)
 pattern.
 If the default value is intended to be mutable, it must be annotated with
 typing.ClassVar; otherwise, a ValueError will be raised.
+In preview this rule also detects mutable defaults passed via the default keyword
+argument in field() (for stdlib dataclasses), attrs.field(), attr.ib(),
+and attr.attrib() calls.
 ## Example
 ```
 from dataclasses import dataclass

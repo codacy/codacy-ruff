@@ -1,9 +1,12 @@
 # unsafe-markup-use (S704)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for non-literal strings being passed to markupsafe.Markup.
 ## Why is this bad?
-[markupsafe.Markup][markupsafe.Markup] does not perform any escaping, so passing dynamic
+markupsafe.Markup does not perform any escaping, so passing dynamic
 content, like f-strings, variables or interpolated strings will potentially
 lead to XSS vulnerabilities.
 Instead you should interpolate the Markup object.

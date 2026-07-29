@@ -1,4 +1,7 @@
 # complex-assignment-in-stub (PYI017)
+Added in v0.0.279 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for assignments with multiple or non-name targets in stub files.

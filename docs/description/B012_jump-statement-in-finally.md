@@ -1,4 +1,7 @@
 # jump-statement-in-finally (B012)
+Added in v0.0.116 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for break, continue, and return statements in finally

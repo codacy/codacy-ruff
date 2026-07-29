@@ -1,4 +1,7 @@
 # yield-in-for-loop (UP028)
+Added in v0.0.210 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

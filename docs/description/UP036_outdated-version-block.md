@@ -1,4 +1,7 @@
 # outdated-version-block (UP036)
+Added in v0.0.240 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does

@@ -1,4 +1,7 @@
 # nested-min-max (PLW3301)
+Added in v0.0.266 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does

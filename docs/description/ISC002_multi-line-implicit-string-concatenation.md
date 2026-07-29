@@ -1,4 +1,7 @@
 # multi-line-implicit-string-concatenation (ISC002)
+Added in v0.0.201 ·
+Related issues ·
+View source
 Derived from the flake8-implicit-str-concat linter.
 ## What it does
 Checks for implicitly concatenated strings that span multiple lines.

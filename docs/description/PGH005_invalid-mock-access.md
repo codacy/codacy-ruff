@@ -1,4 +1,7 @@
 # invalid-mock-access (PGH005)
+Added in v0.0.266 ·
+Related issues ·
+View source
 Derived from the pygrep-hooks linter.
 ## What it does
 Checks for common mistakes when using mock objects.

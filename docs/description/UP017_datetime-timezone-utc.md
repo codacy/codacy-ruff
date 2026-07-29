@@ -1,4 +1,7 @@
 # datetime-timezone-utc (UP017)
+Added in v0.0.192 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does
@@ -15,4 +18,6 @@ datetime.timezone.utc
 ```
 import datetime
 datetime.UTC
+Fix safety
+This rule's fix is marked as safe, unless the expression contains comments.
 ```

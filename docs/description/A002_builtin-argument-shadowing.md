@@ -1,4 +1,7 @@
 # builtin-argument-shadowing (A002)
+Added in v0.0.48 ·
+Related issues ·
+View source
 Derived from the flake8-builtins linter.
 ## What it does
 Checks for function arguments that use the same names as builtins.
@@ -7,6 +10,8 @@ Reusing a builtin name for the name of an argument increases the
 difficulty of reading and maintaining the code, and can cause
 non-obvious errors, as readers may mistake the argument for the
 builtin and vice versa.
+Function definitions decorated with @override or
+@overload are exempt from this rule by default.
 Builtins can be marked as exceptions to this rule via the
 lint.flake8-builtins.ignorelist configuration option.
 ## Example

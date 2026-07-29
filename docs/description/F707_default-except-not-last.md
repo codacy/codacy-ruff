@@ -1,4 +1,7 @@
 # default-except-not-last (F707)
+Added in v0.0.28 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for except blocks that handle all exceptions, but are not the last

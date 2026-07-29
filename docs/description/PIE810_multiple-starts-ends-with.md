@@ -1,4 +1,7 @@
 # multiple-starts-ends-with (PIE810)
+Added in v0.0.243 ·
+Related issues ·
+View source
 Derived from the flake8-pie linter.
 Fix is always available.
 ## What it does

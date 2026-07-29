@@ -1,4 +1,7 @@
 # mixed-spaces-and-tabs (E101)
+Added in v0.0.229 ·
+Related issues ·
+View source
 Derived from the pycodestyle linter.
 ## What it does
 Checks for mixed tabs and spaces in indentation.

@@ -1,4 +1,7 @@
 # invalid-character-zero-width-space (PLE2515)
+Added in v0.0.257 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is sometimes available.
 ## What it does

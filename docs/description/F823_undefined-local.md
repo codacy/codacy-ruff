@@ -1,4 +1,7 @@
 # undefined-local (F823)
+Added in v0.0.24 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for undefined local variables.

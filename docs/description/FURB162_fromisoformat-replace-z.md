@@ -1,4 +1,7 @@
 # fromisoformat-replace-z (FURB162)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
 Fix is always available.
 ## What it does

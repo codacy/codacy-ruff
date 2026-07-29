@@ -1,4 +1,7 @@
 # unnecessary-literal-within-list-call (C410)
+Added in v0.0.66 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 Fix is always available.
 ## What it does

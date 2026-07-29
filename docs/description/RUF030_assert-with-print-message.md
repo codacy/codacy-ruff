@@ -1,4 +1,7 @@
 # assert-with-print-message (RUF030)
+Added in 0.8.0 ·
+Related issues ·
+View source
 Fix is always available.
 ## What it does
 Checks for uses of assert expression, print(message).

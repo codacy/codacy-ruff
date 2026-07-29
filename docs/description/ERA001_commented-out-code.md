@@ -1,4 +1,7 @@
 # commented-out-code (ERA001)
+Added in v0.0.145 ·
+Related issues ·
+View source
 Derived from the eradicate linter.
 ## What it does
 Checks for commented-out Python code.

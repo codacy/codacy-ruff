@@ -1,4 +1,7 @@
 # pytest-incorrect-pytest-import (PT013)
+Added in v0.0.208 ·
+Related issues ·
+View source
 Derived from the flake8-pytest-style linter.
 ## What it does
 Checks for incorrect import of pytest.

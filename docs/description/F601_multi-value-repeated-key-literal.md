@@ -1,4 +1,7 @@
 # multi-value-repeated-key-literal (F601)
+Added in v0.0.30 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is sometimes available.
 ## What it does

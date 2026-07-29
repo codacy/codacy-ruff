@@ -1,4 +1,7 @@
 # regex-flag-alias (FURB167)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the refurb linter.
 Fix is always available.
 ## What it does
@@ -11,12 +14,12 @@ are more readable and self-documenting.
 ## Example
 ```
 import re
-if re.match("^hello", "hello world", re.I):
+if re.search("^hello", "hello world", re.I):
     ...
 ```
 ## Use instead:
 ```
 import re
-if re.match("^hello", "hello world", re.IGNORECASE):
+if re.search("^hello", "hello world", re.IGNORECASE):
     ...
 ```

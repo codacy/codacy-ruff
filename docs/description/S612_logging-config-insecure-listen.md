@@ -1,4 +1,7 @@
 # logging-config-insecure-listen (S612)
+Added in v0.0.231 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for insecure logging.config.listen calls.

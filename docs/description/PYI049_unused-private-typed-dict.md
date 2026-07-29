@@ -1,4 +1,7 @@
 # unused-private-typed-dict (PYI049)
+Added in v0.0.281 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks for the presence of unused private typing.TypedDict definitions.

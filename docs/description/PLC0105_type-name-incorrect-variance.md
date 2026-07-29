@@ -1,4 +1,7 @@
 # type-name-incorrect-variance (PLC0105)
+Added in v0.0.278 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for type names that do not match the variance of their associated

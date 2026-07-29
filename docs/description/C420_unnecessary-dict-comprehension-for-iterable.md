@@ -1,4 +1,7 @@
 # unnecessary-dict-comprehension-for-iterable (C420)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 Fix is sometimes available.
 ## What it does

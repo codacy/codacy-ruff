@@ -1,4 +1,7 @@
 # unsupported-method-call-on-all (PYI056)
+Added in v0.0.281 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 ## What it does
 Checks that append, extend and remove methods are not called on

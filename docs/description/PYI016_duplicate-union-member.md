@@ -1,4 +1,7 @@
 # duplicate-union-member (PYI016)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is sometimes available.
 ## What it does

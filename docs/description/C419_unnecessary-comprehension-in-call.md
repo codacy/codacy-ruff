@@ -1,4 +1,7 @@
 # unnecessary-comprehension-in-call (C419)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-comprehensions linter.
 Fix is sometimes available.
 ## What it does

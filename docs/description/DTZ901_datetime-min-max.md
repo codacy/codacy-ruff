@@ -1,4 +1,7 @@
 # datetime-min-max (DTZ901)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-datetimez linter.
 ## What it does
 Checks for uses of datetime.datetime.min and datetime.datetime.max.

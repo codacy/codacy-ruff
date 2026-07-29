@@ -1,4 +1,7 @@
 # duplicate-literal-member (PYI062)
+Added in 0.6.0 ·
+Related issues ·
+View source
 Derived from the flake8-pyi linter.
 Fix is always available.
 ## What it does

@@ -1,4 +1,7 @@
 # duplicate-handler-exception (B014)
+Added in v0.0.67 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 Fix is always available.
 ## What it does

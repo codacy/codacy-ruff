@@ -1,4 +1,7 @@
 # non-pep695-generic-class (UP046)
+Added in 0.12.0 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does
@@ -6,6 +9,10 @@ Checks for use of standalone type variables and parameter specifications in gene
 ## Why is this bad?
 Special type parameter syntax was introduced in Python 3.12 by PEP 695 for defining generic
 classes. This syntax is easier to read and provides cleaner support for generics.
+In particular, old-style TypeVar variables are typically allocated at module scope, but their
+semantic meaning is only valid within the context of a generic class, function, or type alias.
+PEP 695 eliminates this source of confusion by declaring type parameters at their point of
+use.
 Known problems
 The rule currently skips generic classes nested inside of other functions or classes. It also
 skips type parameters with the default argument introduced in PEP 696 and implemented in
@@ -19,7 +26,7 @@ Fix safety
 This fix is marked as unsafe, as PEP 695 uses inferred variance for type parameters, instead
 of the covariant and contravariant keywords used by TypeVar variables. As such, replacing
 a TypeVar variable with an inline type parameter may change its variance.
-## Example
+## Examples
 ```
 from typing import Generic, TypeVar
 T = TypeVar("T")
@@ -30,6 +37,19 @@ class GenericClass(Generic[T]):
 ```
 class GenericClass[T]:
     var: T
+In cases where you've intentionally defined a reusable TypeVar to share
+the bounds across multiple uses:
+from typing import Generic, TypeVar
+ReusableT = TypeVar("ReusableT", bound=int | str | dict[int, str])
+class GenericClass1(Generic[ReusableT]): ...
+class GenericClass2(Generic[ReusableT]): ...
+class GenericClass3(Generic[ReusableT]): ...
+You can instead extract the bound as a type alias to retain both the
+benefits of the PEP 695 syntax and the reuse of the bound:
+type ReusableTBound = int | str | dict[int, str]
+class GenericClass1[ReusableT: ReusableTBound]: ...
+class GenericClass2[ReusableT: ReusableTBound]: ...
+class GenericClass3[ReusableT: ReusableTBound]: ...
 See also
 This rule replaces standalone type variables in classes but doesn't remove
 the corresponding type variables even if they are unused after the fix. See

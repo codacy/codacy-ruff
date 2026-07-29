@@ -1,4 +1,7 @@
 # f-string-missing-placeholders (F541)
+Added in v0.0.18 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 Fix is always available.
 ## What it does

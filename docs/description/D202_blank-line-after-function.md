@@ -1,4 +1,7 @@
 # blank-line-after-function (D202)
+Added in v0.0.70 ·
+Related issues ·
+View source
 Derived from the pydocstyle linter.
 Fix is sometimes available.
 ## What it does

@@ -1,4 +1,7 @@
 # nonlocal-and-global (PLE0115)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for variables which are both declared as both nonlocal and

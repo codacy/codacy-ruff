@@ -1,4 +1,7 @@
 # unary-prefix-increment-decrement (B002)
+Added in v0.0.83 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for the attempted use of the unary prefix increment (++) or

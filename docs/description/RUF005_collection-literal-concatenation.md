@@ -1,4 +1,7 @@
 # collection-literal-concatenation (RUF005)
+Added in v0.0.227 ·
+Related issues ·
+View source
 Fix is sometimes available.
 ## What it does
 Checks for uses of the + operator to concatenate collections.

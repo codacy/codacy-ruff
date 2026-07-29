@@ -1,4 +1,7 @@
 # invalid-print-syntax (F633)
+Added in v0.0.39 ·
+Related issues ·
+View source
 Derived from the Pyflakes linter.
 ## What it does
 Checks for print statements that use the >> syntax.

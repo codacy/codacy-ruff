@@ -1,4 +1,7 @@
 # ssh-no-host-key-verification (S507)
+Added in v0.2.0 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for uses of policies disabling SSH verification in Paramiko.

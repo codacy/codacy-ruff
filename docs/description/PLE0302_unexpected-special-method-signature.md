@@ -1,4 +1,7 @@
 # unexpected-special-method-signature (PLE0302)
+Added in v0.0.263 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for "special" methods that have an unexpected method signature.

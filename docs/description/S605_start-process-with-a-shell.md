@@ -1,4 +1,7 @@
 # start-process-with-a-shell (S605)
+Added in v0.0.262 ·
+Related issues ·
+View source
 Derived from the flake8-bandit linter.
 ## What it does
 Checks for calls that start a process with a shell, providing guidance on

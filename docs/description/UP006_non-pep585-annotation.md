@@ -1,4 +1,7 @@
 # non-pep585-annotation (UP006)
+Added in v0.0.155 ·
+Related issues ·
+View source
 Derived from the pyupgrade linter.
 Fix is sometimes available.
 ## What it does
@@ -31,4 +34,7 @@ Fix safety
 This rule's fix is marked as unsafe, as it may lead to runtime errors when
 alongside libraries that rely on runtime type annotations, like Pydantic,
 on Python versions prior to Python 3.9.
+In preview, this rule can also add its own __future__ import on Python
+3.9 and earlier, if the lint.future-annotations setting is enabled. This
+also makes the fix unsafe.
 ```

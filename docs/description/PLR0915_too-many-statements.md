@@ -1,4 +1,7 @@
 # too-many-statements (PLR0915)
+Added in v0.0.240 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 ## What it does
 Checks for functions or methods with too many statements.

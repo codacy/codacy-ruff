@@ -1,4 +1,7 @@
 # unnecessary-list-index-lookup (PLR1736)
+Added in 0.5.0 ·
+Related issues ·
+View source
 Derived from the Pylint linter.
 Fix is always available.
 ## What it does

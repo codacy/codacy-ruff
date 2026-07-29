@@ -1,4 +1,7 @@
 # star-arg-unpacking-after-keyword-arg (B026)
+Added in v0.0.109 ·
+Related issues ·
+View source
 Derived from the flake8-bugbear linter.
 ## What it does
 Checks for function calls that use star-argument unpacking after providing a

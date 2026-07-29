@@ -1,4 +1,7 @@
 # root-logger-call (LOG015)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-logging linter.
 ## What it does
 Checks for usages of the following logging top-level functions:

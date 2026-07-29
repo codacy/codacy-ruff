@@ -1,4 +1,7 @@
 # invalid-pathlib-with-suffix (PTH210)
+Added in 0.10.0 ·
+Related issues ·
+View source
 Derived from the flake8-use-pathlib linter.
 Fix is sometimes available.
 ## What it does

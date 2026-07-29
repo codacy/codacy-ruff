@@ -1,4 +1,7 @@
 # assignment-in-assert (RUF018)
+Added in v0.2.0 ·
+Related issues ·
+View source
 ## What it does
 Checks for named assignment expressions (e.g., x := 0) in assert
 statements.
