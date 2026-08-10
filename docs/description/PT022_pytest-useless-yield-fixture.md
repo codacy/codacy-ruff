@@ -30,4 +30,7 @@ def my_fixture_with_teardown():
 def my_fixture_without_teardown():
     resource = acquire_resource()
     return resource
+Fix safety
+This rule's fix is always marked unsafe because removing the yield can change the behavior of
+code that relies on implicit cleanup, such as when a value is garbage-collected.
 ```

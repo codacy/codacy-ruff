@@ -3,3 +3,6 @@
 #Ignore vscode AI rules
 .github/copilot-instructions.md
 .idea/
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
