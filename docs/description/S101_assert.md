@@ -11,6 +11,8 @@ Assertions are removed when Python is run with optimization requested
 production environments. As such, assertions should not be used for runtime
 validation of user input or to enforce interface constraints.
 Consider raising a meaningful error instead of using assert.
+The rule exempts assertions within a TYPE_CHECKING block, assuming these are needed to satisfy
+a type checker.
 ## Example
 ```
 assert x > 0, "Expected positive value."
