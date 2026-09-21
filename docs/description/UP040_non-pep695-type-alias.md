@@ -37,10 +37,14 @@ from annotated_types import Gt
 type ListOfInt = list[int]
 type PositiveInt = Annotated[int, Gt(0)]
 Fix safety
-This fix is marked unsafe for TypeAlias assignments outside of stub files because of the
-runtime behavior around isinstance() calls noted above. The fix is also unsafe for
-TypeAliasType assignments if there are any comments in the replacement range that would be
-deleted.
+This fix is always marked unsafe because it can change runtime behavior and type-checking
+semantics, as described above. It may also remove comments.
+The rule also cannot inspect type variables defined in another module. For TypeAlias
+annotations, this means the fix may fail to convert legacy type variables to type parameters,
+producing code that will be rejected by type checkers. For TypeAliasType, legacy type
+variables are recognized via the explicit type_params argument, but the type variable's
+definition cannot be resolved to preserve its bounds, constraints, defaults, or even kind,
+producing unconstrained TypeVars.
 See also
 This rule only applies to TypeAliases and TypeAliasTypes. See
 non-pep695-generic-class and non-pep695-generic-function for similar

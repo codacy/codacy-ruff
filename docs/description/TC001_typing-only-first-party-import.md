@@ -6,7 +6,7 @@ Derived from the flake8-type-checking linter.
 Fix is sometimes available.
 ## What it does
 Checks for first-party imports that are only used for type annotations, but
-aren't defined in a type-checking block.
+aren't imported lazily or defined in a type-checking block.
 ## Why is this bad?
 Imports that are only used for type annotations add a performance overhead
 at runtime. For first-party imports, they can also contribute to import
@@ -25,6 +25,11 @@ If lint.future-annotations is set to true, from __future__ import annotations wi
 moved into an if TYPE_CHECKING: block. This takes precedence over the
 lint.flake8-type-checking.quote-annotations setting described above if
 both settings are enabled.
+On Python 3.15 and later, lazy imports are also exempt, including imports
+made lazy by a literal __lazy_modules__ declaration. The fix prefers adding
+lazy to single-name import statements where the syntax is legal and
+lint.flake8-tidy-imports.ban-lazy allows it. This defers the import while
+keeping the name available for runtime annotation inspection.
 ## Example
 ```
 from __future__ import annotations
@@ -40,4 +45,11 @@ if TYPE_CHECKING:
     from . import local_module
 def func(sized: local_module.Container) -> int:
     return len(sized)
+On Python 3.15 and later, using a lazy import is also an option:
+lazy from . import local_module
+def func(sized: local_module.Container) -> int:
+    return len(sized)
+Fix safety
+This rule's fixes are unsafe because changing when a module is imported can
+affect runtime behavior, including import-time side effects.
 ```

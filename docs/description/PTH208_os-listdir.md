@@ -3,6 +3,7 @@ Added in 0.10.0 ·
 Related issues ·
 View source
 Derived from the flake8-use-pathlib linter.
+Fix is sometimes available.
 ## What it does
 Checks for uses of os.listdir.
 ## Why is this bad?

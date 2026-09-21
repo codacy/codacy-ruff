@@ -24,4 +24,8 @@ def test_foo():
 def test_bar():
     assert not something
     assert not something_else
+Fix safety
+On stable, the rule's fix is always unsafe and not offered when it would remove comments in the
+compound assertion. In preview, the fix is only unsafe when it would delete such comments and
+safe otherwise.
 ```

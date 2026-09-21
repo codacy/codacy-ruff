@@ -3,7 +3,7 @@ Added in v0.0.199 ·
 Related issues ·
 View source
 Derived from the pyupgrade linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for uses of the xml.etree.cElementTree module.
 ## Why is this bad?

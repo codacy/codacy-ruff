@@ -24,4 +24,6 @@ z = (
     "The quick brown fox jumps over the lazy "
     "dog"
 )
+Fix safety
+The fix is marked as unsafe when it would create a docstring.
 ```

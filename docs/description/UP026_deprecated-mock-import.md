@@ -3,7 +3,7 @@ Added in v0.0.206 ·
 Related issues ·
 View source
 Derived from the pyupgrade linter.
-Fix is always available.
+Fix is sometimes available.
 ## What it does
 Checks for imports of the mock module that should be replaced with
 unittest.mock.
