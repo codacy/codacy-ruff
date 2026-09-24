@@ -22,6 +22,6 @@ print("")
 print()
 Fix safety
 This fix is marked as unsafe if it removes comments or an unused sep keyword argument
-that may have side effects. Removing such arguments may change the program's
-behavior by skipping the execution of those side effects.
+that is not known to be a valid separator. Removing such arguments may change the
+program's behavior by skipping their evaluation or hiding a TypeError.
 ```

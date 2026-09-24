@@ -458,11 +458,22 @@ def main():
         for tr in rows:
             td_elements = tr.find_all("td")
             if len(td_elements) > 1:
+                # Skip rows from the "Rules without codes" table: they have no
+                # rule code id on the first cell and can't map to a patternId.
+                if not td_elements[0].get("id"):
+                    continue
+
                 rule_id = td_elements[0].text.strip()
                 pattern_link = td_elements[1].find("a")
-                # Skip removed or unstable rules
-                if tr.find("span", attrs={"title": "This rule has been removed"}) or tr.find("span", attrs={"title": "Rule is in preview"}):
+                # Skip removed or preview rules. The docs site stamps the
+                # status span title with the version, e.g. "Rule was removed
+                # in 0.13.0" / "Rule has been in preview since 0.16.5".
+                status_titles = [span["title"] for span in tr.find_all("span", attrs={"title": True})]
+                if any(t.startswith("Rule was removed") or t == "This rule has been removed" for t in status_titles):
                     print(f"Skipping removed rule: {rule_id}")
+                    continue
+                if any(t.startswith("Rule has been in preview") or t == "Rule is in preview" for t in status_titles):
+                    print(f"Skipping preview rule: {rule_id}")
                     continue
 
                 pattern_name = pattern_link.text.strip()

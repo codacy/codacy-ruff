@@ -1,6 +1,6 @@
 {
     "name": "ruff",
-    "version": "0.16.0",
+    "version": "0.16.8",
     "patterns": [
         {
             "patternId": "AIR001_airflow-variable-name-task-id-mismatch",
@@ -11,34 +11,6 @@
         },
         {
             "patternId": "AIR002_airflow-dag-no-schedule-argument",
-            "level": "Info",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "AIR003_airflow-variable-get-outside-task",
-            "level": "Info",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "AIR004_airflow-task-branch-as-short-circuit",
-            "level": "Info",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "AIR201_airflow-xcom-pull-in-template-string",
-            "level": "Info",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "AIR202_airflow-task-implicit-multiple-outputs",
             "level": "Info",
             "category": "Compatibility",
             "parameters": [],
@@ -66,13 +38,6 @@
             "enabled": false
         },
         {
-            "patternId": "AIR304_airflow3-dag-dynamic-value",
-            "level": "Info",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "AIR311_airflow3-suggested-update",
             "level": "Info",
             "category": "Compatibility",
@@ -81,13 +46,6 @@
         },
         {
             "patternId": "AIR312_airflow3-suggested-to-move-to-provider",
-            "level": "Info",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "AIR321_airflow31-moved",
             "level": "Info",
             "category": "Compatibility",
             "parameters": [],
@@ -291,13 +249,6 @@
         },
         {
             "patternId": "ASYNC116_long-sleep-not-forever",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "ASYNC119_yield-in-context-manager-in-async-generator",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -632,110 +583,6 @@
         },
         {
             "patternId": "S324_hashlib-insecure-hash-function",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S401_suspicious-telnetlib-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S402_suspicious-ftplib-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S403_suspicious-pickle-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S404_suspicious-subprocess-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S405_suspicious-xml-etree-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S406_suspicious-xml-sax-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S407_suspicious-xml-expat-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S408_suspicious-xml-minidom-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S409_suspicious-xml-pulldom-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S411_suspicious-xmlrpc-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S412_suspicious-httpoxy-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S413_suspicious-pycrypto-import",
-            "level": "Error",
-            "category": "Security",
-            "scanType": "SAST",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "S415_suspicious-pyghmi-import",
             "level": "Error",
             "category": "Security",
             "scanType": "SAST",
@@ -1208,27 +1055,6 @@
             "enabled": true
         },
         {
-            "patternId": "B043_del-attr-with-constant",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "B901_return-in-generator",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "B903_class-as-data-structure",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": true
-        },
-        {
             "patternId": "B904_raise-without-from-inside-except",
             "level": "Error",
             "category": "BestPractice",
@@ -1237,13 +1063,6 @@
         },
         {
             "patternId": "B905_zip-without-explicit-strict",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "B909_loop-iterator-mutation",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -2510,13 +2329,6 @@
             "enabled": false
         },
         {
-            "patternId": "PT029_pytest-warns-without-warning",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PT030_pytest-warns-too-broad",
             "level": "Warning",
             "category": "BestPractice",
@@ -2888,20 +2700,6 @@
             "enabled": false
         },
         {
-            "patternId": "TID254_lazy-import-mismatch",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "TID255_lazy-import-immediately-resolved",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "TD001_invalid-todo-tag",
             "level": "Warning",
             "category": "Documentation",
@@ -2994,13 +2792,6 @@
         },
         {
             "patternId": "TC007_unquoted-type-alias",
-            "level": "Error",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "TC008_quoted-type-alias",
             "level": "Error",
             "category": "Compatibility",
             "parameters": [],
@@ -3595,286 +3386,6 @@
             "enabled": true
         },
         {
-            "patternId": "E111_indentation-with-invalid-multiple",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E112_no-indented-block",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E113_unexpected-indentation",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E114_indentation-with-invalid-multiple-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E115_no-indented-block-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E116_unexpected-indentation-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E117_over-indented",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E201_whitespace-after-open-bracket",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E202_whitespace-before-close-bracket",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E203_whitespace-before-punctuation",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E204_whitespace-after-decorator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E211_whitespace-before-parameters",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E221_multiple-spaces-before-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E222_multiple-spaces-after-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E223_tab-before-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E224_tab-after-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E225_missing-whitespace-around-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E226_missing-whitespace-around-arithmetic-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E227_missing-whitespace-around-bitwise-or-shift-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E228_missing-whitespace-around-modulo-operator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E231_missing-whitespace",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E241_multiple-spaces-after-comma",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E242_tab-after-comma",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E251_unexpected-spaces-around-keyword-parameter-equals",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E252_missing-whitespace-around-parameter-equals",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E261_too-few-spaces-before-inline-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E262_no-space-after-inline-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E265_no-space-after-block-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E266_multiple-leading-hashes-for-block-comment",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E271_multiple-spaces-after-keyword",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E272_multiple-spaces-before-keyword",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E273_tab-after-keyword",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E274_tab-before-keyword",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E275_missing-whitespace-after-keyword",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E301_blank-line-between-methods",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E302_blank-lines-top-level",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E303_too-many-blank-lines",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E304_blank-line-after-decorator",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E305_blank-lines-after-function-or-class",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E306_blank-lines-before-nested-definition",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
             "patternId": "E401_multiple-imports-on-one-line",
             "level": "Error",
             "category": "ErrorProne",
@@ -3890,13 +3401,6 @@
         },
         {
             "patternId": "E501_line-too-long",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": true
-        },
-        {
-            "patternId": "E502_redundant-backslash",
             "level": "Error",
             "category": "ErrorProne",
             "parameters": [],
@@ -4029,13 +3533,6 @@
             "enabled": true
         },
         {
-            "patternId": "W391_too-many-newlines-at-end-of-file",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": true
-        },
-        {
             "patternId": "W505_doc-line-too-long",
             "level": "Warning",
             "category": "CodeStyle",
@@ -4048,55 +3545,6 @@
             "category": "CodeStyle",
             "parameters": [],
             "enabled": true
-        },
-        {
-            "patternId": "DOC102_docstring-extraneous-parameter",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "DOC201_docstring-missing-returns",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "DOC202_docstring-extraneous-returns",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "DOC402_docstring-missing-yields",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "DOC403_docstring-extraneous-yields",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "DOC501_docstring-missing-exception",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "DOC502_docstring-extraneous-exception",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
         },
         {
             "patternId": "D100_undocumented-public-module",
@@ -4415,20 +3863,6 @@
         },
         {
             "patternId": "D419_empty-docstring",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "D420_incorrect-section-order",
-            "level": "Warning",
-            "category": "Documentation",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "D421_property-docstring-starts-with-verb",
             "level": "Warning",
             "category": "Documentation",
             "parameters": [],
@@ -4830,13 +4264,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLC1901_compare-to-empty-string",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLC2401_non-ascii-name",
             "level": "Warning",
             "category": "CodeStyle",
@@ -4845,20 +4272,6 @@
         },
         {
             "patternId": "PLC2403_non-ascii-import-name",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLC2701_import-private-name",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLC2801_unnecessary-dunder-call",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -5012,13 +4425,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLE1141_dict-iter-missing-items",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLE1142_await-outside-async",
             "level": "Error",
             "category": "ErrorProne",
@@ -5131,13 +4537,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLE4703_modified-iterating-set",
-            "level": "Error",
-            "category": "ErrorProne",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLR0124_comparison-with-itself",
             "level": "Warning",
             "category": "Complexity",
@@ -5152,20 +4551,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLR0202_no-classmethod-decorator",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLR0203_no-staticmethod-decorator",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLR0206_property-with-parameters",
             "level": "Warning",
             "category": "Complexity",
@@ -5174,13 +4559,6 @@
         },
         {
             "patternId": "PLR0402_manual-from-import",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLR0904_too-many-public-methods",
             "level": "Warning",
             "category": "Complexity",
             "parameters": [],
@@ -5208,13 +4586,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLR0914_too-many-locals",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLR0915_too-many-statements",
             "level": "Warning",
             "category": "Complexity",
@@ -5222,21 +4593,7 @@
             "enabled": false
         },
         {
-            "patternId": "PLR0916_too-many-boolean-expressions",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLR0917_too-many-positional-arguments",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLR1702_too-many-nested-blocks",
             "level": "Warning",
             "category": "Complexity",
             "parameters": [],
@@ -5258,13 +4615,6 @@
         },
         {
             "patternId": "PLR1711_useless-return",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLR1712_swap-with-temporary-variable",
             "level": "Warning",
             "category": "Complexity",
             "parameters": [],
@@ -5334,27 +4684,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLR6104_non-augmented-assignment",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLR6201_literal-membership",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLR6301_no-self-use",
-            "level": "Warning",
-            "category": "Complexity",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLW0108_unnecessary-lambda",
             "level": "Warning",
             "category": "CodeStyle",
@@ -5418,13 +4747,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLW0244_redefined-slots-in-subclass",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLW0245_super-without-brackets",
             "level": "Warning",
             "category": "CodeStyle",
@@ -5474,13 +4796,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLW0717_too-many-statements-in-try-clause",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLW1501_bad-open-mode",
             "level": "Warning",
             "category": "CodeStyle",
@@ -5516,13 +4831,6 @@
             "enabled": false
         },
         {
-            "patternId": "PLW1514_unspecified-encoding",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "PLW1641_eq-without-hash",
             "level": "Warning",
             "category": "CodeStyle",
@@ -5538,13 +4846,6 @@
         },
         {
             "patternId": "PLW2901_redefined-loop-name",
-            "level": "Warning",
-            "category": "CodeStyle",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "PLW3201_bad-dunder-method-name",
             "level": "Warning",
             "category": "CodeStyle",
             "parameters": [],
@@ -5873,27 +5174,6 @@
             "enabled": false
         },
         {
-            "patternId": "UP051_deprecated-abc-decorator",
-            "level": "Warning",
-            "category": "Compatibility",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB101_read-whole-file",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB103_write-whole-file",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "FURB105_print-empty-string",
             "level": "Warning",
             "category": "BestPractice",
@@ -5908,21 +5188,7 @@
             "enabled": false
         },
         {
-            "patternId": "FURB113_repeated-append",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "FURB116_f-string-number-format",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB118_reimplemented-operator",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -5943,13 +5209,6 @@
             "enabled": false
         },
         {
-            "patternId": "FURB131_delete-full-slice",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "FURB132_check-and-remove-from-set",
             "level": "Warning",
             "category": "BestPractice",
@@ -5958,55 +5217,6 @@
         },
         {
             "patternId": "FURB136_if-expr-min-max",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB140_reimplemented-starmap",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB142_for-loop-set-mutations",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB145_slice-copy",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB148_unnecessary-enumerate",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB152_math-constant",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB154_repeated-global",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB156_hardcoded-string-charset",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -6090,13 +5300,6 @@
             "enabled": false
         },
         {
-            "patternId": "FURB180_meta-class-abc-meta",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "FURB181_hashlib-digest-hex",
             "level": "Warning",
             "category": "BestPractice",
@@ -6112,13 +5315,6 @@
         },
         {
             "patternId": "FURB188_slice-to-remove-prefix-or-suffix",
-            "level": "Warning",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "FURB189_subclass-builtin",
             "level": "Warning",
             "category": "BestPractice",
             "parameters": [],
@@ -6286,13 +5482,6 @@
             "enabled": false
         },
         {
-            "patternId": "RUF027_missing-f-string-syntax",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF028_invalid-formatter-suppression-comment",
             "level": "Error",
             "category": "BestPractice",
@@ -6300,21 +5489,7 @@
             "enabled": false
         },
         {
-            "patternId": "RUF029_unused-async",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF030_assert-with-print-message",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF031_incorrectly-parenthesized-tuple-in-subscript",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -6356,20 +5531,6 @@
             "enabled": false
         },
         {
-            "patternId": "RUF038_redundant-bool-literal",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF039_unraw-re-pattern",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF040_invalid-assert-message-literal-argument",
             "level": "Error",
             "category": "BestPractice",
@@ -6391,21 +5552,7 @@
             "enabled": false
         },
         {
-            "patternId": "RUF045_implicit-class-var-in-dataclass",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF046_unnecessary-cast-to-int",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF047_needless-else",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -6426,13 +5573,6 @@
             "enabled": false
         },
         {
-            "patternId": "RUF050_unnecessary-if",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF051_if-key-in-dict-del",
             "level": "Error",
             "category": "BestPractice",
@@ -6440,35 +5580,7 @@
             "enabled": false
         },
         {
-            "patternId": "RUF052_used-dummy-variable",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF053_class-with-mixed-type-vars",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF054_indented-form-feed",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF055_unnecessary-regular-expression",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF056_falsy-dict-get-fallback",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -6524,77 +5636,7 @@
             "enabled": false
         },
         {
-            "patternId": "RUF065_logging-eager-conversion",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF066_property-without-return",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF067_non-empty-init-module",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF068_duplicate-entry-in-dunder-all",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF069_float-equality-comparison",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF070_unnecessary-assign-before-yield",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF071_os-path-commonprefix",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF072_useless-finally",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF073_f-string-percent-format",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF074_incorrect-decorator-order",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF075_fallible-context-manager",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],
@@ -6636,28 +5678,7 @@
             "enabled": false
         },
         {
-            "patternId": "RUF105_noqa-comments",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF106_rule-codes-in-suppression-comments",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
             "patternId": "RUF200_invalid-pyproject-toml",
-            "level": "Error",
-            "category": "BestPractice",
-            "parameters": [],
-            "enabled": false
-        },
-        {
-            "patternId": "RUF201_rule-codes-in-selectors",
             "level": "Error",
             "category": "BestPractice",
             "parameters": [],

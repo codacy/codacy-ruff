@@ -32,4 +32,12 @@ for i in range(10):
     # make each task remove its own reference from the set after
     # completion:
     task.add_done_callback(background_tasks.discard)
+Or, for Python 3.11 and later, use structured concurrency with
+asyncio.TaskGroup when the tasks should be awaited as part of the current
+operation:
+import asyncio
+async def main() -> None:
+    async with asyncio.TaskGroup() as tg:
+        for i in range(10):
+            tg.create_task(some_coro(param=i))
 ```

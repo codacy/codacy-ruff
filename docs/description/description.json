@@ -14,34 +14,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "AIR003_airflow-variable-get-outside-task",
-        "title": "airflow-variable-get-outside-task (AIR003)",
-        "description": "Checks for Variable.get() calls outside of Airflow task execution\ncontext (i.e., outside @task-decorated functions and operator\nexecute() methods).",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "AIR004_airflow-task-branch-as-short-circuit",
-        "title": "airflow-task-branch-as-short-circuit (AIR004)",
-        "description": "Checks for branching logic that could be replaced with a short-circuit\npattern, either via @task.branch decorated functions or\nBranchPythonOperator callables.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "AIR201_airflow-xcom-pull-in-template-string",
-        "title": "airflow-xcom-pull-in-template-string (AIR201)",
-        "description": "Checks for Airflow operator keyword arguments that use a Jinja template\nstring containing a single xcom_pull call to retrieve another task's\noutput.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "AIR202_airflow-task-implicit-multiple-outputs",
-        "title": "airflow-task-implicit-multiple-outputs (AIR202)",
-        "description": "Checks for @task-decorated functions whose multiple_outputs behavior is\ndetermined by Airflow's runtime inference rather than being set explicitly.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "AIR301_airflow3-removal",
         "title": "airflow3-removal (AIR301)",
         "description": "Checks for uses of deprecated Airflow functions and values.",
@@ -63,13 +35,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "AIR304_airflow3-dag-dynamic-value",
-        "title": "airflow3-dag-dynamic-value (AIR304)",
-        "description": "Checks for calls to runtime-varying functions (such as datetime.now())\nused as arguments in Airflow Dag or task constructors.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "AIR311_airflow3-suggested-update",
         "title": "airflow3-suggested-update (AIR311)",
         "description": "Checks for uses of deprecated Airflow functions and values that still have\na compatibility layer.",
@@ -80,13 +45,6 @@
         "patternId": "AIR312_airflow3-suggested-to-move-to-provider",
         "title": "airflow3-suggested-to-move-to-provider (AIR312)",
         "description": "Checks for uses of Airflow functions and values that have been moved to its providers\nbut still have a compatibility layer (e.g., apache-airflow-providers-standard).",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "AIR321_airflow31-moved",
-        "title": "airflow31-moved (AIR321)",
-        "description": "Checks for uses of deprecated or moved Airflow functions and values in Airflow 3.1.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -294,13 +252,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "ASYNC119_yield-in-context-manager-in-async-generator",
-        "title": "yield-in-context-manager-in-async-generator (ASYNC119)",
-        "description": "Checks for yield inside a context manager in an async generator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "ASYNC210_blocking-http-call-in-async-function",
         "title": "blocking-http-call-in-async-function (ASYNC210)",
         "description": "Checks that async functions do not contain blocking HTTP calls.",
@@ -345,7 +296,7 @@
     {
         "patternId": "ASYNC240_blocking-path-method-in-async-function",
         "title": "blocking-path-method-in-async-function (ASYNC240)",
-        "description": "Checks that async functions do not call blocking os.path or pathlib.Path\nmethods.",
+        "description": "Checks that async functions do not call blocking os.path functions or\npathlib.Path methods.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -598,97 +549,6 @@
         "patternId": "S324_hashlib-insecure-hash-function",
         "title": "hashlib-insecure-hash-function (S324)",
         "description": "Checks for uses of weak or broken cryptographic hash functions in\nhashlib and crypt libraries.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S401_suspicious-telnetlib-import",
-        "title": "suspicious-telnetlib-import (S401)",
-        "description": "Checks for imports of the telnetlib module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S402_suspicious-ftplib-import",
-        "title": "suspicious-ftplib-import (S402)",
-        "description": "Checks for imports of the ftplib module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S403_suspicious-pickle-import",
-        "title": "suspicious-pickle-import (S403)",
-        "description": "Checks for imports of the pickle, cPickle, dill, and shelve modules.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S404_suspicious-subprocess-import",
-        "title": "suspicious-subprocess-import (S404)",
-        "description": "Checks for imports of the subprocess module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S405_suspicious-xml-etree-import",
-        "title": "suspicious-xml-etree-import (S405)",
-        "description": "Checks for imports of the xml.etree.cElementTree and xml.etree.ElementTree modules",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S406_suspicious-xml-sax-import",
-        "title": "suspicious-xml-sax-import (S406)",
-        "description": "Checks for imports of the xml.sax module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S407_suspicious-xml-expat-import",
-        "title": "suspicious-xml-expat-import (S407)",
-        "description": "Checks for imports of the xml.dom.expatbuilder module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S408_suspicious-xml-minidom-import",
-        "title": "suspicious-xml-minidom-import (S408)",
-        "description": "Checks for imports of the xml.dom.minidom module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S409_suspicious-xml-pulldom-import",
-        "title": "suspicious-xml-pulldom-import (S409)",
-        "description": "Checks for imports of the xml.dom.pulldom module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S411_suspicious-xmlrpc-import",
-        "title": "suspicious-xmlrpc-import (S411)",
-        "description": "Checks for imports of the xmlrpc module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S412_suspicious-httpoxy-import",
-        "title": "suspicious-httpoxy-import (S412)",
-        "description": "Checks for imports of wsgiref.handlers.CGIHandler and\ntwisted.web.twcgi.CGIScript.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S413_suspicious-pycrypto-import",
-        "title": "suspicious-pycrypto-import (S413)",
-        "description": "Checks for imports of several unsafe cryptography modules.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "S415_suspicious-pyghmi-import",
-        "title": "suspicious-pyghmi-import (S415)",
-        "description": "Checks for imports of the pyghmi module.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -1134,27 +994,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "B043_del-attr-with-constant",
-        "title": "del-attr-with-constant (B043)",
-        "description": "Checks for uses of delattr that take a constant attribute value as an\nargument (e.g., delattr(obj, \"foo\")).",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "B901_return-in-generator",
-        "title": "return-in-generator (B901)",
-        "description": "Checks for return {value} statements in functions that also contain yield\nor yield from statements.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "B903_class-as-data-structure",
-        "title": "class-as-data-structure (B903)",
-        "description": "Checks for classes that only have a public __init__ method,\nwithout base classes and decorators.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "B904_raise-without-from-inside-except",
         "title": "raise-without-from-inside-except (B904)",
         "description": "Checks for raise statements in exception handlers that lack a from\nclause.",
@@ -1165,13 +1004,6 @@
         "patternId": "B905_zip-without-explicit-strict",
         "title": "zip-without-explicit-strict (B905)",
         "description": "Checks for zip calls without an explicit strict parameter when called with two or more iterables, or any starred argument.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "B909_loop-iterator-mutation",
-        "title": "loop-iterator-mutation (B909)",
-        "description": "Checks for mutations to an iterable during a loop iteration.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -2436,13 +2268,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PT029_pytest-warns-without-warning",
-        "title": "pytest-warns-without-warning (PT029)",
-        "description": "Checks for pytest.warns calls without an expected warning.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PT030_pytest-warns-too-broad",
         "title": "pytest-warns-too-broad (PT030)",
         "description": "Checks for pytest.warns calls without a match parameter.",
@@ -2814,20 +2639,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "TID254_lazy-import-mismatch",
-        "title": "lazy-import-mismatch (TID254)",
-        "description": "Enforces the configured lazy-import policy in contexts where lazy import\nis legal.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "TID255_lazy-import-immediately-resolved",
-        "title": "lazy-import-immediately-resolved (TID255)",
-        "description": "Checks for lazy imports that are resolved immediately at module load time.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "TD001_invalid-todo-tag",
         "title": "invalid-todo-tag (TD001)",
         "description": "Checks that a TODO comment is labelled with \"TODO\".",
@@ -2879,21 +2690,21 @@
     {
         "patternId": "TC001_typing-only-first-party-import",
         "title": "typing-only-first-party-import (TC001)",
-        "description": "Checks for first-party imports that are only used for type annotations, but\naren't defined in a type-checking block.",
+        "description": "Checks for first-party imports that are only used for type annotations, but\naren't imported lazily or defined in a type-checking block.",
         "parameters": [],
         "timeToFix": 5
     },
     {
         "patternId": "TC002_typing-only-third-party-import",
         "title": "typing-only-third-party-import (TC002)",
-        "description": "Checks for third-party imports that are only used for type annotations, but\naren't defined in a type-checking block.",
+        "description": "Checks for third-party imports that are only used for type annotations, but\naren't imported lazily or defined in a type-checking block.",
         "parameters": [],
         "timeToFix": 5
     },
     {
         "patternId": "TC003_typing-only-standard-library-import",
         "title": "typing-only-standard-library-import (TC003)",
-        "description": "Checks for standard library imports that are only used for type\nannotations, but aren't defined in a type-checking block.",
+        "description": "Checks for standard library imports that are only used for type\nannotations, but aren't imported lazily or defined in a type-checking block.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -2922,13 +2733,6 @@
         "patternId": "TC007_unquoted-type-alias",
         "title": "unquoted-type-alias (TC007)",
         "description": "Checks if PEP 613 explicit type aliases contain references to\nsymbols that are not available at runtime.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "TC008_quoted-type-alias",
-        "title": "quoted-type-alias (TC008)",
-        "description": "Checks for unnecessary quotes in PEP 613 explicit type aliases\nand PEP 695 type statements.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -3521,286 +3325,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "E111_indentation-with-invalid-multiple",
-        "title": "indentation-with-invalid-multiple (E111)",
-        "description": "Checks for indentation with a non-multiple of 4 spaces.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E112_no-indented-block",
-        "title": "no-indented-block (E112)",
-        "description": "Checks for indented blocks that are lacking indentation.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E113_unexpected-indentation",
-        "title": "unexpected-indentation (E113)",
-        "description": "Checks for unexpected indentation.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E114_indentation-with-invalid-multiple-comment",
-        "title": "indentation-with-invalid-multiple-comment (E114)",
-        "description": "Checks for indentation of comments with a non-multiple of 4 spaces.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E115_no-indented-block-comment",
-        "title": "no-indented-block-comment (E115)",
-        "description": "Checks for comments in a code blocks that are lacking indentation.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E116_unexpected-indentation-comment",
-        "title": "unexpected-indentation-comment (E116)",
-        "description": "Checks for unexpected indentation of comment.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E117_over-indented",
-        "title": "over-indented (E117)",
-        "description": "Checks for over-indented code.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E201_whitespace-after-open-bracket",
-        "title": "whitespace-after-open-bracket (E201)",
-        "description": "Checks for the use of extraneous whitespace after \"(\", \"[\" or \"{\".",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E202_whitespace-before-close-bracket",
-        "title": "whitespace-before-close-bracket (E202)",
-        "description": "Checks for the use of extraneous whitespace before \")\", \"]\" or \"}\".",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E203_whitespace-before-punctuation",
-        "title": "whitespace-before-punctuation (E203)",
-        "description": "Checks for the use of extraneous whitespace before \",\", \";\" or \":\".",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E204_whitespace-after-decorator",
-        "title": "whitespace-after-decorator (E204)",
-        "description": "Checks for trailing whitespace after a decorator's opening @.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E211_whitespace-before-parameters",
-        "title": "whitespace-before-parameters (E211)",
-        "description": "Checks for extraneous whitespace immediately preceding an open parenthesis\nor bracket.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E221_multiple-spaces-before-operator",
-        "title": "multiple-spaces-before-operator (E221)",
-        "description": "Checks for extraneous whitespace before an operator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E222_multiple-spaces-after-operator",
-        "title": "multiple-spaces-after-operator (E222)",
-        "description": "Checks for extraneous whitespace after an operator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E223_tab-before-operator",
-        "title": "tab-before-operator (E223)",
-        "description": "Checks for extraneous tabs before an operator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E224_tab-after-operator",
-        "title": "tab-after-operator (E224)",
-        "description": "Checks for extraneous tabs after an operator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E225_missing-whitespace-around-operator",
-        "title": "missing-whitespace-around-operator (E225)",
-        "description": "Checks for missing whitespace around all operators.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E226_missing-whitespace-around-arithmetic-operator",
-        "title": "missing-whitespace-around-arithmetic-operator (E226)",
-        "description": "Checks for missing whitespace arithmetic operators.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E227_missing-whitespace-around-bitwise-or-shift-operator",
-        "title": "missing-whitespace-around-bitwise-or-shift-operator (E227)",
-        "description": "Checks for missing whitespace around bitwise and shift operators.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E228_missing-whitespace-around-modulo-operator",
-        "title": "missing-whitespace-around-modulo-operator (E228)",
-        "description": "Checks for missing whitespace around the modulo operator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E231_missing-whitespace",
-        "title": "missing-whitespace (E231)",
-        "description": "Checks for missing whitespace after ,, ;, and :.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E241_multiple-spaces-after-comma",
-        "title": "multiple-spaces-after-comma (E241)",
-        "description": "Checks for extraneous whitespace after a comma.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E242_tab-after-comma",
-        "title": "tab-after-comma (E242)",
-        "description": "Checks for extraneous tabs after a comma.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E251_unexpected-spaces-around-keyword-parameter-equals",
-        "title": "unexpected-spaces-around-keyword-parameter-equals (E251)",
-        "description": "Checks for missing whitespace around the equals sign in an unannotated\nfunction keyword parameter.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E252_missing-whitespace-around-parameter-equals",
-        "title": "missing-whitespace-around-parameter-equals (E252)",
-        "description": "Checks for missing whitespace around the equals sign in an annotated\nfunction keyword parameter.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E261_too-few-spaces-before-inline-comment",
-        "title": "too-few-spaces-before-inline-comment (E261)",
-        "description": "Checks if inline comments are separated by at least two spaces.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E262_no-space-after-inline-comment",
-        "title": "no-space-after-inline-comment (E262)",
-        "description": "Checks if one space is used after inline comments.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E265_no-space-after-block-comment",
-        "title": "no-space-after-block-comment (E265)",
-        "description": "Checks for block comments that lack a single space after the leading # character.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E266_multiple-leading-hashes-for-block-comment",
-        "title": "multiple-leading-hashes-for-block-comment (E266)",
-        "description": "Checks for block comments that start with multiple leading # characters.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E271_multiple-spaces-after-keyword",
-        "title": "multiple-spaces-after-keyword (E271)",
-        "description": "Checks for extraneous whitespace after keywords.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E272_multiple-spaces-before-keyword",
-        "title": "multiple-spaces-before-keyword (E272)",
-        "description": "Checks for extraneous whitespace before keywords.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E273_tab-after-keyword",
-        "title": "tab-after-keyword (E273)",
-        "description": "Checks for extraneous tabs after keywords.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E274_tab-before-keyword",
-        "title": "tab-before-keyword (E274)",
-        "description": "Checks for extraneous tabs before keywords.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E275_missing-whitespace-after-keyword",
-        "title": "missing-whitespace-after-keyword (E275)",
-        "description": "Checks for missing whitespace after keywords.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E301_blank-line-between-methods",
-        "title": "blank-line-between-methods (E301)",
-        "description": "Checks for missing blank lines between methods of a class.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E302_blank-lines-top-level",
-        "title": "blank-lines-top-level (E302)",
-        "description": "Checks for missing blank lines between top level functions and classes.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E303_too-many-blank-lines",
-        "title": "too-many-blank-lines (E303)",
-        "description": "Checks for extraneous blank lines.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E304_blank-line-after-decorator",
-        "title": "blank-line-after-decorator (E304)",
-        "description": "Checks for extraneous blank line(s) after function decorators.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E305_blank-lines-after-function-or-class",
-        "title": "blank-lines-after-function-or-class (E305)",
-        "description": "Checks for missing blank lines after the end of function or class.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E306_blank-lines-before-nested-definition",
-        "title": "blank-lines-before-nested-definition (E306)",
-        "description": "Checks for 1 blank line between nested function or class definitions.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "E401_multiple-imports-on-one-line",
         "title": "multiple-imports-on-one-line (E401)",
         "description": "Check for multiple imports on one line.",
@@ -3818,13 +3342,6 @@
         "patternId": "E501_line-too-long",
         "title": "line-too-long (E501)",
         "description": "Checks for lines that exceed the specified maximum character length.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "E502_redundant-backslash",
-        "title": "redundant-backslash (E502)",
-        "description": "Checks for redundant backslashes between brackets.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -3955,13 +3472,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "W391_too-many-newlines-at-end-of-file",
-        "title": "too-many-newlines-at-end-of-file (W391)",
-        "description": "Checks for files with multiple trailing blank lines.\nIn the case of notebooks, this check is applied to\neach cell separately.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "W505_doc-line-too-long",
         "title": "doc-line-too-long (W505)",
         "description": "Checks for doc lines that exceed the specified maximum character length.",
@@ -3972,55 +3482,6 @@
         "patternId": "W605_invalid-escape-sequence",
         "title": "invalid-escape-sequence (W605)",
         "description": "Checks for invalid escape sequences.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC102_docstring-extraneous-parameter",
-        "title": "docstring-extraneous-parameter (DOC102)",
-        "description": "Checks for function docstrings that include parameters which are not\nin the function signature.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC201_docstring-missing-returns",
-        "title": "docstring-missing-returns (DOC201)",
-        "description": "Checks for functions with return statements that do not have \"Returns\"\nsections in their docstrings.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC202_docstring-extraneous-returns",
-        "title": "docstring-extraneous-returns (DOC202)",
-        "description": "Checks for function docstrings with unnecessary \"Returns\" sections.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC402_docstring-missing-yields",
-        "title": "docstring-missing-yields (DOC402)",
-        "description": "Checks for functions with yield statements that do not have \"Yields\" sections in\ntheir docstrings.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC403_docstring-extraneous-yields",
-        "title": "docstring-extraneous-yields (DOC403)",
-        "description": "Checks for function docstrings with unnecessary \"Yields\" sections.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC501_docstring-missing-exception",
-        "title": "docstring-missing-exception (DOC501)",
-        "description": "Checks for function docstrings that do not document all explicitly raised\nexceptions.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "DOC502_docstring-extraneous-exception",
-        "title": "docstring-extraneous-exception (DOC502)",
-        "description": "Checks for function docstrings that state that exceptions could be raised\neven though they are not directly raised in the function body.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4343,20 +3804,6 @@
         "patternId": "D419_empty-docstring",
         "title": "empty-docstring (D419)",
         "description": "Checks for empty docstrings.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "D420_incorrect-section-order",
-        "title": "incorrect-section-order (D420)",
-        "description": "Checks for docstring sections that appear out of order.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "D421_property-docstring-starts-with-verb",
-        "title": "property-docstring-starts-with-verb (D421)",
-        "description": "Checks for @property method docstrings that start with known verbs\n(e.g., \"returns\", \"gets\", etc).",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4753,13 +4200,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLC1901_compare-to-empty-string",
-        "title": "compare-to-empty-string (PLC1901)",
-        "description": "Checks for comparisons to empty strings.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLC2401_non-ascii-name",
         "title": "non-ascii-name (PLC2401)",
         "description": "Checks for the use of non-ASCII characters in variable names.",
@@ -4770,20 +4210,6 @@
         "patternId": "PLC2403_non-ascii-import-name",
         "title": "non-ascii-import-name (PLC2403)",
         "description": "Checks for the use of non-ASCII characters in import statements.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLC2701_import-private-name",
-        "title": "import-private-name (PLC2701)",
-        "description": "Checks for import statements that import a private name (a name starting\nwith an underscore _) from another module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLC2801_unnecessary-dunder-call",
-        "title": "unnecessary-dunder-call (PLC2801)",
-        "description": "Checks for explicit use of dunder methods, like __str__ and __add__.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -4935,13 +4361,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLE1141_dict-iter-missing-items",
-        "title": "dict-iter-missing-items (PLE1141)",
-        "description": "Checks for dictionary unpacking in a for loop without calling .items().",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLE1142_await-outside-async",
         "title": "await-outside-async (PLE1142)",
         "description": "Checks for uses of await outside async functions.",
@@ -5054,13 +4473,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLE4703_modified-iterating-set",
-        "title": "modified-iterating-set (PLE4703)",
-        "description": "Checks for loops in which a set is modified during iteration.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLR0124_comparison-with-itself",
         "title": "comparison-with-itself (PLR0124)",
         "description": "Checks for operations that compare a name to itself.",
@@ -5075,20 +4487,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLR0202_no-classmethod-decorator",
-        "title": "no-classmethod-decorator (PLR0202)",
-        "description": "Checks for the use of a classmethod being made without the decorator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLR0203_no-staticmethod-decorator",
-        "title": "no-staticmethod-decorator (PLR0203)",
-        "description": "Checks for the use of a staticmethod being made without the decorator.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLR0206_property-with-parameters",
         "title": "property-with-parameters (PLR0206)",
         "description": "Checks for property definitions that accept function parameters.",
@@ -5099,13 +4497,6 @@
         "patternId": "PLR0402_manual-from-import",
         "title": "manual-from-import (PLR0402)",
         "description": "Checks for submodule imports that are aliased to the submodule name.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLR0904_too-many-public-methods",
-        "title": "too-many-public-methods (PLR0904)",
-        "description": "Checks for classes with too many public methods\nBy default, this rule allows up to 20 public methods, as configured by\nthe lint.pylint.max-public-methods option.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5131,13 +4522,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLR0914_too-many-locals",
-        "title": "too-many-locals (PLR0914)",
-        "description": "Checks for functions that include too many local variables.\nBy default, this rule allows up to fifteen locals, as configured by the\nlint.pylint.max-locals option.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLR0915_too-many-statements",
         "title": "too-many-statements (PLR0915)",
         "description": "Checks for functions or methods with too many statements.\nBy default, this rule allows up to 50 statements, as configured by the\nlint.pylint.max-statements option.",
@@ -5145,23 +4529,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLR0916_too-many-boolean-expressions",
-        "title": "too-many-boolean-expressions (PLR0916)",
-        "description": "Checks for too many Boolean expressions in an if statement.\nBy default, this rule allows up to 5 expressions. This can be configured\nusing the lint.pylint.max-bool-expr option.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLR0917_too-many-positional-arguments",
         "title": "too-many-positional-arguments (PLR0917)",
         "description": "Checks for function definitions that include too many positional arguments.\nBy default, this rule allows up to five arguments, as configured by the\nlint.pylint.max-positional-args option.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLR1702_too-many-nested-blocks",
-        "title": "too-many-nested-blocks (PLR1702)",
-        "description": "Checks for functions or methods with too many nested blocks.\nBy default, this rule allows up to five nested blocks.\nThis can be configured using the lint.pylint.max-nested-blocks option.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5183,13 +4553,6 @@
         "patternId": "PLR1711_useless-return",
         "title": "useless-return (PLR1711)",
         "description": "Checks for functions that end with an unnecessary return or\nreturn None, and contain no other return statements.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLR1712_swap-with-temporary-variable",
-        "title": "swap-with-temporary-variable (PLR1712)",
-        "description": "Checks for code that swaps two variables using a temporary variable.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5257,27 +4620,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLR6104_non-augmented-assignment",
-        "title": "non-augmented-assignment (PLR6104)",
-        "description": "Checks for assignments that can be replaced with augmented assignment\nstatements.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLR6201_literal-membership",
-        "title": "literal-membership (PLR6201)",
-        "description": "Checks for membership tests on list and tuple literals.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLR6301_no-self-use",
-        "title": "no-self-use (PLR6301)",
-        "description": "Checks for the presence of unused self parameter in methods definitions.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLW0108_unnecessary-lambda",
         "title": "unnecessary-lambda (PLW0108)",
         "description": "Checks for lambda definitions that consist of a single function call\nwith the same arguments as the lambda itself.",
@@ -5341,13 +4683,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLW0244_redefined-slots-in-subclass",
-        "title": "redefined-slots-in-subclass (PLW0244)",
-        "description": "Checks for a re-defined slot in a subclass.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLW0245_super-without-brackets",
         "title": "super-without-brackets (PLW0245)",
         "description": "Detects attempts to use super without parentheses.",
@@ -5397,13 +4732,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLW0717_too-many-statements-in-try-clause",
-        "title": "too-many-statements-in-try-clause (PLW0717)",
-        "description": "Checks for try clauses with too many statements.\nBy default, this rule allows up to 5 statements, as configured by the\nlint.pylint.max-statements-in-try option.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLW1501_bad-open-mode",
         "title": "bad-open-mode (PLW1501)",
         "description": "Check for an invalid mode argument in open calls.",
@@ -5439,13 +4767,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "PLW1514_unspecified-encoding",
-        "title": "unspecified-encoding (PLW1514)",
-        "description": "Checks for uses of open and related calls without an explicit encoding\nargument.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "PLW1641_eq-without-hash",
         "title": "eq-without-hash (PLW1641)",
         "description": "Checks for classes that implement __eq__ but not __hash__.",
@@ -5463,13 +4784,6 @@
         "patternId": "PLW2901_redefined-loop-name",
         "title": "redefined-loop-name (PLW2901)",
         "description": "Checks for variables defined in for loops and with statements that\nget overwritten within the body, for example by another for loop or\nwith statement or by direct assignment.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "PLW3201_bad-dunder-method-name",
-        "title": "bad-dunder-method-name (PLW3201)",
-        "description": "Checks for dunder methods that have no special meaning in Python 3.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5553,7 +4867,7 @@
     {
         "patternId": "UP012_unnecessary-encode-utf8",
         "title": "unnecessary-encode-utf8 (UP012)",
-        "description": "Checks for unnecessary calls to encode as UTF-8.",
+        "description": "Checks for unnecessary calls to encode as UTF-8 and unnecessary explicit\nUTF-8 encoding arguments.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5796,27 +5110,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "UP051_deprecated-abc-decorator",
-        "title": "deprecated-abc-decorator (UP051)",
-        "description": "Checks for uses of abstractclassmethod, abstractstaticmethod, abstractproperty.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB101_read-whole-file",
-        "title": "read-whole-file (FURB101)",
-        "description": "Checks for uses of open and read that can be replaced by pathlib\nmethods, like Path.read_text and Path.read_bytes.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB103_write-whole-file",
-        "title": "write-whole-file (FURB103)",
-        "description": "Checks for uses of open and write that can be replaced by pathlib\nmethods, like Path.write_text and Path.write_bytes.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "FURB105_print-empty-string",
         "title": "print-empty-string (FURB105)",
         "description": "Checks for print calls with unnecessary empty strings as positional\narguments and unnecessary sep keyword arguments.",
@@ -5831,23 +5124,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "FURB113_repeated-append",
-        "title": "repeated-append (FURB113)",
-        "description": "Checks for consecutive calls to append.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "FURB116_f-string-number-format",
         "title": "f-string-number-format (FURB116)",
         "description": "Checks for uses of bin(...)[2:] (or hex, or oct) to convert\nan integer into a string.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB118_reimplemented-operator",
-        "title": "reimplemented-operator (FURB118)",
-        "description": "Checks for lambda expressions and function definitions that can be replaced with a function from\nthe operator module.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -5866,13 +5145,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "FURB131_delete-full-slice",
-        "title": "delete-full-slice (FURB131)",
-        "description": "Checks for del statements that delete the entire slice of a list or\ndictionary.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "FURB132_check-and-remove-from-set",
         "title": "check-and-remove-from-set (FURB132)",
         "description": "Checks for uses of set.remove that can be replaced with set.discard.",
@@ -5883,55 +5155,6 @@
         "patternId": "FURB136_if-expr-min-max",
         "title": "if-expr-min-max (FURB136)",
         "description": "Checks for if expressions that can be replaced with min() or max()\ncalls.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB140_reimplemented-starmap",
-        "title": "reimplemented-starmap (FURB140)",
-        "description": "Checks for generator expressions, list and set comprehensions that can\nbe replaced with itertools.starmap.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB142_for-loop-set-mutations",
-        "title": "for-loop-set-mutations (FURB142)",
-        "description": "Checks for code that updates a set with the contents of an iterable by\nusing a for loop to call .add() or .discard() on each element\nseparately.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB145_slice-copy",
-        "title": "slice-copy (FURB145)",
-        "description": "Checks for unbounded slice expressions to copy a list.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB148_unnecessary-enumerate",
-        "title": "unnecessary-enumerate (FURB148)",
-        "description": "Checks for uses of enumerate that discard either the index or the value\nwhen iterating over a sequence.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB152_math-constant",
-        "title": "math-constant (FURB152)",
-        "description": "Checks for literals that are similar to constants in math module.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB154_repeated-global",
-        "title": "repeated-global (FURB154)",
-        "description": "Checks for consecutive global (or nonlocal) statements.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB156_hardcoded-string-charset",
-        "title": "hardcoded-string-charset (FURB156)",
-        "description": "Checks for uses of hardcoded charsets, which are defined in Python string module.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -6013,13 +5236,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "FURB180_meta-class-abc-meta",
-        "title": "meta-class-abc-meta (FURB180)",
-        "description": "Checks for uses of metaclass=abc.ABCMeta to define abstract base classes\n(ABCs).",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "FURB181_hashlib-digest-hex",
         "title": "hashlib-digest-hex (FURB181)",
         "description": "Checks for the use of .digest().hex() on a hashlib hash, like sha512.",
@@ -6037,13 +5253,6 @@
         "patternId": "FURB188_slice-to-remove-prefix-or-suffix",
         "title": "slice-to-remove-prefix-or-suffix (FURB188)",
         "description": "Checks for code that could be written more idiomatically using\nstr.removeprefix()\nor str.removesuffix().\nSpecifically, the rule flags code that conditionally removes a prefix or suffix\nusing a slice operation following an if test that uses str.startswith() or str.endswith().\nThe rule is only applied if your project targets Python 3.9 or later.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "FURB189_subclass-builtin",
-        "title": "subclass-builtin (FURB189)",
-        "description": "Checks for subclasses of dict, list or str.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -6209,13 +5418,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF027_missing-f-string-syntax",
-        "title": "missing-f-string-syntax (RUF027)",
-        "description": "Searches for strings that look like they were meant to be f-strings, but are missing an f prefix.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF028_invalid-formatter-suppression-comment",
         "title": "invalid-formatter-suppression-comment (RUF028)",
         "description": "Checks for formatter suppression comments that are ineffective or incompatible\nwith Ruff's formatter.",
@@ -6223,23 +5425,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF029_unused-async",
-        "title": "unused-async (RUF029)",
-        "description": "Checks for functions declared async that do not await or otherwise use features requiring the\nfunction to be declared async.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF030_assert-with-print-message",
         "title": "assert-with-print-message (RUF030)",
         "description": "Checks for uses of assert expression, print(message).",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF031_incorrectly-parenthesized-tuple-in-subscript",
-        "title": "incorrectly-parenthesized-tuple-in-subscript (RUF031)",
-        "description": "Checks for consistent style regarding whether nonempty tuples in subscripts\nare parenthesized.\nThe exact nature of this violation depends on the setting\nlint.ruff.parenthesize-tuple-in-subscript. By default, the use of\nparentheses is considered a violation.\nThis rule is not applied inside \"typing contexts\" (type annotations,\ntype aliases and subscripted class bases), as these have their own specific\nconventions around them.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -6279,20 +5467,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF038_redundant-bool-literal",
-        "title": "redundant-bool-literal (RUF038)",
-        "description": "Checks for Literal[True, False] type annotations.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF039_unraw-re-pattern",
-        "title": "unraw-re-pattern (RUF039)",
-        "description": "Reports the following re and regex calls when\ntheir first arguments are not raw strings:\nFor regex and re: compile, findall, finditer,\n    fullmatch, match, search, split, sub, subn.\nregex-specific: splititer, subf, subfn, template.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF040_invalid-assert-message-literal-argument",
         "title": "invalid-assert-message-literal-argument (RUF040)",
         "description": "Checks for invalid use of literals in assert message arguments.",
@@ -6314,23 +5488,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF045_implicit-class-var-in-dataclass",
-        "title": "implicit-class-var-in-dataclass (RUF045)",
-        "description": "Checks for implicit class variables in dataclasses.\nVariables matching the lint.dummy-variable-rgx are excluded\nfrom this rule.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF046_unnecessary-cast-to-int",
         "title": "unnecessary-cast-to-int (RUF046)",
         "description": "Checks for int conversions of values that are already integers.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF047_needless-else",
-        "title": "needless-else (RUF047)",
-        "description": "Checks for else clauses that only contains pass and ... statements.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -6349,13 +5509,6 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF050_unnecessary-if",
-        "title": "unnecessary-if (RUF050)",
-        "description": "Checks for if statements (without elif or else branches) where the\nbody contains only pass or ...",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF051_if-key-in-dict-del",
         "title": "if-key-in-dict-del (RUF051)",
         "description": "Checks for if key in dictionary: del dictionary[key].",
@@ -6363,37 +5516,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF052_used-dummy-variable",
-        "title": "used-dummy-variable (RUF052)",
-        "description": "Checks for \"dummy variables\" (variables that are named as if to indicate they are unused)\nthat are in fact used.\nBy default, \"dummy variables\" are any variables with names that start with leading\nunderscores. However, this is customisable using the lint.dummy-variable-rgx setting).",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF053_class-with-mixed-type-vars",
         "title": "class-with-mixed-type-vars (RUF053)",
         "description": "Checks for classes that have PEP 695\nwhile also inheriting from typing.Generic or typing_extensions.Generic.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF054_indented-form-feed",
-        "title": "indented-form-feed (RUF054)",
-        "description": "Checks for form feed characters preceded by either a space or a tab.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF055_unnecessary-regular-expression",
-        "title": "unnecessary-regular-expression (RUF055)",
-        "description": "Checks for uses of the re module that can be replaced with builtin str methods.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF056_falsy-dict-get-fallback",
-        "title": "falsy-dict-get-fallback (RUF056)",
-        "description": "Checks for dict.get(key, falsy_value) calls in boolean test positions.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -6447,79 +5572,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF065_logging-eager-conversion",
-        "title": "logging-eager-conversion (RUF065)",
-        "description": "Checks for eager string conversion of arguments to logging calls.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF066_property-without-return",
-        "title": "property-without-return (RUF066)",
-        "description": "Detects class @property methods that does not have a return statement.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF067_non-empty-init-module",
-        "title": "non-empty-init-module (RUF067)",
-        "description": "Detects the presence of code in __init__.py files.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF068_duplicate-entry-in-dunder-all",
         "title": "duplicate-entry-in-dunder-all (RUF068)",
         "description": "Detects duplicate elements in __all__ definitions.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF069_float-equality-comparison",
-        "title": "float-equality-comparison (RUF069)",
-        "description": "Checks for comparisons between floating-point values using == or !=.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF070_unnecessary-assign-before-yield",
-        "title": "unnecessary-assign-before-yield (RUF070)",
-        "description": "Checks for variable assignments that immediately precede a yield (or\nyield from) of the assigned variable, where the variable is not\nreferenced anywhere else.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF071_os-path-commonprefix",
-        "title": "os-path-commonprefix (RUF071)",
-        "description": "Checks for uses of os.path.commonprefix.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF072_useless-finally",
-        "title": "useless-finally (RUF072)",
-        "description": "Checks for finally clauses that only contain pass or ... statements",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF073_f-string-percent-format",
-        "title": "f-string-percent-format (RUF073)",
-        "description": "Checks for uses of the % operator on f-strings.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF074_incorrect-decorator-order",
-        "title": "incorrect-decorator-order (RUF074)",
-        "description": "Checks for incorrect ordering of decorators on functions and methods.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF075_fallible-context-manager",
-        "title": "fallible-context-manager (RUF075)",
-        "description": "Checks for @contextlib.contextmanager decorated functions that contain\nyield expressions not protected against exceptions.",
         "parameters": [],
         "timeToFix": 5
     },
@@ -6559,30 +5614,9 @@
         "timeToFix": 5
     },
     {
-        "patternId": "RUF105_noqa-comments",
-        "title": "noqa-comments (RUF105)",
-        "description": "Checks for the use of noqa comments instead of Ruff-specific ruff: ignore comments.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF106_rule-codes-in-suppression-comments",
-        "title": "rule-codes-in-suppression-comments (RUF106)",
-        "description": "Checks for rule codes in Ruff-specific suppression comments.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
         "patternId": "RUF200_invalid-pyproject-toml",
         "title": "invalid-pyproject-toml (RUF200)",
         "description": "Checks for any pyproject.toml that does not conform to the schema from the relevant PEPs.",
-        "parameters": [],
-        "timeToFix": 5
-    },
-    {
-        "patternId": "RUF201_rule-codes-in-selectors",
-        "title": "rule-codes-in-selectors (RUF201)",
-        "description": "Checks for any configuration files that use rule codes as selectors.",
         "parameters": [],
         "timeToFix": 5
     },
